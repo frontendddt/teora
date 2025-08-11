@@ -15,7 +15,7 @@ const About = () =>{
         {
             counter: 28.9,
             discriptions: "Of the world’s population experience food insecurity, &",
-            strong: "& 864 million facing severe hunger"
+            strong: "& 864 million facing severe hunger add"
         },
          {
             counter: '$2.9T',

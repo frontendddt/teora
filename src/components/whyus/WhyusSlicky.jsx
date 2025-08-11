@@ -187,7 +187,7 @@ const WhyusSlicky = () =>{
                                                 <span className="rounded-pill buge-style accentBlueBg purpleColor pt-2 pb-2">NO COMPROMISE</span>
                                                 <div className="text-primaryBeige">
                                                     <h3 className="m-top-b">
-                                                        While Others SellYou Disease
+                                                        While Others SellYou Disease hello g deep
                                                         Prevention Or Disease Cure Or Growth
                                                         Enhancement, We Deliver It All In One
                                                         Feed-Top Or Foliar Spray Solution For
