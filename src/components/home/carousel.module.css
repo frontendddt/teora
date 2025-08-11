@@ -1,0 +1,146 @@
+/* .emblaWrapper {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.embla {
+  overflow: hidden;
+  height: 100%;
+}
+
+.embla__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.embla__slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.embla__slide.isSelected {
+  opacity: 1;
+  z-index: 2;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 0.5rem;
+  max-width: 80%;
+}
+
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.prevButton {
+  left: 10px;
+}
+.nextButton {
+  right: 10px;
+} */
+
+.bannerImg{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+
+.bannerContaner{ 
+  /* background-color: #35284b; */
+  background: var(--primaryPurple); 
+}
+.sliders{
+    height: 1007px; 
+    opacity: 1; 
+}
+
+.prevButton{
+  display:  inline-block;
+  width: 50px;
+  height: 50px;
+  border: 2.3px solid var(--primaryBeige);
+  color: var(--primaryBeige);
+  font-weight: var(--fw-600);
+  border-radius: 50%;
+  font-size: 24px; 
+}
+
+.bannerHeaderContant{
+    width: 100%;
+    max-width: 910px;
+    height: 240px;
+    position: relative;
+    top: 200px;
+    margin:  0 auto;
+    /* left: 50%; 
+    transform: translateX(-50%);   */
+    text-align: center;
+    color: var(--lightNeutral);
+    letter-spacing: -0.23px;
+     letter-spacing: var(--unnamed-character-spacing--0-18);
+     text-transform: capitalize;  
+}
+
+.slider_img_container{
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 50%; 
+    transform: translateX(-50%);   
+}
+.bannerFooterContant{
+    width: 100%;
+    max-width: 790px;
+    margin: 0 auto 20px auto;
+    /* position: absolute;
+    top:807px;
+    left: 50%; 
+    transform: translateX(-50%);   */
+    text-align: center;
+    color: var(--primaryBeige);  
+    letter-spacing: var(--unnamed-character-spacing--0-18);
+    text-transform: capitalize;
+}
+
+.bannerFooterContant h3{
+  font-weight: 100 !important;
+}
+.cleanTex{
+  color: var(--mutedLavender);
+}
+
+
+.banner_counter{
+  top: 100px;
+  right: 0;
+  position: absolute;
+  color: var(--midPurple);
+}

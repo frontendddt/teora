@@ -1,0 +1,76 @@
+ 
+
+ .arrowPrev{
+    position: absolute !important;
+    top: -150px;
+    right: 20%;
+    padding: 20px;
+ 
+ }
+ .arrowNext{
+     position: absolute !important;
+     top: -150px;
+     right: 0%;
+     padding: 20px;
+
+ }
+ .slicky_p{
+    padding: 2rem 0 0 2rem;
+ }
+ 
+ .countscroll{
+    display: flex;
+    gap:10px;
+    width: fit-content;
+    padding: 0 5px;
+    border: 2.5px solid var(--primaryBeige);
+    border-radius: 10px;
+    height: 50px;
+ }
+ .countscroll2{
+   border-color: var(--purpleColor) !important; 
+ }
+  .values2{border-color: var(--purpleColor) !important}
+ .values{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; 
+    border: 2.5px solid var(--primaryBeige); 
+    font-size: 22px !important;
+    font-weight: 700;
+ }
+
+
+ .border_rignt{
+     border-right: 2px solid var(--accentLime);
+     padding: 1rem .6rem;
+}
+.border_rignt p{
+  font-size: 15px !important;
+  line-height: 22px !important;
+}
+
+
+ /* slicky 5 */
+
+  .widths_5{
+    height: 500px; 
+    border-radius: 40px;
+    top:180px;
+ }
+ 
+ .sliderBanner{
+   padding: .4rem 2rem;
+   background: #ffff;
+   border-radius: 60px;
+ }
+
+ .fontCard{
+   font-size: 19px;
+   font-weight: 400;
+   padding: 5px 5px;
+ }
+ .zerpfonts{
+   font-size: 15.5px !important;
+   font-weight: 600 !important;
+ }

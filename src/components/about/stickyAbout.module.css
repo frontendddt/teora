@@ -1,0 +1,139 @@
+
+.sticky_section{
+    height: auto;
+    width: 100%; 
+    border-radius: 70px 70px 0 0;  
+    top:30px; 
+    min-height: 100vh;
+}
+
+.bg1{ 
+    background-image: url("../../assets/homeAssets/slider-teora-bg.png");
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;  
+}
+
+.aboutCardBox{
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+}
+.aboutCardtext{
+    font-size: 18.5px !important;
+    font-weight: 700 !important;
+    line-height: 26px !important;
+}
+.arrows{
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.asiaOne{
+    font-weight: 500 !important;
+}
+
+.proprietarySection{
+    padding:0 5%;
+}
+.card_content{
+    padding: 2rem;
+}
+
+.card_content p{
+    margin: 1rem 0;
+}
+
+.margin_bottom{
+    /* margin-bottom: 4rem; */
+}
+
+.border_radiusEl{
+    border-radius: 33px;
+    overflow: hidden;
+}
+ 
+
+
+/* ***** progressbar ******/
+.progress {
+    height: 1px;
+    background-color: #d3d3d3;
+    position: relative;
+}
+.progress-bar {
+    height: 2px;
+    background-color: var(--accentLime);
+}
+
+.progress-label {
+    font-size: 0.875rem;
+    color: #999;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.activeIconst{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primaryBeige);
+}
+
+.activeArraw{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.activeText h4{
+    font-weight: 400 !important;
+    transition: ease-in-out all .4s;
+}
+
+.slideOne{
+    padding-right: 1.5rem;
+}
+
+.innovationBtn{
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+     
+}
+
+
+.table_borders thead th{
+  border: 4px solid var(--primaryPurple);
+  padding: 10px 0;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+.table_borders thead th:first-child{
+  border-left: none;
+}
+.table_borders thead th:last-child{
+  border-right: none;
+}
+
+.table_borders tbody tr td{
+    font-size: 19px;
+    padding: 10px 2.4rem;
+    text-align: center;
+}
+.table_borders tbody tr td:first-child{
+    border-right: 4px solid var(--primaryPurple);
+}
+
+.contents{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
