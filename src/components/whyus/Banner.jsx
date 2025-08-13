@@ -103,7 +103,7 @@ const Banner = () =>{
                                 </h1>
                                 <div className={`d-flex gap-2 ${Styles.aboutbannerBtn}`}>
                                     <Link className="buttons-Beige" href="/">About Teora</Link>
-                                    <Link className="buttons-primary" href="/">Our Solutions</Link>
+                                    <Link className="buttons-primary border1px" href="/">Our Solutions</Link>
                                 </div>
                             </div>
                        </div> 

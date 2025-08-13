@@ -11,7 +11,7 @@ import styles from './slicky.module.css';
  
 import React, { Component, useRef } from "react";
 
-import homesliky from "../../../assets/heroSlider/slicky-home-1.svg";
+// import homesliky from "../../../assets/heroSlider/slicky-home-1.svg";
 // import group1 from "/public/homeAssets/group-1.png";
 import group1 from "../../../assets/icons/group1.png";
 import group2 from "../../../assets/icons/group2.png";
@@ -98,8 +98,8 @@ const SolaqSlider = () => {
                     </div>
 
                     <div className="col-3">
-                      <Image
-                        src={homesliky}
+                      <img
+                        src="/icons/slicky-home-1.svg"
                         alt='solutions for sustainable Farming'
                         className='img-w' 
                       />
@@ -163,8 +163,8 @@ const SolaqSlider = () => {
 
                     <div className="col-3 ">
                         <div className='' style={{padding:'0 0px 0 15px'}}>
-                               <Image
-                                    src={homesliky}
+                               <img
+                                    src="/icons/slicky-home-1.svg"
                                     alt='solutions for sustainable Farming'
                                     height={120}
                                   />

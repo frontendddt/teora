@@ -4,61 +4,69 @@ import cardimg4 from "../../../public/aboutAssets/cardimg/cardimg4.png";
 import WhyMatterCard from "../home/slickyComponents/WhyMatterCard";
 import { MissionCardSwiper } from "../about/subComponent/MissionCardSwiper";
 import styles from "./whyUS.module.css";
-
+import StackedCards from "../about/subComponent/StackedCards";
+import Building from "./Building";
+ 
 
 //TimerCardSwiper   why us sweeper data
 const cardcontant = [   
         {
-            heading: "No Needles. No Cold Chains. No Nonsense.No Stress",
+            heading_before_break: "No Needles. No Cold Chains.",
+            heading_after_break: "No Nonsense.No Stress",
             tableTrtd1: "Injections that stress animals. Cold storage nightmares. Labor-intensive",
             tableTrtd2: "Just sprinkle on feed. Roomtemperature stable. Works in any climate, no handling.", 
-            img:"",
+            img:"/image/adoption_fish.png",
             alt: "Outbreaks End Before",
             imgTitle:"Easy adoption. Zero infrastructure upgrades. Happy animals.",
             listActive:"Stress-Free",
         },
         {
-            heading: "AI-Powered. Disease Moves Fast. We Move Faster",
+            heading_before_break: "AI-Powered. Disease Moves Fast. We ", 
+            heading_after_break: "Move Faster Fast. We Move Faster",
             tableTrtd1: " Expensive, slow-to-deploy vaccines— 3-5 years to develop new vaccines.By",
             tableTrtd2: "Fast production —AI + precision fermentation deliver custom biologics in 6-8 ", 
-            img:"",
+            img:"/image/ai_power.png",
             alt: "Outbreaks End Before",
             imgTitle:"Stay ahead of emerging diseases. Protect next season. Keep production moving.",
             listActive:"Fast Response",
         },
         {
-            heading: "Regulatory-Ready. No Antibiotics. No Chemicals. No Residues.Ban-Proof",
+            heading_before_break: "Regulatory-Ready. No Antibiotics. No ",
+            heading_after_break: "Chemicals. No Residues.Ban-Proof",
             tableTrtd1: "Banned substances. Antibiotic  overload. Residue in every harvest, Import rejections, recall and falling premiums.",
             tableTrtd2: "Zero-residue biologics meet EU, US, and Asian clean-food mandates, export-ready healthy clean stock from day one", 
-            img:"",
+            img:"/image/antibiotics.png",
             alt: "Outbreaks End Before",
             imgTitle:"Clean approvals. Smooth exports. Command higher prices.Food people actuallytrust.",
             listActive:"Clean Science",
         },
         
         {
-            heading: "Any Farm. Any Size. Any Season. Climate Stable",
+            heading_before_break: "Any Farm. Any Size. Any ",
+            heading_after_break: "Season. Climate Stable",
             tableTrtd1: "High-tech solutions for high-budget farms or ignores small farms adds hidden costs.",
             tableTrtd2: "Modular powders and sprays dose by weight— Accessible for both smallholders and industrial-scale farms.", 
-            img:"",
+            img:"/image/climate.png",
             alt: "Outbreaks End Before",
             imgTitle:"One solution across locations. Predictable costs, smooth expansion, confidence to seize newmarkets. ",
             listActive:"Built to Scale",
         }, 
         {
-            heading: "ROIYou Can Plan On. More Growth, Less Feed. Low Cost",
+            heading_before_break: "ROIYou Can Plan On. More ",
+            heading_after_break: "Growth, Less Feed. Low Cost",
             tableTrtd1: "Hidden fees, frequent re-dosing, High FCR, wasted feed, and slow harvests bleed margins.",
             tableTrtd2: "Transparent pricing, long shelf life, consistent field returns that outrun costs cycle after cycle.", 
-            img:"",
+            img:"/image/quicker.png",
             alt: "Outbreaks End Before",
             imgTitle:"Lower cost per kilo, faster cash flow,quicker growth, & stronger ROI every cycle. ",
             listActive:"Smart ROI",
         },
         {
-            heading: "Clean Inputs. Clear Water. Good For Earth. Great For Earnings",
+            heading_before_break: "Clean Inputs. Clear Water. Good ",
+             heading_after_break: "For Earth. Great For Earnings",
             tableTrtd1: "Choose between profits OR planet, Chemical runoff creates dead zones and ",
             tableTrtd2: "Nature-sync biologics slash runoff , 40% lower emissions. 30% less feed waste. while boosting yield.", 
-            img:"",
+            img:"/image/sustainability.png",
             alt: "Outbreaks End Before",
             imgTitle:"Hit sustainability targets, earn community goodwill, and safeguard your operating license. ",
             listActive:"Planet positive",
@@ -68,7 +76,7 @@ const cardcontant = [
 // WhyMatterCard data
   const slideCardData = [
         {
-            img: "/icons/farmer.jpg",
+            img: "/icons/whyus_slicy_icon1.png",
             heading:"Smart Biotech for Fish, Shrimp & the Future of Aquaculture- Disease & Growth management",
             title: "Teora’s biotech platform packs precision science into everyday feed and delivers gutsmart biologics that prevent disease, speed up growth, and give farms a fighting chance without stressing the aqua animals—or the ecosystem. ",
             bold:"No cold chains. No antibiotics. No injections",
@@ -77,43 +85,58 @@ const cardcontant = [
         },
         {
             img: "/icons/food.jpg",
-            heading:" Because food shouldn’t come at the cost of Planet or ecosystems",
-            title: "By eliminating chemical runoff and antibiotic overuse, SOLAQ™ helps farms shrink their footprint—not just expand their yield.",
+             
+            title: "Next-gen, feed-based prophylactic + therapeutic disease protection—no injections, no antibiotics, no drama. ",
+            titleBold:"ShrimpGuard™| FishGuard™ ",
             bold:"Clean ponds. Healthier soils. Fewer emissions.",
             class: "purpleBg",
             color:"text-primaryBeige"
         },
-         {
-            img: "/icons/prevetion.jpg",
-            heading:"Because disease prevention shouldn’t mean choosing between safety and survival.",
-            title: "No more toxic trade-offs. SOLAQ™ protects livestock, crops, and aquatic systems without needles, cold chains, or antibiotic overload",
-            bold:"Just science thatworks—with zero stress",
-            class: "accentBlueBg",
+         { 
+            banner:"/image/servial.png",
+            none:"d-none",
+            explore_results_btn: "Explore Results",
+            class: "mutedBeigeBg",
             color:"purpleColor"
         },
-        {
-            img: "/icons/foodchain.jpg",
-            heading:"Because the Food Chain is only as strong as Its weakest link.",
-            title: " SOLAQ™ helps farmers meet regulatory demands, lets distributors offer cleaner food, and enables brands to promise safety and sustainability. ",
-            bold:"Fromproduction to plate—it keeps thewhole chainmoving forward.", 
-            class: "accentRedBg",
-            color:"text-primaryBeige"
+        { 
+            banner:'/image/srimpGard.png',
+            explore_results_btn: "Explore Results", 
+            class: "lightBeigeBg",
+            color:"purpleColor"
         },
         {
             img: "/icons/termcircal.jpg",
-            heading:"Because 600 Million people shouldn’t get sick from what they eat.",
+            bgcolorClass: 'accentLimebg',
+
             title: "SOLAQ™ biologics are clean and dont add to the residues, contaminants, and AMR risks that chemical farming leaves behind.",
             bold:"Cleanerfood. Safer exports. Healthierfutures.",
-            class: "mutedLavenderBg",
-            color:"purpleColor"
+            class: "purpleBg",
+            color:"text-primaryBeige"
             
         },
         {
-            img: "/icons/aurnmorny.jpg",
-            heading:"Because strong Communities start with resilient farms & happy people.",
-            title: "SOLAQ™ biologics are clean and dont add to the residues, contaminants, and AMR risks that chemical farming leaves behind.",
-            bold:"Cleanerfood. Safer exports. Healthierfutures.", 
+            banner:'/image/wssv.png',
+            explore_results_btn: "Explore Results",  
             class: "midBeigeBg",
+            color:"purpleColor"
+        },
+
+
+         {
+            img: "/icons/aurnmorny.jpg",
+            heading:"Real-World Results— Proven Where It Matters: In Your Ponds, Not Just Our Labs",
+            title: "10+ pathogens neutralized  5+ countries validated >45x improved survival in outbreak farms ~30% faster growth across species  70% fewer toxic inputs",
+            bold:"0 residues. Zero rejections. No run-offs", 
+            class: "lavenderBg",
+            color:"purpleColor"
+        }, 
+         {
+            img: "/icons/aurnmorny.jpg",
+            heading:"What this means for Aquaculture Farmers ?",
+            title: "Less stress → Healthier ponds  \nNo antibiotics, \nno residues → No rejections Fewer mortalities → More harvests Healthier stock → Better prices Lower feed use = lower footprint More growth, less input, Less waste  Save on labor, logistics and stress",
+            bold:"Cleaner yields . Safer exports. No withdrawal period.", 
+            class: "lavenderBg",
             color:"purpleColor"
         },
         
@@ -155,6 +178,104 @@ const missionCardSwiperData = [
      
 ]
 
+//whyus stack card slider card slider content 
+const stackCadrSlide = [
+    {
+    titleName: 'SAFETY',
+    image:'/icons/boosting.png',
+    hedings: "DESIGNED FOR REAL FARMS.",
+    subHeading: "Any Farm Any Species. Any Season. Fast", 
+    bgClass:"mutedLavenderBg",
+     listTitles: [
+      { title: "Shelf-stable, easy to use",
+        icons:'FaRegSquareCheck'
+      },
+      { title: "Built in 6–8 months, not years",
+        icons:'FaRegSquareCheck'
+      },
+      { title: "Species & Disease-specific, not generic",
+        icons:'FaRegSquareCheck'
+      },
+      { title: " Works across aquaculture, livestock, crops, poultry and pet health. ",
+        icons:'FaRegSquareCheck'
+      }, 
+       
+    ]
+  },
+   {
+    titleName: 'SAFETY',
+    image:'/icons/boosting.png',
+    hedings: "NOT JUST SAFER. SMARTER.",
+    subHeading: "Lab-designed. Farm-tested. Globally ready. ",
+    title:"Teora fits right into existing feed or spray routines—removes stress, complex handling and harmful inputs from farming. It boosts survival and growth without changing how you farm, whether you’re a smallholder or scaled up. ",
+    bgClass:"mutedBeigeBg"
+  },
+  {
+    titleName: 'CLEAN BIOLOGICS',
+    image:'/icons/emission.png',
+    hedings: "OURBIOLOGICS ARE",
+    subHeading: "90% Survival. 30% Less Waste. More yield ", 
+    bgClass:"accentBlueBg",
+    listTitles: [
+      { title: "Antibiotic-free  ",
+        icons:'FaRegSquareCheck'
+      },
+      { title: "Injection-free ",
+        icons:'FaRegSquareCheck'
+      },
+      { title: "Cold-chain free",
+        icons:'FaRegSquareCheck'
+      },
+      { title: " Hormone-free ",
+        icons:'FaRegSquareCheck'
+      },
+       { title: " Species-specific & scalable ",
+        icons:'FaRegSquareCheck'
+      },
+       
+    ]
+  },
+   { 
+    image:'/icons/scales.png',
+    hedings: "STARTS AT THE MOLECULAR LEVEL",
+    subHeading: "Our smart biologics do what vaccines, chemicals, and supplements can’t.",  
+    bgClass:"accentLimebg",
+    listTitles: [
+      { title: "Prevent disease before it starts ",
+        icons:'FaRegSquareCheck'
+      },
+      { title: "Treat outbreaks fast—without antibiotics ",
+        icons:'FaRegSquareCheck'
+      },
+      { title: " Boost growth and feed efficiency naturally",
+        icons:'FaRegSquareCheck'
+      },
+      { title: "Cut costs, waste, and complexity—across ",
+        icons:'FaRegSquareCheck'
+      },
+       
+    ]
+  },
+
+  {
+    titleName: 'SUSTAINABILITY', 
+    hedings: "HOW IT WORKS",
+    rowImage:"/image/process_image.png",
+    subHeading: "Less Emissions. More Ecosystem.",
+    title:"By improving feed efficiency and disease resilience, we reduce waste, boosts yields while shrinking carbon emissions , conserving resources, and restoring balance.",
+    bgClass:"purpleBg",
+    colors: "text-primaryBeige"
+  },
+
+  { 
+    image:'/icons/slicky-home-1.svg',
+    hedings: "MEET SOLAQ™",
+    subHeading: "The Science That Thinks Like a Farmer ",
+    title:"An AI-powered biotech platform that maps disease patterns, designs species-specific biologics, and delivers them through feed in fish and animals and foliar spray in crops— no injections, no chemicals, no cold-chain",
+    bgClass:"lightPinkBg"
+  }, 
+  
+]
 
 const WhyusSlicky = () =>{
     return(
@@ -169,7 +290,21 @@ const WhyusSlicky = () =>{
                 </div>
 
                   <div className="sticky-top section-space-2 accentRedBg sticky_section" style={{zIndex:'3'}}>
-                         
+                        <div className="container">
+                             <StackedCards 
+                                stackCadrSlide= {stackCadrSlide}
+                                heading={"THE SCIENCE BEHIND THE MAGIC"}
+                                />
+                        </div>
+                 </div>
+
+                  <div className="sticky-top section-space-2 bg-info sticky_section" style={{zIndex:'3'}}>
+                        <div className="container">
+                        {
+                            
+                             <Building/>
+                        }
+                        </div>
                  </div>
 
                   <div className="sticky-top section-space-2 lavenderBg sticky_section" style={{zIndex:'4'}}>
@@ -187,7 +322,7 @@ const WhyusSlicky = () =>{
                                                 <span className="rounded-pill buge-style accentBlueBg purpleColor pt-2 pb-2">NO COMPROMISE</span>
                                                 <div className="text-primaryBeige">
                                                     <h3 className="m-top-b">
-                                                        While Others SellYou Disease hello g deep
+                                                        While Others Sell You Disease 
                                                         Prevention Or Disease Cure Or Growth
                                                         Enhancement, We Deliver It All In One
                                                         Feed-Top Or Foliar Spray Solution For
@@ -203,9 +338,10 @@ const WhyusSlicky = () =>{
                                             </div>
                                     </div>
 
-                                    <div className="col-md-6">
+                                    <div className="col-md-6 d-flex justify-content-end">
                                         <img
-
+                                            src="/image/compromisImg.png"
+                                            alt="compromisImg"
                                         />
                                     </div>
                                 </div>
@@ -222,7 +358,11 @@ const WhyusSlicky = () =>{
                             zIndex:'6'
                     }}>
                         <div className="container">
-                            <WhyMatterCard data={slideCardData} text="FIELD PROVEN IN AQUACULTURE"/>
+                            <WhyMatterCard 
+                                data={slideCardData} 
+                                text="FIELD PROVEN IN AQUACULTURE"
+                                buttons={"buttons"}
+                                />
                         </div>   
                  </div>
 

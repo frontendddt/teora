@@ -32,7 +32,7 @@
 .sticky_section{
     border-radius: 70px 70px 0 0; 
     height: auto;
-    top:30px;
+    top:10px;
     min-height: 100vh;
 } 
 

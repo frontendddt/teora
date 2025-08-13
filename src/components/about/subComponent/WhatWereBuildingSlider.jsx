@@ -8,6 +8,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import slickyAboutImg1 from  "/public/aboutAssets/about-slide1.png"; 
  
 const WhatWereBuildingSlider = ({swiperData}) =>{
+    
   const [slideCounter, setSlideCounter] = useState(1);
     const swiperRef = useRef(null);  
       useEffect(() => {
@@ -49,7 +50,7 @@ const WhatWereBuildingSlider = ({swiperData}) =>{
 
                             <div className="swiper-container">
                                 <Swiper
-                                         onSwiper={(swiper) => (swiperRef.current = swiper)}
+                                           onSwiper={(swiper) => (swiperRef.current = swiper)}
                                             spaceBetween={30}
                                             slidesPerView={1.2}
                                             centeredSlides={true}

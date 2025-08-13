@@ -149,6 +149,54 @@ const missionCardSwiperData = [
 ];
 
 
+// stack card slider card slider content 
+const stackCadrSlide = [
+   {
+    titleName: 'SAFETY',
+    image:'/icons/boosting.png',
+    hedings: "SAFE FROM START TO SCALE",
+    subHeading: "Safe for Animals. Crops. People. Planet.",
+    title:"Teora protects animals, crops, and ecosystems with stress-free, chemical-free biologics—making food safer for people, and farming gentler on the planet.",
+    bgClass:"midBeigeBg"
+  },
+  {
+    titleName: 'FOOD SECURITY',
+    image:'/icons/emission.png',
+    hedings: "BUILT FOR RESILIENCE",
+    subHeading: "90% Survival. 30% Less Waste. More yield ",
+    title:"By boosting immunity and reducing losses via biologics, SOLAQ™ helps farms stand strong against disease and supply chain disruptions- Prepared to feed 10 Billion.",
+    bgClass:"accentBlueBg"
+  },
+   {
+    titleName: 'FOOD SECURITY',
+    image:'/icons/scales.png',
+    hedings: "SCALE SWITH YOU",
+    subHeading: "Any Farm. Any Species. Any Season",
+    title:"From smallholders to industrial setups, Teora’s biotech plugs right into existing routines of farm—no injections, no cold chain, no barriers to scale",
+    bgClass:"mutedLavenderBg"
+  },
+
+  {
+    titleName: 'SUSTAINABILITY',
+    image:'/icons/emission.png',
+    hedings: "BUILT TO REGENERATE,NOT DEPLETE",
+    subHeading: "Less Emissions. More Ecosystem.",
+    title:"By improving feed efficiency and disease resilience, we reduce waste, boosts yields while shrinking carbon emissions , conserving resources, and restoring balance.",
+    bgClass:"accentLimebg"
+  },
+
+  {
+    titleName: 'SUSTAINABILITY',
+    image:'/icons/planet.png',
+    hedings: "TOXIN-FREE BY DESIGN",
+    subHeading: "Zero Residues. Zero Runoff. No Bans",
+    title:"We cut chemicals, antibiotics, and wasteful inputs—replacing them with clean biologics that works in sync with nature to keep food, soil, and water safe for generations",
+    bgClass:"lightgreyBg"
+  }, 
+  
+]
+
+
 const StickyAbout = () =>{
 
     return(
@@ -274,7 +322,10 @@ const StickyAbout = () =>{
 
                  <div className={`sticky-top z-4 section-space-2 midPurpleBg ${Styles.sticky_section}`}>
                      <div className="container">
-                            <StackedCards/>
+                            <StackedCards
+                                stackCadrSlide ={stackCadrSlide}
+                                heading = {"ON A MISSION TO BUILD THE FUTURE  OF SAFE, SUSTAINABLE FARMING"}
+                            />
                      </div>
                 </div>
 

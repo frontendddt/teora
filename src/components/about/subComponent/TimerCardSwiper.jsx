@@ -37,11 +37,10 @@ const TimerCardSwiper = ({cardcontant, heading, TimerCardSwiperWhyUS,  varient =
     const renderCardContent = (slide) =>{
         if(varient === "whyusTimerDesign"){
             return( 
-                    <div className="card_table_container d-flex flex-column justify-content-between">
-
+                    <div className="card_table_container whyUstimerSweeperCard_height  d-flex flex-column justify-content-between">
                         <div className="purpleColor">
-                            <div className="p-all h3lineHeights">
-                                 <h3 className="text-center fw-400">{slide.heading}</h3> 
+                            <div className="p-all pb-1 h3lineHeights">
+                                 <h3 className="text-center fw-400">{slide.heading_before_break} <br/> {slide.heading_after_break}</h3> 
                             </div>
                        
                             <table className={`purpleColor ${Styles.table_borders}`}>
@@ -60,19 +59,20 @@ const TimerCardSwiper = ({cardcontant, heading, TimerCardSwiperWhyUS,  varient =
                        </div>
                         <div className="adoption_sections position-relative text-primaryBeige">
                                 <img
-                                    src="/image/adoption_fish.png"
-                                    className="w-100"
+                                    src={slide.img}
+                                    className="w-100 position-relative"
                                     alt={`${slide.alt}`}
                                     />
                                 <div className={` ${Styles.contents} h3lineHeights`}>
-                                    <h2>YOUR WIN</h2>
-                                    <h3 className="mb-0">  
-                                        {slide.imgTitle}
-                                    </h3>
+                                    <div>
+                                        <h2>YOUR WIN</h2>
+                                        <h3 className="mb-0">  
+                                            {slide.imgTitle}
+                                        </h3>
+                                    </div>
                                 </div>
                         </div>  
-                    </div> 
-
+                    </div>  
             )
         }
 
@@ -82,7 +82,7 @@ const TimerCardSwiper = ({cardcontant, heading, TimerCardSwiperWhyUS,  varient =
                         <h4 className="f-600" style={{ display: 'inline-block', maxWidth: '300px' }}>
                             {slide.heading}
                         </h4>
-                        <p>{slide.title}</p>
+                        <p className="mb-0 mt-0">{slide.title}</p>
                     </div>
 
                     <div className="align-items-end"> 

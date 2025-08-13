@@ -36,18 +36,22 @@ export const OurTeam = () =>{
     return(
         <>
             <div className="container">
-                    <h4 className={`text-white text-center fw-500 ${Styles.awardHeading}`}>Our Award Winning Team</h4> 
+                    <h4 className={`text-white text-center fw-500 ${Styles.awardHeading}`}>Our Award Winning Team </h4> 
+
                     <div className="row">
                         {
                             teamData.map((team, index) =>(
                                 <div className="col-md-3" key={index}>
                                     <div className="p-3 h-100">
-                                        <div className={`mutedNeutralBg borderRadius20 mb-3 ${Styles.team_container}`}>
+                                        <div className={`mutedNeutralBg position-relative borderRadius20 mb-3 ${Styles.team_container}`}>
                                             <img
                                                 src={team.memberImg}
                                                 style={{width:'100%', height:'100%'}}
                                                 alt={team.designation}
                                             />
+                                            {
+                                                //  <div className="rowWhites"> </div>
+                                            }
                                         </div>
                                         <div className={`text-primaryBeige ${Styles.teamDetails}`}>
                                              <div className={` ${Styles.teams}`}>
