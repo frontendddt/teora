@@ -145,7 +145,7 @@ const Banner = () =>{
                                             between growth and guilt. Where science is built for real-world
                                             pressure, and solutions don’t harm the planet to feed it. 
                                         </h6>
-                                         <h5 className="accentLimeColor mt-3  h4industry">Built ForReal Farms. Backed By Science. Scaling For Impact.</h5>
+                                         <h5 className="accentLimeColor mt-3  h4industry">Built For Real Farms. Backed By Science. Scaling For Impact.</h5>
                                 </div>
                             </div> 
                         </div> 

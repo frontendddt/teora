@@ -158,7 +158,7 @@ const SlidingCards = () => {
             <div className="container purpleColor p_smarter corporateBg border_radius_round2 position-relative">
               <div className="row">
                 <div className="col-4">
-                  <h1>Supported by the best</h1>
+                  <h1>Supported By The Best</h1>
                   <p>
                     For investors who want real impact with global reach—Teora delivers both. Backing
                     Teora is backing the future of food.

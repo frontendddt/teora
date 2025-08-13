@@ -14,6 +14,7 @@
    /* --font-roboto-condensed: 'Roboto Condensed', sans-serif; */
 }
 
+
 :root {
   --font-primary: var(--font-archivo);
   --font-secondary: var(--font-roboto);
@@ -416,7 +417,9 @@ ul{
 .purpleColor{
   color: var(--primaryPurple);
 }
-
+.num-percentage{
+  text-decoration: underline;
+}
 .text-primaryBeige{
   color: var(--primaryBeige);
 }
@@ -437,6 +440,9 @@ ul{
   color: var(--accentBlue);
 }
 
+.lightblueColor{
+  color: #b1d3d3;
+}
 .lightNeutralColor{
     color: var(--lightNeutral);
 }

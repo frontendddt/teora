@@ -71,7 +71,7 @@ const Footer = () =>{
                                             height={180}
                                             />
                                 </span>
-                               <span><Link href="/" className={Styles.footer_info_heading}>info@Teoralife.com</Link></span>
+                               <span><Link href="/" className={Styles.footer_info_heading}>Info@Teoralife.com</Link></span>
                         </section>
                         <hr className={Styles.hr}></hr>
 

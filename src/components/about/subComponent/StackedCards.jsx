@@ -24,6 +24,8 @@ const StackedCards = ({stackCadrSlide, heading}) => {
   );
     const [movedCount, setMovedCount] = useState(0);
       // Move left
+
+
   const handleMoveLeft = () => {
     if (movedCount >= stackCadrSlide.length - 1) return;
 
@@ -42,7 +44,6 @@ const StackedCards = ({stackCadrSlide, heading}) => {
   // Move right
   const handleMoveRight = () => {
     if (movedCount <= 0) return;
-
     const index = stackCadrSlide.length - movedCount;
     const newPositions = [...positions];
     const newZIndexes = [...zIndexes];
@@ -192,10 +193,7 @@ const StackedCards = ({stackCadrSlide, heading}) => {
                         </div>  
                         ))} 
                     </div>
-            </div>
-            
-
-                
+            </div> 
           
 
         </div> 

@@ -12,14 +12,14 @@ import mapicon4 from "../../assets/icons/mapicon4.png";
 
 const bubble = [
       {
-        text: "Disease outbreaks are wiping outmyfarms. Antibiotics/ Chemicals aren’t working- what do I do ?",
+        text: "Disease outbreaks are wiping out my farms. Antibiotics/ Chemicals aren’t working- what do I do ?",
         bgclass: 'darkredBg',
         colorClass: 'text-primaryBeige', 
         bubbleClass: 'bubble2',
         icon:mapicon1,
     },
     {
-        text: "Biosecurity is too expensive for small farms like mine. I can’t aord to upgrade facilities! ",
+        text: "Biosecurity is too expensive for small farms like mine. I can’t afford to upgrade facilities! ",
         bgclass: 'midBeigeBg',
         colorClass: 'purpleColor', 
         bubbleClass: 'bubble1',  
@@ -27,14 +27,14 @@ const bubble = [
     },
    
       {
-        text: "Feed costs are skyrocketing, andmy farmis struggling. Can we grow fish fasterwith less feed?",
+        text: "Feed costs are skyrocketing, and my farm is struggling. Can we grow fish faster with less feed?",
         bgclass: 'darkgreenBg',
         colorClass: 'purpleColor', 
         bubbleClass: 'bubble4',
         icon:mapicon4
     },
       {
-        text: "My animal/ fish take too long to reachmarket size, but I can’t aord extra feed costs!",
+        text: "My animal/ fish take too long to reach market size, but I can’t afford extra feed costs!",
         bgclass: 'darkinfoBg',
         colorClass: 'purpleColor', 
         bubbleClass: 'bubble3',
@@ -42,7 +42,7 @@ const bubble = [
     },
 
      {
-        text: "One-third of all food produced is wasted—I amloosing Money ! Can technology help us?",
+        text: "One-third of all food produced is wasted—I am loosing Money ! Can technology help",
         bgclass: 'accentLimebg',
         colorClass: 'purpleColor', 
         bubbleClass: 'bubble6',
@@ -50,7 +50,7 @@ const bubble = [
     },
   
      {
-        text: "I have no way to vaccinatemy livestockwithout expensive injections and labor costs",
+        text: "I have no way to vaccinate my livestock without expensive injections and labor costs",
         bgclass: 'mutedLavenderBg',
         colorClass: 'purpleColor', 
         bubbleClass: 'bubble5',
@@ -59,7 +59,7 @@ const bubble = [
     },
     
     {
-        text: "Fertilizers, chemicals, and antibiotic waste are polluting ourwater and soil—what’s the alternative?",
+        text: "Fertilizers, chemicals, and antibiotic waste are polluting our water and soil—what’s the alternative?",
         bgclass: 'lightredBg',
         colorClass: 'text-primaryBeige', 
         bubbleClass: 'bubble7',
@@ -67,7 +67,7 @@ const bubble = [
     },
    
     {
-        text: "My animal/ fish take too long to reachmarket size, but I can’t aord extra feed costs! ",
+        text: "My animal/ fish take too long to reach market size, but I can’t afford extra feed costs! ",
         bgclass: 'lightredBg',
         colorClass: 'text-primaryBeige', 
         bubbleClass: 'bubble8',

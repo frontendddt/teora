@@ -171,7 +171,7 @@ const missionCardSwiperData = [
     },
      {
         heaing: "Security",
-        info: "Teora scaling beyond Aquaculture—With AIpowered design and rapid precision fermentation, we’re shaping a cleaner, scalable future for livestock, poultry, crops, & Pets",
+        info: "Teora scaling beyond Aquaculture—With AI-powered design and rapid precision fermentation, we’re shaping a cleaner, scalable future for livestock, poultry, crops, & Pets",
         title: "Sustainability Recognition – Named A We Empower UN SDG Challenge Finalist And Recognised In Media",
         image: '/slider/aboutSlide6.png'
     }

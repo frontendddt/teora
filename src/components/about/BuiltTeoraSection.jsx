@@ -9,7 +9,7 @@ const impowersData = [
   {
     image:'/icons/impower.png',
     heading:'EMPOWER',
-    titles:'Empower Farmers Empower People Empower Community'
+    titles:'Empower Farmers Empower People \nEmpower Community'
   },
     {
     image:'/icons/Safeguard.png',
