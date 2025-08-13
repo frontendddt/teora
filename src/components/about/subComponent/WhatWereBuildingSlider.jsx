@@ -98,7 +98,7 @@ const WhatWereBuildingSlider = ({swiperData}) =>{
                                                                                 </div>
 
                                                                                 <div className={`w-100 purpleColor ${Styles.slideOne}`}> 
-                                                                                    <p className="shrimpGuard text-primaryBeige text-center purpleBg">ShrimpGuard <sup>TM</sup> & FishGuard <sup>TM</sup></p> 
+                                                                                    <p className="shrimpGuard text-primaryBeige text-center purpleBg lightblueColor">ShrimpGuard <sup>TM</sup> & FishGuard <sup>TM</sup></p> 
                                                                                     <p className="aboutslicky_info">
                                                                                         Designed for disease-prone ponds, proven across Asia. Protect against deadly viruses like WSSV, IMNV, SDDV,
                                                                                          Vibrio etc. Just mix it in feed—no needles, no cold chain, no waste.<strong>Up to 90% survival. Zero stress</strong>
@@ -131,11 +131,11 @@ const WhatWereBuildingSlider = ({swiperData}) =>{
                                                                                 </div>
 
                                                                                 <div className={`w-100 purpleColor ${Styles.slideOne}`}> 
-                                                                                    <p className="shrimpGuard text-primaryBeige text-center purpleBg">FishJumbo <sup>TM</sup></p> 
+                                                                                    <p className="shrimpGuard text-primaryBeige text-center purpleBg lightblueColor">FishJumbo <sup>TM</sup></p> 
                                                                                     <p className="aboutslicky_info">
                                                                                         Growth-Boosting biologcs for Fish. Bigger yields, shorter cycles—without hormones or chemicals. Increases  
-                                                                                        . <strong>growth —up to 30% faster, with better FCR naturally </strong>
-                                                                                         Works for Sea-bass, Pangasius, tilapia, trout & more.
+                                                                                        . <strong>growth —up to 30% faster, with better FCR naturally.</strong>
+                                                                                          Works for Sea-bass, Pangasius, tilapia, trout & more.
                                                                                     </p>
                                                                                 </div>
                                                                         </div>

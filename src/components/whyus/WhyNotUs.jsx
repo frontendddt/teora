@@ -70,7 +70,7 @@ const cardData = [
     },
     {
         cardHeading:"Powered By",
-        cardTitle: "Teora’s feed-integrated, AIdesigned biotech platform redefines how disease is prevented, growth is triggered, and yields are protected. Its a science that does what farming needs next."
+        cardTitle: "Teora’s feed-integrated, AI-designed biotech platform redefines how disease is prevented, growth is triggered, and yields are protected. Its a science that does what farming needs next."
     },
     {
         cardHeading:"Global Change Leader",
@@ -92,9 +92,9 @@ const WhyNotUs = () =>{
                                             </h2> 
                                             <p className="purpleColor psize">
                                                 We’re not just another biotech company making promises in PowerPoints. 
-                                                <b>We’re the team that took fish survival from 2% to 90% in aquaculture.</b>
-                                                We are scientists who wear boots to farm trials and still win
-                                                <b><a href="/" className="purpleColor"> global innovation awards.</a></b>
+                                                <b>We’re the team that took fish survival from <span class="num-percentage">2% to 90%</span> in aquaculture.</b>
+                                                We are scientists who wear boots to farm trials and still win 
+                                                <b><a href="/" className="purpleColor"><span class="num-percentage">global innovation awards.</span></a></b>
                                                 <br></br>  
                                             </p>
                                             <p className="purpleColor psize">

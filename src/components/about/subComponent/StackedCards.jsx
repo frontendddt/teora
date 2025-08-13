@@ -24,7 +24,7 @@ const stackCadrSlide = [
    {
     titleName: 'FOOD SECURITY',
     image:'/icons/scales.png',
-    hedings: "SCALE SWITH YOU",
+    hedings: "SCALES WITH YOU",
     subHeading: "Any Farm. Any Species. Any Season",
     title:"From smallholders to industrial setups, Teora’s biotech plugs right into existing routines of farm—no injections, no cold chain, no barriers to scale",
     bgClass:"mutedLavenderBg"

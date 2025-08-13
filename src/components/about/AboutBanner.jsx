@@ -21,9 +21,9 @@ const AboutBanner = () => {
                          <div className={`${Styles.aboutheadings}`} >
                             <div className='' style={{padding:'3rem 0 0 2rem'}}>
                                 <h1 className="text-primaryBeige mb-0 f-600" >
-                                        We didn’t start with a <br className='breackDisplay'/>
-                                        product. We started with a <br className='breackDisplay'/>
-                                        question—
+                                        We Didn’t Start With A <br className='breackDisplay'/>
+                                        Product. We Started With A <br className='breackDisplay'/>
+                                        Question—
                                     <span className="mutedLavenderColor fw-400"> What if growing <br className='breackDisplay'/> food didn’t mean breaking the
                                         <span className="accentLimeColor"> <br className='breackDisplay'/> planet, </span> our
                                         <span className="accentBlueColor"> health</span>

@@ -6,7 +6,7 @@ const CompanyComponents = () =>{
                     <div className="row">
                         <div className="col-4">
                             <div className='' style={{padding:'0 1.5rem'}}>
-                                <h2>Supported by the best</h2>
+                                <h2>Supported By The Best</h2>
                                 <p>
                                     For investors who want real impact with global reach—Teora delivers both. Backing
                                     Teora is backing the future of food.

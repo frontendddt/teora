@@ -52,7 +52,7 @@ const Agriculture = () =>{
                                                 </h2>
 
                                                 <p className="purpleColor m-top-b" style={{padding:'0 1.5rem 0 0'}}>
-                                                        Our oral and sprayable biologics are already improving
+                                                        Our oral feed based and foliar sprayable Plant biologics are already improving
                                                         survival, accelerating growth, and reducing waste across
                                                         aquaculture.Next stop: livestock, poultry, crop disease
                                                         management, and companion health.
@@ -92,7 +92,7 @@ const Agriculture = () =>{
                                                 <div className="m-0">
                                                         <span className="rounded-pill buge-style accentLimebg purpleColor pt-2 pb-2">GROWTH OPTIMISATION IN FISH</span>
                                                         <h2 className="m-0">JUMBO SERIES</h2>
-                                                        <p className="m-0">BUILT TO FIGHT BACK & PROTECT</p>
+                                                        <p className="m-0">BUILT TO GROW MORE SMARTLY</p>
                                                 </div>
                                         </div>  
                                 </div>

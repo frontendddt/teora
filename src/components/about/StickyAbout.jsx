@@ -49,7 +49,7 @@ import card1 from "/public/slider/redcard.png"
             miniicon: slideMini2,
             subtitle: "Grow healthier animals, clean and profitably.",
             text: "Our feed-based biologics build muscle and immunity—no injections needed.Currently working on natural growth enhancers for cows, pigs, and goats. Easy to mix in feed, shelf-stable, no infrastructure needed",
-            bold: "More weight. Less waste. Zero residues",
+            bold: "More weight. Less waste. Zero residues.",
             img: aboutIcon2,
             alt:"More weight. Less waste. Zero",
             linkName: "Explore More",
@@ -142,7 +142,7 @@ const missionCardSwiperData = [
     },
     {
         heaing: "2025- EXPANSION",
-        info: "Teora scaling beyond Aquaculture—With AIpowered design and rapid precision fermentation, we’re shaping a cleaner, scalable future for livestock, poultry, crops, & Pets",
+        info: "Teora scaling beyond Aquaculture—With AI-powered design and rapid precision fermentation, we’re shaping a cleaner, scalable future for livestock, poultry, crops, & Pets",
         title: "Sustainability Recognition – Named A We Empower UN SDG Challenge Finalist And Recognised In Media",
         image: '/slider/aboutSlide6.png'
     }
@@ -210,7 +210,7 @@ const StickyAbout = () =>{
                                                     <div className={`mutedBeigeBg mb-3 ${Styles.aboutCardBox} purpleColor`}>
                                                         <div className="d-flex">
                                                             <div>
-                                                                <h6 className={Styles.aboutCardtext}>Teora ="One of the 10 Biotech Startups Rewriting The Future Of Food.”</h6> 
+                                                                <h6 className={Styles.aboutCardtext}>Teora -"One of the 10 Biotech Startups Rewriting The Future Of Food.”</h6> 
                                                                 <span className={Styles.asiaOne}>- AsiaOne</span> 
                                                             </div>
                                                             <div style={{width:'150px'}} className="d-flex justify-content-end align-items-end">
@@ -227,7 +227,7 @@ const StickyAbout = () =>{
                                                         <div className="d-flex">
                                                             <div style={{paddingRight:'1rem'}}>
                                                                 <h6 className={Styles.aboutCardtext}> Global Shrimp Summit 2024 - Innovation Award</h6> 
-                                                                <span className={Styles.asiaOne}> Teora received the innovation Award acknowledging its advancements in shrim farming technologies</span> 
+                                                                <span className={Styles.asiaOne}> Teora received the innovation Award acknowledging its advancements in shrimp farming technologies</span> 
                                                             </div>
                                                             <div style={{width:'150px'}} className="d-flex justify-content-end align-items-end position-relative">
                                                                 <img
@@ -247,7 +247,7 @@ const StickyAbout = () =>{
                                                         <div className="d-flex">
                                                             <div>
                                                                 <h6 className={Styles.aboutCardtext}>Inventures 2023 – Agri Category Winner</h6> 
-                                                                <span className={Styles.asiaOne}> Teora Secored the top position highlighting its groundbreaking solutions in the agritech sector</span> 
+                                                                <span className={Styles.asiaOne}> Teora Secured the top position, highlighting its groundbreaking solutions in the agritech sector</span> 
                                                             </div>
                                                             <div style={{width:'150px'}} className="d-flex justify-content-end align-items-end">
                                                                 <Link href="#" className="round_arrow hovers">
