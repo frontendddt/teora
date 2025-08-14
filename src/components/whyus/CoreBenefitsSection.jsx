@@ -1,5 +1,8 @@
 
-
+"use client"
+import { useAnimationContext } from "@/context/AnimationContext";
+import { MotionWrapper } from "@/context/MotionWrapper";
+ 
 import styles from "./whyUS.module.css";
 
 const benefitData = [
@@ -30,8 +33,12 @@ const benefitData = [
 ];
 
 const CoreBenefitsSection = () =>{
+    const { fadeDown } = useAnimationContext();
     return(
         <>
+          <MotionWrapper className="position-relative"
+            variant={fadeDown}
+          >
             <div className="container section-space">
                 <div className="row">
                    {benefitData.map((el, index) =>(
@@ -54,7 +61,7 @@ const CoreBenefitsSection = () =>{
             </div>
 
             <div className="rowsborders darkpurpolBg"> </div>
-            
+        </MotionWrapper> 
         </>
     )
 }

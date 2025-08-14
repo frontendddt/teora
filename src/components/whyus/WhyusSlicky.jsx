@@ -1,13 +1,14 @@
 import TimerCardSwiper from "../about/subComponent/TimerCardSwiper";
 // import cardimg4 from "../../../../public/aboutAssets/cardimg/cardimg4.png";
-import cardimg4 from "../../../public/aboutAssets/cardimg/cardimg4.png";
+ 
 import WhyMatterCard from "../home/slickyComponents/WhyMatterCard";
 import { MissionCardSwiper } from "../about/subComponent/MissionCardSwiper";
 import styles from "./whyUS.module.css";
 import StackedCards from "../about/subComponent/StackedCards";
 import Building from "./Building";
- 
-
+import aqualture from "../../../public/bgImage/swiper_team_whyUs.png";
+import aqualture2 from "../../../public/bgImage/aqualture.png";
+import NoCompromise from "./NoCompromise";
 //TimerCardSwiper   why us sweeper data
 const cardcontant = [   
         {
@@ -124,7 +125,7 @@ const cardcontant = [
 
 
          {
-            img: "/icons/aurnmorny.jpg",
+            img: "/icons/neutralized.png",
             heading:"Real-World Results— Proven Where It Matters: In Your Ponds, Not Just Our Labs",
             title: "10+ pathogens neutralized  5+ countries validated >45x improved survival in outbreak farms ~30% faster growth across species  70% fewer toxic inputs",
             bold:"0 residues. Zero rejections. No run-offs", 
@@ -132,7 +133,7 @@ const cardcontant = [
             color:"purpleColor"
         }, 
          {
-            img: "/icons/aurnmorny.jpg",
+            img: "/icons/neutralized.png",
             heading:"What this means for Aquaculture Farmers ?",
             title: "Less stress → Healthier ponds  \nNo antibiotics, \nno residues → No rejections Fewer mortalities → More harvests Healthier stock → Better prices Lower feed use = lower footprint More growth, less input, Less waste  Save on labor, logistics and stress",
             bold:"Cleaner yields . Safer exports. No withdrawal period.", 
@@ -182,7 +183,7 @@ const missionCardSwiperData = [
 const stackCadrSlide = [
     {
     titleName: 'SAFETY',
-    image:'/icons/boosting.png',
+    image:'/icons/settings.png',
     hedings: "DESIGNED FOR REAL FARMS.",
     subHeading: "Any Farm Any Species. Any Season. Fast", 
     bgClass:"mutedLavenderBg",
@@ -204,7 +205,7 @@ const stackCadrSlide = [
   },
    {
     titleName: 'SAFETY',
-    image:'/icons/boosting.png',
+    image:'/icons/smarter.png',
     hedings: "NOT JUST SAFER. SMARTER.",
     subHeading: "Lab-designed. Farm-tested. Globally ready. ",
     title:"Teora fits right into existing feed or spray routines—removes stress, complex handling and harmful inputs from farming. It boosts survival and growth without changing how you farm, whether you’re a smallholder or scaled up. ",
@@ -212,7 +213,7 @@ const stackCadrSlide = [
   },
   {
     titleName: 'CLEAN BIOLOGICS',
-    image:'/icons/emission.png',
+    image:'/icons/Needle.svg',
     hedings: "OURBIOLOGICS ARE",
     subHeading: "90% Survival. 30% Less Waste. More yield ", 
     bgClass:"accentBlueBg",
@@ -236,7 +237,7 @@ const stackCadrSlide = [
     ]
   },
    { 
-    image:'/icons/scales.png',
+    image:'/icons/whyrush.png',
     hedings: "STARTS AT THE MOLECULAR LEVEL",
     subHeading: "Our smart biologics do what vaccines, chemicals, and supplements can’t.",  
     bgClass:"accentLimebg",
@@ -298,64 +299,44 @@ const WhyusSlicky = () =>{
                         </div>
                  </div>
 
-                  <div className="sticky-top section-space-2 bg-info sticky_section" style={{zIndex:'3'}}>
-                        <div className="container">
-                        {
-                            
-                             <Building/>
-                        }
+                  <div className="sticky-top section-space-2 sticky_section deepPurple"
+                          style={{
+                            // backgroundImage: 'url("/bgimage/swiper_team_whyUs.png")',
+                            backgroundImage: `url(${aqualture.src})`,
+                            backgroundRepeat: 'no-repeat',
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',         
+                            backgroundAttachment: 'fixed',
+                            zIndex:'4'
+                    }}
+                  >
+                        <div className="container"> 
+                             <Building/> 
                         </div>
                  </div>
 
-                  <div className="sticky-top section-space-2 lavenderBg sticky_section" style={{zIndex:'4'}}>
+                  <div className="sticky-top section-space-2 lavenderBg sticky_section" style={{zIndex:'5'}}>
                         <MissionCardSwiper
                              missionCardSwiperData = {missionCardSwiperData}
                              heading="Built to help solve global challenges in food industry"
                         />
                  </div>
 
-                  <div className="sticky-top section-space-2 deepPurple sticky_section" style={{zIndex:'5'}}>
+                  <div className="sticky-top section-space-2 deepPurple sticky_section" style={{zIndex:'6'}}>
                         <div className="container">
-                                <div className="row">
-                                    <div className="col-md-6">
-                                            <div className="paddingRight">
-                                                <span className="rounded-pill buge-style accentBlueBg purpleColor pt-2 pb-2">NO COMPROMISE</span>
-                                                <div className="text-primaryBeige">
-                                                    <h3 className="m-top-b">
-                                                        While Others Sell You Disease 
-                                                        Prevention Or Disease Cure Or Growth
-                                                        Enhancement, We Deliver It All In One
-                                                        Feed-Top Or Foliar Spray Solution For
-                                                        Aquaculture, Agriculture, LivestockAnd
-                                                        Companion Animals. 
-                                                    </h3>
-                                                    <p>
-                                                        Because why choose between healthy farmed animals or plants
-                                                        and profitably farmed animals or plants when you can have both? 
-                                                    </p> 
-                                                </div>
-                                                <button className="connectBtn mt-4" type="button">Download Brochure</button>
-                                            </div>
-                                    </div>
-
-                                    <div className="col-md-6 d-flex justify-content-end">
-                                        <img
-                                            src="/image/compromisImg.png"
-                                            alt="compromisImg"
-                                        />
-                                    </div>
-                                </div>
+                              <NoCompromise/>
                         </div>     
                  </div>
 
-                <div className="sticky-top indexpage section-space-2 sticky_section "
+                <div className="sticky-top indexpage lavenderBg section-space-2 sticky_section "
                     style={{
-                            backgroundImage: 'url("/bgimage/aqualture.png")',
+                            // backgroundImage: 'url("/bgimage/aqualture.png")',
+                            backgroundImage: `url(${aqualture2.src})`,
                             backgroundRepeat: 'no-repeat',
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',         
                             backgroundAttachment: 'fixed',
-                            zIndex:'6'
+                            zIndex:'7'
                     }}>
                         <div className="container">
                             <WhyMatterCard 
@@ -366,7 +347,7 @@ const WhyusSlicky = () =>{
                         </div>   
                  </div>
 
-                 <div className="sticky-top section-space-2 sticky_section beigeCreamBg" style={{zIndex:'7'}}>
+                 <div className="sticky-top section-space-2 sticky_section beigeCreamBg" style={{zIndex:'8'}}>
                         <div className="container"> 
                                 <h2 className="h1500 revolutionising purpleColor"> HOW DO WE SOLVE LOW VACCINE COVERAGE IN FISH & SHRIMPFARMS ?</h2>
                                 <div className={styles.vaccine}>

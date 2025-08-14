@@ -1,7 +1,10 @@
 
 
-'use client'; // For Next.js App Router (if needed)
+'use client'; 
 import React, { useState } from 'react';
+import { useAnimationContext } from "@/context/AnimationContext";
+import { MotionWrapper } from "@/context/MotionWrapper";
+ 
 import styles from './StackedCards.module.css';
 import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md';  
 import { FaArrowRight } from "react-icons/fa6";
@@ -10,21 +13,22 @@ import { FaRegSquareCheck } from "react-icons/fa6";
 
 const StackedCards = ({stackCadrSlide, heading}) => {
 
+const {fadeDown} = useAnimationContext();
+
   /// new  is this 
-  const moveTargetBase = 40; // px
-  const moveGap = 40;        // px
-  const startLeft = 61;      // %
-  const stepLeft = 3;        // % decrease per card
-  // Initial positions based on number of cards
+  
+  const moveTargetBase = 40;  
+  const moveGap = 40;        
+  const startLeft = 61;     
+  const stepLeft = 3;       
+
   const initialLefts = stackCadrSlide.map((_, i) => `${startLeft - i * stepLeft}%`);
   const [positions, setPositions] = useState(initialLefts);
-  // zIndexes based on card count
   const [zIndexes, setZIndexes] = useState(
     Array.from({ length: stackCadrSlide.length }, (_, i) => i + 1)
   );
     const [movedCount, setMovedCount] = useState(0);
       // Move left
-
 
   const handleMoveLeft = () => {
     if (movedCount >= stackCadrSlide.length - 1) return;
@@ -58,7 +62,6 @@ const StackedCards = ({stackCadrSlide, heading}) => {
 
 
   /// old is this 
-
   // const initialLefts = ["61%", "58%", "55%", "52%", "0%"]; 
   // const [positions, setPositions] = useState(initialLefts.slice());
   // const [movedCount, setMovedCount] = useState(0); 
@@ -121,7 +124,10 @@ const StackedCards = ({stackCadrSlide, heading}) => {
           </div>
  
             <div>
-                  <div className="position-relative w-100"> 
+                  <MotionWrapper 
+                    className="position-relative w-100"
+                    variant={fadeDown}
+                    > 
                       {stackCadrSlide.map((label, i) => ( 
                         <div className={`${styles.card} w-100 ${label.colors ? 'text-primaryBeige' : 'purpleColor' } ${styles.cardSlide} ${label.bgClass}`}
                               key={i}
@@ -133,8 +139,8 @@ const StackedCards = ({stackCadrSlide, heading}) => {
                               {
                                 label.titleName ? <p className='text-end'><strong>{label.titleName}</strong></p>
                                  :  
-                                 <div class="col-12 d-flex justify-content-end">
-                                   <Link class="linksElements" href="/"> Learn More  <FaArrowRight/></Link>
+                                 <div className="col-12 d-flex justify-content-end">
+                                   <Link className="linksElements" href="/"> Learn More  <FaArrowRight/></Link>
                                 </div>
                                 } 
                                     <img
@@ -176,10 +182,10 @@ const StackedCards = ({stackCadrSlide, heading}) => {
                                             <h5 className={`mt-1 mb-1 `}><b>{label.subHeading}</b></h5>
                                             {label.listTitles ? 
                                                label.listTitles.map((list, index) =>(
-                                                  <p className='mb-1 d-flex gap-2' >
-                                                    <div style={{fontSize:'23px', marginRight:'5px'}}><FaRegSquareCheck/></div> 
-                                                     <div> {list.title}</div>
-                                                   </p>
+                                                  <div className='mb-1 d-flex gap-2' key={index} >
+                                                      <div style={{fontSize:'23px', marginRight:'5px'}}><FaRegSquareCheck/></div> 
+                                                      <div> {list.title}</div>
+                                                   </div>
                                                ))
                                               :
                                               <p>{label.title}</p> 
@@ -192,7 +198,7 @@ const StackedCards = ({stackCadrSlide, heading}) => {
                               </div>
                         </div>  
                         ))} 
-                    </div>
+                  </MotionWrapper>
             </div> 
           
 

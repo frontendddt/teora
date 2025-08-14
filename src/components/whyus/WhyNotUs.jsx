@@ -1,5 +1,10 @@
+"use client"
+import { useAnimationContext } from "@/context/AnimationContext";
+import { MotionWrapper } from "@/context/MotionWrapper";
+ import { motion } from "framer-motion";
 import IndustrySlider from "../home/IndustrySlider";
 
+//IndustrySlider data
 const data = [
     {
             image: "/icons/billion.png", 
@@ -78,11 +83,14 @@ const cardData = [
     },
 ]
 const WhyNotUs = () =>{
+
+     const { fadeLeft, fadeRight, animationVariants, ref1, inView1 } = useAnimationContext();
+
     return(
         <>
             <div className="container section-space-2">
                     <div className="row">
-                            <div className="col-md-5"> 
+                            <MotionWrapper className="col-md-5" variant={fadeLeft}> 
                                     <div className="paddingRight">
                                            <div className={`rounded-pill buge-style accentRedBg text-primaryBeige pt-2 pb-2 w-75`}>
                                                WHY US ? WHY NOT US !
@@ -92,9 +100,9 @@ const WhyNotUs = () =>{
                                             </h2> 
                                             <p className="purpleColor psize">
                                                 We’re not just another biotech company making promises in PowerPoints. 
-                                                <b>We’re the team that took fish survival from <span class="num-percentage">2% to 90%</span> in aquaculture.</b>
+                                                <b>We’re the team that took fish survival from <span className="num-percentage">2% to 90%</span> in aquaculture.</b>
                                                 We are scientists who wear boots to farm trials and still win 
-                                                <b><a href="/" className="purpleColor"><span class="num-percentage">global innovation awards.</span></a></b>
+                                                <b><a href="/" className="purpleColor"><span className="num-percentage">global innovation awards.</span></a></b>
                                                 <br></br>  
                                             </p>
                                             <p className="purpleColor psize">
@@ -103,8 +111,8 @@ const WhyNotUs = () =>{
                                                     farmers, ecosystems, or food safety standards. 
                                             </p>
                                     </div> 
-                            </div>
-                            <div className="col-md-7">
+                            </MotionWrapper>
+                            <MotionWrapper className="col-md-7" variant={fadeRight}>
                                 <div className="row">
                                     {cardData.map((el, index) =>(
                                         <div className="col-md-6 mb-4" key={`index${index}`}>
@@ -118,13 +126,19 @@ const WhyNotUs = () =>{
                                     ))} 
 
                                 </div>
-                            </div>
+                            </MotionWrapper>
                     </div>
             </div>
 
-            <div className="whyusRows">
+            <motion.div className="whyusRows"
+                 ref={ref1}
+                initial="hidden"
+                animate={inView1 ? 'visible' : 'hidden'}
+                variants={animationVariants}
+                transition={{ duration: 0.8, ease: 'easeOut' }}
+            >
                 <IndustrySlider data={data} text="What We’re Up Against ?" className="whyusHeadins"/>
-            </div>
+            </motion.div>
         
         </>
     )

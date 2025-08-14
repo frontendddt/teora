@@ -1,7 +1,6 @@
 import Styles from "./header.module.css";
 import Link from "next/link";
 import { FileText, Search } from 'lucide-react';
-import Image from 'next/image';
  
 // import logo from "/logo/teora-logo.png"
 
@@ -10,14 +9,14 @@ const Header = () =>{
     const navList = ([
         { navName:'About', navLink: '/about', id: 1},
         { navName:'Why Us', navLink: '/whyus', id: 2},
-        { navName:'SOLAQ', navLink: '/sola', sup:'/sup', id: 3},
+        { navName:'SOLAQ', navLink: '/solaq', sup:'/sup', id: 3},
         { navName:'Solutions', navLink: '/solutions', id: 4},
         { navName:'Contact', navLink: '/contact', id: 5},
         { navName:'Awards & Media', navLink: '/awardsmedia', id: 6},
-    ])
+    ]);
 
    return(
-          <header className="sticky-top" style={{zIndex:'99999'}}>
+          <header className="sticky-top m-0" style={{zIndex:'99999'}}>
                <div className={`${Styles.header_container}`}>
                      <nav className="navbar navbar-expand-lg">
                         <div className={`container position-relative ${Styles.nav_container}`}>

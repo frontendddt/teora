@@ -8,7 +8,11 @@ import { MdArrowOutward } from "react-icons/md";
 import { useRef, useState, useEffect } from "react";
 import Link from "next/link";
 
-const TimerCardSwiper = ({cardcontant, heading, TimerCardSwiperWhyUS,  varient = "default"}) =>{ 
+import { useAnimationContext } from "@/context/AnimationContext";
+import { MotionWrapper } from "@/context/MotionWrapper";
+
+const TimerCardSwiper = ({cardcontant, heading,  varient = "default"}) =>{
+        const { fadeLeft, fadeRight } = useAnimationContext(); 
         const swiperRef = useRef(null);   
         const [activeIndex, setActiveIndex] = useState(0);
         const [progress, setProgress] = useState(0);  
@@ -27,6 +31,10 @@ const TimerCardSwiper = ({cardcontant, heading, TimerCardSwiperWhyUS,  varient =
             return () => clearInterval(interval);
         }, []);
 
+        const handleNavClick = (index) => {
+            swiperRef.current?.slideToLoop(index);
+        };
+
         const onSlideChange = (swiper) => {
             setActiveIndex(swiper.realIndex);
             setProgress(0); 
@@ -37,16 +45,18 @@ const TimerCardSwiper = ({cardcontant, heading, TimerCardSwiperWhyUS,  varient =
     const renderCardContent = (slide) =>{
         if(varient === "whyusTimerDesign"){
             return( 
-                    <div className="card_table_container whyUstimerSweeperCard_height  d-flex flex-column justify-content-between">
+                    <div className="card_table_container whyUstimerSweeperCard_height d-flex flex-column justify-content-between">
                         <div className="purpleColor">
-                            <div className="p-all pb-1 h3lineHeights">
-                                 <h3 className="text-center fw-400">{slide.heading_before_break} <br/> {slide.heading_after_break}</h3> 
+                            <div className="p-all pb-1 h3lineHeights paddingAll15">
+                                 <h3 className="text-center fw-400 ">{slide.heading_before_break} <br/> {slide.heading_after_break}</h3> 
                             </div>
                        
                             <table className={`purpleColor ${Styles.table_borders}`}>
                                 <thead>
-                                    <th>OTHERS</th>
-                                    <th>TEORA</th>
+                                        <tr>
+                                               <th>OTHERS</th>
+                                               <th>TEORA</th>
+                                        </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
@@ -79,7 +89,7 @@ const TimerCardSwiper = ({cardcontant, heading, TimerCardSwiperWhyUS,  varient =
         return(
              <div className="cardslider purpleColor max-heightsSwip d-flex flex-column justify-content-between">
                     <div className={Styles.card_content}>
-                        <h4 className="f-600" style={{ display: 'inline-block', maxWidth: '300px' }}>
+                        <h4 className="f-600 " style={{ display: 'inline-block', maxWidth: '300px' }}>
                             {slide.heading}
                         </h4>
                         <p className="mb-0 mt-0">{slide.title}</p>
@@ -101,14 +111,16 @@ const TimerCardSwiper = ({cardcontant, heading, TimerCardSwiperWhyUS,  varient =
         <>
             <div className={Styles.proprietarySection}>
                         <div className="mb-4">
-                            <h2 className={`text-primaryBeige ${Styles.margin_bottom}`} >
+                            <h2 className={`text-primaryBeige  ${Styles.margin_bottom} ${varient === "whyusTimerDesign" ? 'aquaHeadings150' : ''}`} >
                                 {heading}
                             </h2>
                         </div>
 
                         <div className="row">
                                 
-                            <div className="col-md-6 d-flex flex-column justify-content-between">
+                            <MotionWrapper className="col-md-6 d-flex flex-column justify-content-between"
+                                variant={fadeLeft}
+                            >
                                 <div>
                                     <div className={Styles.progress}>
                                         <div
@@ -124,8 +136,9 @@ const TimerCardSwiper = ({cardcontant, heading, TimerCardSwiperWhyUS,  varient =
                                         {cardcontant.map((item, index) => (
                                         <li
                                                 key={index}
-                                                onClick={() => swiperRef.current.slideToLoop(index)}
-                                                className={` ${Styles.navItem} ${index === activeIndex ? 'active' : ''}`}>
+                                                onClick={() => handleNavClick(index)}
+                                                //  onClick={() => swiperRef.current.slideToLoop(index)}
+                                                className={` ${Styles.navItem} ${index === activeIndex ? 'active' : ''}`} style={{cursor:'pointer'}}>
                                             <div className="d-flex gap-4 align-items-center mb-3 text-primaryBeige">
                                                 <div className="h-100" style={{width:'50px'}}>  
                                                         {index === activeIndex && <span className={Styles.activeIconst}>
@@ -146,9 +159,11 @@ const TimerCardSwiper = ({cardcontant, heading, TimerCardSwiperWhyUS,  varient =
                                  <div className="buttons d-flex gap-2" style={{marginLeft:'2rem'}}>
                                     <Link className="buttons-primary " href="/">Explore Platform</Link>
                                  </div>
-                            </div> 
+                            </MotionWrapper> 
                                 
-                            <div className="col-md-6">
+                            <MotionWrapper className="col-md-6"
+                                variant={fadeRight}
+                            >
                                     <div className={`corporateBg ${Styles.border_radiusEl} border_radiusEl`}>
                                         <Swiper
                                             modules={[Autoplay]}
@@ -167,7 +182,7 @@ const TimerCardSwiper = ({cardcontant, heading, TimerCardSwiperWhyUS,  varient =
                                             ))}
                                         </Swiper>
                                     </div>
-                                </div>
+                                </MotionWrapper>
 
                             </div>
                     </div>

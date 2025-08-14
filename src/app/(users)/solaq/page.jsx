@@ -1,18 +1,17 @@
+ import SolaqBanner from "@/components/solaq/SolaqBanner";
+ import ImpactingCardSwiper from "@/components/solaq/ImpactingCardSwiper";
+ import IndustrySlider from "@/components/home/IndustrySlider";
+ import CountersSection from "@/components/home/CountersSection";
+//  import AgricultureComponents from "@/components/about/subComponent/AgricultureComponents";
+ import Agriculture from "@/components/about/Agriculture";
+ import CompanyComponents from "@/components/home/slickyComponents/CompanyComponents";
+import WhyusSlicky from "@/components/whyus/WhyusSlicky";
 
-import ContactBanner from "@/components/contact/ContactBanner";
-import ImpactCards from "@/components/solutions/ImpactCards";
-import ScienceEmpower from "@/components/solutions/ScienceEmpower";
-import IndustrySlider from "@/components/home/IndustrySlider";
-import CountersSection from "@/components/home/CountersSection";
-import ContactSlicky from "@/components/contact/ContactSlicky";
-import Agriculture from "@/components/about/Agriculture";
-import CompanyComponents from "@/components/home/slickyComponents/CompanyComponents";
-import OurBrochure from "@/components/home/OurBrochure";
+ import OurBrochure from "@/components/home/OurBrochure";
 import LeadershipSection from "@/components/home/LeadershipSection";
 import BlogSection from "@/components/home/BlogSection";
 
-  // contact page industrySliderData
-   const industrySliderData = [
+ const industrySliderData = [
     {
             image: "/icons/word-icon.png", 
             title: 'UNSAFE FOOD (600M PEOPLE SICK ANNUALLY)', 
@@ -61,10 +60,10 @@ import BlogSection from "@/components/home/BlogSection";
             widths:120,
             heights:120,
     },
-  ]
+]
 
-  // contact page counterData
-   const counterData = [
+//CountersSection data
+const counterData = [
         {
             counter: 28.9,
             discriptions: "Of the world’s population experience food insecurity, &",
@@ -86,34 +85,30 @@ import BlogSection from "@/components/home/BlogSection";
             strong: "food security and farmer livelihoods"
         }
     ]
-
-
-const Contact = () =>{
+ const Solaq = () =>{
     return(
-         <>
-             <section className="purpleBg">
-                    <ContactBanner/>
-                    
-                    <div className="container section-space-2 pt-0">
-                        <ImpactCards/>
-                    </div>
+        <>
+            <section className="purpleBg">
+                <SolaqBanner/>   
+
+                <ImpactingCardSwiper/> 
             </section>
 
-             <section className="corporateBg section-space-2">
-                 <ScienceEmpower/>
-                 <IndustrySlider data={industrySliderData} text="The Result" className="soalq" solaqClass="soloqIndustry"/>
+            <section className="corporateBg section-space-2">
+                <section>
+                    <IndustrySlider data={industrySliderData} text="The Result" className="soalq" solaqClass="soloqIndustry"/>
+                </section>
+                <section className="section-space-2">
+                    <CountersSection counterData={counterData} className="accentRedBg"/> 
+                </section>
             </section>
 
-             <section className="corporateBg section-space-2">
-                <CountersSection counterData={counterData} className="accentRedBg" />
-            </section>
-
-            <section className="corporateBg">
-                <ContactSlicky/>
+            <section>
+                <WhyusSlicky/>
             </section>
 
             <section className="">
-                     <Agriculture/> 
+                    <Agriculture/> 
             </section>
 
             <section>
@@ -146,9 +141,9 @@ const Contact = () =>{
                     <BlogSection/>
                 </section>
 
-            </section> 
-         
-         </>
+           </section> 
+
+        </>
     )
 }
-export default Contact;
+export default Solaq;

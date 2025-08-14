@@ -1,4 +1,7 @@
 "use client";
+import { useAnimationContext } from "@/context/AnimationContext";
+import { MotionWrapper } from "@/context/MotionWrapper";
+ 
 import Link from "next/link";
 import Styles from "./stickyAbout.module.css";
 
@@ -199,6 +202,7 @@ const stackCadrSlide = [
 
 const StickyAbout = () =>{
 
+    const {fadeDown} = useAnimationContext();
     return(
         <div className="sticky_container" >
                 <div className={`sticky-top z-2 section-space-2 ${Styles.sticky_section}`} 
@@ -337,7 +341,12 @@ const StickyAbout = () =>{
                 </div> 
              
                 <div className={`sticky-top z-6 section-space-2 deepPurple h-fitcontent ${Styles.sticky_section}`}>
-                     <OurTeam/>
+                        <MotionWrapper 
+                            className="position-relative"
+                            variant={fadeDown}
+                            >
+                             <OurTeam/>
+                        </MotionWrapper>
                 </div> 
                
 

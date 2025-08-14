@@ -8,7 +8,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import slickyAboutImg1 from  "/public/aboutAssets/about-slide1.png"; 
  
 const WhatWereBuildingSlider = ({swiperData}) =>{
-    
+
   const [slideCounter, setSlideCounter] = useState(1);
     const swiperRef = useRef(null);  
       useEffect(() => {
@@ -285,8 +285,7 @@ const WhatWereBuildingSlider = ({swiperData}) =>{
                                                         
                                                     </div> 
                                                 </div>
-                                            </SwiperSlide>
-                                        
+                                        </SwiperSlide> 
                                     
                                 </Swiper>
                             </div>

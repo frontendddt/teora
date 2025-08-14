@@ -328,7 +328,12 @@ ul{
   line-height: 40px !important;
 } 
 
-
+button{
+  outline: none !important;
+}
+button:focus{
+  outline: none !important;
+}
 
 /* alll background color class start*/
 .purpleBg{
@@ -410,16 +415,16 @@ ul{
   background-color: #d3b4bc;
 }
 /* alll background color class start*/
-
+.num-percentage{
+  text-decoration: underline;
+}
 
 
 /* alll color class start*/
 .purpleColor{
   color: var(--primaryPurple);
 }
-.num-percentage{
-  text-decoration: underline;
-}
+
 .text-primaryBeige{
   color: var(--primaryBeige);
 }
@@ -446,6 +451,13 @@ ul{
 .lightNeutralColor{
     color: var(--lightNeutral);
 }
+.midPurpleColor{
+  color: var(--midPurple);
+}
+
+.mutedPurpleColor{
+  color: var(--mutedPurple);
+}
 /* alll color class end*/
 
 .sticky_section{
@@ -454,7 +466,6 @@ ul{
     top:10px;
     min-height: 100vh;
 } 
-
 
 /* padding class start */
 .p-all{
@@ -481,6 +492,9 @@ ul{
 }
 .paddingLeft{
   padding-left: 3rem;
+}
+.paddingLe2{
+  padding: 0 2rem 0 1.5rem;
 }
 .section-space{
   padding: 3.2rem 0;
@@ -852,11 +866,15 @@ ul{
   font-size: 40px !important;
 }
 
-.rowWhites{
+.rowWhites_2{
   position: absolute;
   width: 100%;
-  height: 50px;
-  background-color: #fff;
+  height: 120px;
+  top: 27%;
+  left: 0;
+  background-color: var(--primaryBeige);
+  z-index: -1;
+ 
 }
 /* .linsAnim {
   width: 1px;
@@ -1022,13 +1040,21 @@ ul{
   font-size: 15.5px;
   font-weight: 600 !important;
  }
+
  .whyusHeadins{
-    margin-top: 4.5rem !important;
+    margin-top: 3rem !important;
  }
 .whyusHeadins p{
   font-size: 25px !important;
   font-weight: 400 !important;
 }
+.soalq{
+  margin-top: 3.5rem !important;
+}
+.soloqIndustry .rowWhites{
+  top: 60px !important;
+}
+
 
  .aboutIndustrice .rowWhites{
     top: 40px !important;
@@ -1043,7 +1069,7 @@ ul{
   padding-right: 2.5rem;
  }
  .whyusRows .rowWhites{
-      top: 52px !important;
+    top: 52px !important;
  }
 
  .textdecoration{
@@ -1095,8 +1121,15 @@ ul{
   width: 50%;
    
 }
-.listPAddings{
  
+.soloqIndustry h4{
+  font-size: 20px !important;
+  line-height: 30px !important;
+}
+.solutionsH3 {
+  font-size: 60px !important;
+  line-height: 70px !important;
+
 }
 /********************************************************************** media query start *******************************************************************/
 
@@ -1135,7 +1168,7 @@ ul{
   font-size: 50px !important;
   margin: .2rem 0 !important;
 }
-p{margin-bottom: 0px !important;}
+p{margin-bottom: 0px }
 
 .text_container{
   margin-top: 2rem !important;
@@ -1153,6 +1186,23 @@ p{margin-bottom: 0px !important;}
    width: 100%;
   height: 240px;
 }
+
+ /* why us */
+
+ .threSwiperImg{
+    width: 90% !important;
+ }
+ .foxedMin_w{
+    font-size: 38px !important;
+ }
+ .paddingAll15{
+  padding-top: 5px !important; 
+ }
+ 
+ .aquaHeadings150{
+  font-size: 32px !important;
+  line-height: 40px !important;
+ }
 
 }
 /********************************************************************** media query end *******************************************************************/

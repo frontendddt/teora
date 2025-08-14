@@ -1,7 +1,18 @@
+"use client"
+import { useAnimationContext } from "@/context/AnimationContext";
+import { MotionWrapper } from "@/context/MotionWrapper";
+ 
 
 const CompanyComponents = () =>{
+    
+        const { fadeDown } = useAnimationContext();
+
     return(
-        <div className="supported_slider_card beigeCreamBg border_radius_round2 sliderCardHeight d-flex justify-content-center align-items-center" style={{ padding: '0 0 1.5rem 0' }}>
+        <MotionWrapper 
+            className="supported_slider_card beigeCreamBg border_radius_round2 sliderCardHeight d-flex justify-content-center align-items-center"
+            style={{ padding: '0 0 1.5rem 0' }}
+            variant={fadeDown}
+            >
                 <div className="container purpleColor p-4 corporateBg border_radius_round2 position-relative" style={{height:'300px'}}>
                     <div className="row">
                         <div className="col-4">
@@ -18,7 +29,7 @@ const CompanyComponents = () =>{
                         </div>
                     </div>
                 </div>
-            </div>
+        </MotionWrapper>
     )
 }
 

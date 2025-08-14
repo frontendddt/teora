@@ -1,4 +1,8 @@
 
+"use client"
+import { useAnimationContext } from "@/context/AnimationContext";
+import { MotionWrapper } from "@/context/MotionWrapper";
+
 import styles from "./whyUS.module.css";
 import { FaRegCheckSquare } from "react-icons/fa";
 const tableData = [
@@ -28,12 +32,15 @@ const tableData = [
     status: 'In Development',
   },
 ];
-const Aquaculture = () =>{
+const Aquaculture = () =>{ 
+        const { fadeLeft, fadeRight } = useAnimationContext();
     return(
         <>
             <div className="container section-space-2">
                     <div className="row">
-                            <div className="col-md-6">
+                            <MotionWrapper className="col-md-6"
+                                 variant={fadeLeft}
+                            >
                                      <div className="table-wrapper">
                                         <table className={styles.sector_table}>
                                             <thead>
@@ -54,8 +61,10 @@ const Aquaculture = () =>{
                                             </tbody>
                                         </table>
                                     </div>
-                            </div>
-                            <div className="col-md-6 d-flex flex-column justify-content-between paddingLeft">
+                            </MotionWrapper>
+                            <MotionWrapper className="col-md-6 d-flex flex-column justify-content-between paddingLeft"
+                                variant={fadeRight}
+                            >
                                 <div className="stopping-container">
                                      <span className="rounded-pill buge-style accentRedBg text-primaryBeige pt-2 pb-2">WHERE WE’RE HEADED</span>  
                                      <div className="purpleColor">
@@ -75,13 +84,15 @@ const Aquaculture = () =>{
                                 <div className="links">
                                     <a className="buttons-primary " href="/"> Know More</a>
                                 </div>
-                            </div>
+                            </MotionWrapper>
                     </div> 
             </div>
 
             <div className="container section-space-2 pt-0">
                      <div className="row"> 
-                            <div className="col-md-6 d-flex flex-column justify-content-between ">
+                            <MotionWrapper className="col-md-6 d-flex flex-column justify-content-between "
+                                variant={fadeLeft}
+                            >
                                 <div className="stopping-container"> 
                                      <div className={`purpleColor ${styles.checksele}`}>
                                             <h2 className=" m-top-b">
@@ -105,33 +116,35 @@ const Aquaculture = () =>{
                                 <div className="links mt-4">
                                     <a className="buttons-primary " href="/"> Contact Us Now</a>
                                 </div>
-                            </div>
-                            <div className="col-md-6">
-                                    <div class="card1 p_smarter purpleBg text-primaryBeige border_radius_round2 mb-4 d-flex align-items-center gap-3 ">
+                            </MotionWrapper>
+                            <MotionWrapper className="col-md-6"
+                                 variant={fadeRight}
+                            >
+                                    <div className="card1 p_smarter purpleBg text-primaryBeige border_radius_round2 mb-4 d-flex align-items-center gap-3 ">
                                               <span>
                                                     <img width="120" src="/icons/Needle.svg"/>
                                                 </span>
-                                                <div class="m-0">  
+                                                <div className="m-0">  
                                                     <span className="rounded-pill buge-style accentRedBg text-primaryBeige pt-2 pb-2">
                                                         THE SOLUTION IS CLEAR
                                                     </span>
-                                                    <p class={`mt-3 ${styles.solutionsElements}`}>
+                                                    <p className={`mt-3 ${styles.solutionsElements}`}>
                                                         Clean Science. Smart Biologics. Easy Adoption. Sustainable Scaling.
                                                     </p> 
                                                 </div>
                                     </div>
 
-                                    <div class="card1 p_smarter purpleBg text-primaryBeige border_radius_round2 mb-4 "> 
+                                    <div className="card1 p_smarter purpleBg text-primaryBeige border_radius_round2 mb-4 "> 
                                             <div className="m-0">  
-                                                <span class="rounded-pill buge-style accentRedBg text-primaryBeige pt-2 pb-2">
+                                                <span className="rounded-pill buge-style accentRedBg text-primaryBeige pt-2 pb-2">
                                                     THE SOLUTION IS CLEAR
                                                 </span>
-                                                <p class={`mt-3 ${styles.solutionsElements}`}>
+                                                <p className={`mt-3 ${styles.solutionsElements}`}>
                                                     Keep Fighting Disease With Yesterday’s Tools—Or Feed The Future With Tomorrow’s Science.
                                                 </p> 
                                             </div>
                                     </div>
-                            </div>
+                            </MotionWrapper>
                     </div>                    
             </div>
         

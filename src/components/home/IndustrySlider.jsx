@@ -2,18 +2,16 @@
 'use client';
 import { useState } from 'react';
 import dynamic from 'next/dynamic';
-import Image from 'next/image';
+
 import { useRef } from "react";
 import styles from './home.module.css';
-
 import { MdArrowBackIosNew, MdArrowForwardIos  } from "react-icons/md";
- 
- 
 const Slider = dynamic(() => import('react-slick'), { ssr: false });
+
+const IndustrySlider = ({data, text, className, solaqClass}) => {
  
 
-const IndustrySlider = ({data, text, className}) => {
- 
+
  const sliderRef = useRef(null);
  const [activeIndex, setActiveIndex] = useState(0);
 
@@ -38,7 +36,7 @@ const IndustrySlider = ({data, text, className}) => {
   return (
         
             <div className="container">
-                <div className={`row d-flex position-relative ${styles.rowcontainer}`}>
+                <div className={`row d-flex position-relative ${styles.rowcontainer} ${solaqClass}`}>
 
                     <div className={`${styles.left_arrow} `}>
                         <div className={`d-flex gap-2 justify-content-between align-items-center w-100 ${className}`}>
@@ -56,8 +54,7 @@ const IndustrySlider = ({data, text, className}) => {
                                     >
                                         <MdArrowForwardIos/>
                                     </button>
-                                  </div>
-                                
+                                  </div> 
                         </div>
                     </div>  
 
@@ -70,7 +67,7 @@ const IndustrySlider = ({data, text, className}) => {
                                            <div className={`d-flex justify-content-center slicky_container p-3
                                            
                                            `}  key={index}>
-                                                <div className="slickys purpleColor" > 
+                                                <div className={` slickys purpleColor ${solaqClass}`} > 
                                                     <div className='d-flex justify-content-center'>
                                                             <img
                                                                 src={items.image}

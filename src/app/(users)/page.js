@@ -96,7 +96,7 @@ const counterData = [
       
       {
         title: 'ANIMAL FEED IMPACT',
-        image: "icons/impact.png",
+        image: "/icons/impact.png",
         text: '60% of animal & aquatic farm spend goes to feed.  ',
         bold: 'Much of it is wasted due to poor conversion.',
          widths: 150,

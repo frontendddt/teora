@@ -47,7 +47,7 @@ export const MissionCardSwiper = ({missionCardSwiperData, heading}) => {
             <div className="container" >
                 <div className="d-flex justify-content-between align-items-center purpleColor">
                     <div style={{ maxWidth: '800px' }}>
-                        <h1 className="h1500 revolutionising">
+                        <h1 className="h1500 revolutionising foxedMin_w">
                            {heading}
                         </h1>
                     </div>
@@ -108,7 +108,7 @@ export const MissionCardSwiper = ({missionCardSwiperData, heading}) => {
                                     }
 
                                     <div className='aboutimages d-flex align-items-center h-100'>
-                                        <img src={slides.image} className='w-100' />
+                                        <img src={slides.image} className='w-100 threSwiperImg' />
                                     </div>
 
                                     {activeIndex === index && (

@@ -15,8 +15,8 @@ const WhyMatterCard = ({data, text, buttons}) =>{
                                     <h1 >{text}</h1>  
                                     {buttons ? 
                                         <div className="">
-                                            <button class="connectBtn m-2">Aquaculture Products</button>
-                                            <button class="buttons-primary border1px m-2 bg-transparent" href="/">Why Teora ?</button>
+                                            <button className="connectBtn m-2">Aquaculture Products</button>
+                                            <button className="buttons-primary border1px m-2 bg-transparent" href="/">Why Teora ?</button>
                                         </div> : ''
                                     }
                                 </div>
@@ -44,7 +44,7 @@ const WhyMatterCard = ({data, text, buttons}) =>{
                                                   
                                                         {elements.explore_results_btn ?
                                                             <div className={`explore_results mt-3 ${elements.none ? elements.none : '' }`}>
-                                                            <a class="buttons-primary " href="/">{elements.explore_results_btn} </a>
+                                                            <a className="buttons-primary " href="/">{elements.explore_results_btn} </a>
                                                         </div> :''
                                                         }
                                                    </div> :
@@ -57,10 +57,10 @@ const WhyMatterCard = ({data, text, buttons}) =>{
                                                         </h5> :
                                                          <div className="d-flex align-items-center gap-3 mb-5">
                                                                 <span><img src="/icons/about-icon1.png" width="100" alt="BUILT TO FIGHT BACK &amp; PROTECT"/></span>
-                                                                <div class="m-0">
-                                                                    <span class="rounded-pill buge-style accentRedBg text-primaryBeige pt-2 pb-2">DISEASE MANAGEMENT- SHRIMPS &amp; FISH</span>
-                                                                    <h2 class="m-0">GUARD SERIES</h2>
-                                                                    <p class="m-0">PREVENT. COMBAT. KEEP CALM. FARM ON.</p>
+                                                                <div className="m-0">
+                                                                    <span className="rounded-pill buge-style accentRedBg text-primaryBeige pt-2 pb-2">DISEASE MANAGEMENT- SHRIMPS &amp; FISH</span>
+                                                                    <h2 className="m-0">GUARD SERIES</h2>
+                                                                    <p className="m-0">PREVENT. COMBAT. KEEP CALM. FARM ON.</p>
                                                                 </div>
                                                          </div>
                                                     }

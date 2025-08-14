@@ -1,3 +1,7 @@
+"use client"
+import { useAnimationContext } from "@/context/AnimationContext";
+import { MotionWrapper } from "@/context/MotionWrapper";
+ 
 
 import Styles from "../about/aboutStypes.module.css";
 import Link from "next/link";
@@ -77,6 +81,10 @@ const InfoCardData = [
 
 
 const Banner = () =>{
+
+        const { fadeLeft, fadeRight, fadeDown } = useAnimationContext();
+
+
     return(
 
            <>
@@ -115,14 +123,17 @@ const Banner = () =>{
                       
                 <div className={`row`}> 
 
-                        <div className="col-md-4 d-flex align-items-center justify-content-center">
+                        <MotionWrapper className="col-md-4 d-flex align-items-center justify-content-center"
+                            variant={fadeLeft}
+                        >
                             <img
                                 src="/image/slickybg.png"
                                 alt="And because the old ways o"
                                 style={{width:'90%'}}
                             />
-                        </div>
-                        <div className="col-md-8">
+                        </MotionWrapper>
+                        <MotionWrapper className="col-md-8"
+                         variant={fadeRight}>
                             <div className='d-flex align-items-center text-primaryBeige p-24'>  
                                 <img 
                                     src="/icons/border.png" 
@@ -148,16 +159,19 @@ const Banner = () =>{
                                          <h5 className="accentLimeColor mt-3  h4industry">Built For Real Farms. Backed By Science. Scaling For Impact.</h5>
                                 </div>
                             </div> 
-                        </div> 
+                        </MotionWrapper> 
 
                 </div>  
 
              </div> 
 
-              <div className="section-space-2">
+              <MotionWrapper
+                 className="section-space-2"
+                    variant={fadeDown}
+                 >
                     
                       <InfoCard classNameContainer = "container" InfoCardData={InfoCardData}/>  
-              </div>
+              </MotionWrapper>
            
            </>
 
