@@ -27,3 +27,9 @@ export const corporatePageContent = {
     }
   }
 };
+
+ // about content Data
+ export const aboutcontentData = {
+
+  
+ }

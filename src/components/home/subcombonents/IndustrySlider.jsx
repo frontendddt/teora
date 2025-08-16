@@ -24,7 +24,8 @@ const industryImage = [
 const sliderRef = useRef(null);
 const settings = {
     dots: false,
-    infinite: true,
+    infinite: true, 
+    arrows: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,

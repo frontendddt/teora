@@ -16,13 +16,14 @@ const StackedCards = ({stackCadrSlide, heading}) => {
 const {fadeDown} = useAnimationContext();
 
   /// new  is this 
-  
   const moveTargetBase = 40;  
   const moveGap = 40;        
   const startLeft = 61;     
   const stepLeft = 3;       
 
   const initialLefts = stackCadrSlide.map((_, i) => `${startLeft - i * stepLeft}%`);
+
+  
   const [positions, setPositions] = useState(initialLefts);
   const [zIndexes, setZIndexes] = useState(
     Array.from({ length: stackCadrSlide.length }, (_, i) => i + 1)
@@ -32,14 +33,13 @@ const {fadeDown} = useAnimationContext();
 
   const handleMoveLeft = () => {
     if (movedCount >= stackCadrSlide.length - 1) return;
-
     const index = stackCadrSlide.length - 1 - movedCount;
     const newPositions = [...positions];
     const newZIndexes = [...zIndexes];
 
     newPositions[index] = `${moveTargetBase + movedCount * moveGap}px`;
     newZIndexes[index] = Math.max(...zIndexes) + 1;
-
+    // newZIndexes[2];
     setPositions(newPositions);
     setZIndexes(newZIndexes);
     setMovedCount(movedCount + 1);
@@ -51,7 +51,6 @@ const {fadeDown} = useAnimationContext();
     const index = stackCadrSlide.length - movedCount;
     const newPositions = [...positions];
     const newZIndexes = [...zIndexes];
-
     newPositions[index] = initialLefts[index];
     newZIndexes[index] = Math.max(...zIndexes) + 1;
 
@@ -60,15 +59,14 @@ const {fadeDown} = useAnimationContext();
     setMovedCount(movedCount - 1);
   };
 
-
   /// old is this 
+  
   // const initialLefts = ["61%", "58%", "55%", "52%", "0%"]; 
   // const [positions, setPositions] = useState(initialLefts.slice());
   // const [movedCount, setMovedCount] = useState(0); 
   // const [zIndexes, setZIndexes] = useState([1, 2, 3, 4, 5]);
   // const moveTargetBase = 40;
   // const moveGap = 40;
- 
 
   // const handleMoveLeft = () => {
   //     if (movedCount >= stackCadrSlide.length - 1) return; 

@@ -1,6 +1,5 @@
  
 "use client"
-
 import brochure_card from "../../assets/homeAssets/brochure_card.png";
 import Image from "next/image"; 
 import scan from "../../assets/homeAssets/scan.jpg";

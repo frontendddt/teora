@@ -29,6 +29,7 @@ import cardimg2 from "/public/aboutAssets/cardimg/cardimg2.png";
 import cardimg3 from "/public/aboutAssets/cardimg/cardslide3.png";
 import cardimg4 from "/public/aboutAssets/cardimg/cardimg4.png";
 import card1 from "/public/slider/redcard.png"
+ 
 
   const swiperData = [
         {
@@ -201,7 +202,6 @@ const stackCadrSlide = [
 
 
 const StickyAbout = () =>{
-
     const {fadeDown} = useAnimationContext();
     return(
         <div className="sticky_container" >
@@ -352,7 +352,6 @@ const StickyAbout = () =>{
 
 
         </div>
-
     )
 }
 export default StickyAbout;
