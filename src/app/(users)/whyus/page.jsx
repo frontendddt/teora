@@ -51,7 +51,7 @@ const Whyus = () =>{
                             buttonText_card1 = "Contact Our Team"
                             classname_card1 = "card1_font"
 
-                            heading_card2 = " “We didn’t set out to revolutionize farming.We just got tired of watching it fail. Sowe built some thing better. Some thing that works. Some thing that lasts. Some thing that feeds the future without stealing fromit.” "
+                            heading_card2 = " “We didn’t set out to revolutionize farming.We just got tired of watching it fail. So we built some thing better. Something that works. Something that lasts. Something that feeds the future without stealing from it.” "
                             descreption_card2 = "– Dr. Rishita Changede, Founder & CEO" 
                             buttonText_card2 = "Connect With Leadership"
                             classname_card2 = "card2_font"
