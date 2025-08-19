@@ -214,7 +214,7 @@ const stackCadrSlide = [
   {
     titleName: 'CLEAN BIOLOGICS',
     image:'/icons/Needle.svg',
-    hedings: "OURBIOLOGICS ARE",
+    hedings: "OUR BIOLOGICS ARE",
     subHeading: "90% Survival. 30% Less Waste. More yield ", 
     bgClass:"accentBlueBg",
     listTitles: [
