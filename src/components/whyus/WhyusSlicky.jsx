@@ -85,13 +85,16 @@ const cardcontant = [
             color:"purpleColor"
         },
         {
-            img: "/icons/food.jpg",
-             
+            img: "/image/therpic-fish.png",
+            main_icon:"/icons/about-icon1.png",
             title: "Next-gen, feed-based prophylactic + therapeutic disease protection—no injections, no antibiotics, no drama. ",
             titleBold:"ShrimpGuard™| FishGuard™ ",
-            bold:"Clean ponds. Healthier soils. Fewer emissions.",
+            bold:"Up to 90% survival rates, 70%drop in antibiotic use, Via top-coated feed, no cold storage required, Validated in real- farms across Asia.",
             class: "purpleBg",
-            color:"text-primaryBeige"
+            color:"text-primaryBeige",
+            series_title:"DISEASE MANAGEMENT- SHRIMPS & FISH",
+            series:"GUARD SERIES",
+            series_subTitle:"PREVENT. COMBAT. KEEP CALM. FARM ON."
         },
          { 
             banner:"/image/servial.png",
@@ -107,13 +110,17 @@ const cardcontant = [
             color:"purpleColor"
         },
         {
-            img: "/icons/termcircal.jpg",
+            img: "/image/accrelator-fish.png",
+            main_icon:"/icons/about-icon2.png",
             bgcolorClass: 'accentLimebg',
 
             title: "SOLAQ™ biologics are clean and dont add to the residues, contaminants, and AMR risks that chemical farming leaves behind.",
-            bold:"Cleanerfood. Safer exports. Healthierfutures.",
+            bold:"20% faster growth, 0.2–0.5 lower FCR, 30%less feedwastage, No hormones orGMOs, 100%biodegradable and export-compliant",
             class: "purpleBg",
-            color:"text-primaryBeige"
+            color:"text-primaryBeige",
+            series_title:"GROWTH OPTIMISATION IN FISH",
+            series:"JUMBO SERIES",
+            series_subTitle:"GROW BIG. GROW FAST. STAY CLEAN."
             
         },
         {
@@ -300,8 +307,7 @@ const WhyusSlicky = () =>{
                  </div>
 
                   <div className="sticky-top section-space-2 sticky_section deepPurple"
-                          style={{
-                            // backgroundImage: 'url("/bgimage/swiper_team_whyUs.png")',
+                          style={{ 
                             backgroundImage: `url(${aqualture.src})`,
                             backgroundRepeat: 'no-repeat',
                             backgroundSize: 'cover',
@@ -322,7 +328,7 @@ const WhyusSlicky = () =>{
                         />
                  </div>
 
-                  <div className="sticky-top section-space-2 deepPurple sticky_section" style={{zIndex:'6'}}>
+                  <div className="sticky-top section-space-2 purpleBg tectureBg sticky_section" style={{zIndex:'6'}}>
                         <div className="container">
                               <NoCompromise/>
                         </div>     

@@ -36,15 +36,15 @@ const About = () =>{
 
     return(
         <section className="purpleBg">
-                <section >
+                <section className="tectureBg" >
                         <AboutBanner/>
                 </section>
 
-                <section>
+                <section className="tectureBg">
                     <MapOverlay/>
                 </section>
 
-                <section>
+                <section className="tectureBg">
                     <MotivationSection/>
                 </section>
 
@@ -52,12 +52,7 @@ const About = () =>{
                     <CountersSection counterData={counterData} className="accentRedBg" />
                 </section>
 
-                <section
-                     style={{
-                        backgroundImage: 'url(/bgimage/bg.png)',
-                        backgroundRepeat:'repeat'
-                    }}
-                >
+                <section className="tectureBg">
                     <BuiltTeoraSection/>
                 </section> 
 

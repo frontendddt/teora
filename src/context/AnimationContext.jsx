@@ -14,6 +14,7 @@ export const AnimationProvider = ({children}) =>{
 
     // right to left 
     const fadeRight = {
+         
         hidden: { opacity: 0, x: 100 },
         visible: {
         opacity: 1,

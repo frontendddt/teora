@@ -115,8 +115,8 @@ const counterData = [
              <IndustrySlider data={IndustrySliderData} text="State of the Industry" className="homeheading"/> 
           </section>
           
-          <section>
-              <CountersSection counterData={counterData} className="purpleBg"/> 
+          <section >
+              <CountersSection counterData={counterData} className="purpleBg tectureBg"/> 
           </section>
 
           <section className="corporateBg">

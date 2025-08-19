@@ -71,7 +71,7 @@ const StickySection = () =>{
   
     return(
         <div className={`${Styles.sticky_container}` }>
-            <div className={`sticky-top z-1 section-space-2 purpleBg ${Styles.sticky_section}`}>
+            <div className={`sticky-top z-1 section-space-2 purpleBg tectureBg ${Styles.sticky_section}`}>
                 <div className="container">
                         <div className="row">
                             <motion.div className="col-md-6"
@@ -83,7 +83,7 @@ const StickySection = () =>{
                             
                                 <img
                                     src="/image/slickybg.png"
-                                    style={{width:'80%', height:'80%'}}
+                                    style={{width:'80%'}}
                                     alt="slick image"
                                     className="imageheights"
                                 />
@@ -155,7 +155,7 @@ const StickySection = () =>{
              
             
             <div className={`sticky-top section-space-2 z-4 accentBlueBg ${Styles.sticky_section}`}>
-                 <div className="">
+                 <div className="animate-wrapper">
                     <div className="container purpleColor">
                         <span className="rounded-pill text-primaryBeige buge-style purpleBg" >DISEASE MANAGEMENT | GROWTH ENHANCERS FOR FISH & SHRIMPS.</span>
                         <h1 className="m-top-b h1500 h11536">SOLUTIONS FOR AQUACULTURE</h1>  

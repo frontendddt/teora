@@ -2,7 +2,7 @@
 "use client"
 import brochure_card from "../../assets/homeAssets/brochure_card.png";
 import Image from "next/image"; 
-import scan from "../../assets/homeAssets/scan.jpg";
+ 
 import { motion } from "framer-motion";
 import { useAnimationContext } from '@/context/AnimationContext'; 
  
@@ -21,8 +21,8 @@ const {fadeRight, fadeLeft} = useAnimationContext();
                                 borderRadius:'12px', bottom:'-20px'}}
                         >
                             <div className="position-relative h-100 " style={{borderRadius:'12px'}} >
-                                <Image
-                                    src={scan}
+                                <img
+                                    src="/icons/scan.png"
                                     width={65}
                                     alt="useful reads—from"
                                 />

@@ -36,7 +36,7 @@ const settings = {
         <>     
             <div className="container">
                     <div className="row">
-                            <motion.div className="col-5"
+                            <motion.div className="col-md-5 col-12"
                                 variants={fadeLeft}
                                 initial="hidden"
                                 whileInView="visible"
@@ -55,7 +55,7 @@ const settings = {
                                         ))} 
                                     </Slider>  
                             </motion.div>
-                            <motion.div className="col-7 d-flex justify-content-center align-items-center"
+                            <motion.div className="col-md-7 col-12 d-flex justify-content-center align-items-center"
                                    variants={fadeRight}
                                     initial="hidden"
                                     whileInView="visible"
@@ -74,8 +74,8 @@ const settings = {
                                                 <MdArrowForwardIos/>
                                             </button>
                                          </div>
-                                         <h2 className="m-top-b purpleColor h2font">INDUSTRIES WE ARE IMPACTING</h2>
-                                         <p className="m-top-b purpleColor ">Backed by proprietary AI-driven bioinformatics, precision fermentation,
+                                          <h2 className="m-top-b purpleColor h2font">INDUSTRIES WE ARE IMPACTING</h2>
+                                          <p className="m-top-b purpleColor ">Backed by proprietary AI-driven bioinformatics, precision fermentation,
                                             and advanced oral feed based or foliar spray based delivery, our solutions
                                             are proven in aquaculture and primed to scale into livestock, poultry,
                                             companion animals and agriculture— <strong>unlocking a $193 billion market</strong></p>

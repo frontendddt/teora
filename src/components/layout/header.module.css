@@ -1,6 +1,5 @@
 
-.header_container{
-    background-color: var(--primaryPurple);
+.header_container{ 
     color: var(--primaryPurple);
 }
 .nav_container{
@@ -10,6 +9,7 @@
     margin: 5px auto;
     border-radius: 10px;
 }
+
 
 .teora_hub{
     width: 120px;
@@ -50,4 +50,30 @@
 }
 .tora_hub_doc{
     color: var(--accentLime);
+}
+
+
+@media (max-width:500px){
+    .navvbarWidth{
+        max-width: 85%;
+    }
+    .header_search{
+        display: none !important;
+    }
+    .header_container{
+        padding: 0 2rem;
+    }
+    .nav_container{
+        height: 70px;
+        padding: 0px;
+    }
+    .navMenu{
+        position: absolute;
+        right: -60px;
+        gap: 10px;
+    }
+    .teora_hub{
+        height: 43px;
+    }
+    
 }

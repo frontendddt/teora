@@ -27,8 +27,8 @@ const FeatureHighlights = () => {
         {
            features.map((feture, index) =>{
                 return(
-                    <div className="col-md-3" key={index}>
-                        <div className={`d-flex  gap-3 align-items-center text-primaryBeige h-100 ${styles.border_rignt}`}>
+                    <div className={`col-md-3 ${index === features.length - 1 ? "" : styles.border_rignt}`} key={index}>
+                        <div className={`d-flex gap-3 align-items-center text-primaryBeige h-100 `}>
                             <img
                                 src={feture.icon}
                                 alt="Targeting- Made"

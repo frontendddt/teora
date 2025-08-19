@@ -181,7 +181,22 @@ body{
   right: -50px;  
 }
 
+.navbar-menu{
+  padding: 0px; 
+  font-size: 40px;
+  border: none;
+  outline: none;  
+}
 
+.menuText{
+  font-size: 17px;
+  font-weight: 700;
+}
+
+button{
+  outline: none !important;
+  border:  none;
+}
 /*-------------------------------------not use add on-------------------------------------------*/
 
 
@@ -460,6 +475,10 @@ button:focus{
   color: var(--mutedPurple);
 }
 /* alll color class end*/
+.tectureBg {
+  background-image: url("../../public/bgImage/bg.png") !important;
+  background-repeat: repeat;
+}
 
 .sticky_section{
     border-radius: 70px 70px 0 0; 
@@ -877,26 +896,6 @@ button:focus{
   z-index: -1;
  
 }
-/* .linsAnim {
-  width: 1px;
-  height: 70px;
-  background: var(--primaryBeige);
-  transform-origin: top;
-  animation: growLine 1s ease 0.5s forwards;
-}
-
-
-@keyframes growLine {
-  0% {
-    transform: scaleY(0);
-    opacity: 0;
-  }
-  100% {
-    transform: scaleY(1);
-    opacity: 1;
-  }
-} */
-
 
 .stickytopCard{
       width: 100%;
@@ -1130,8 +1129,13 @@ button:focus{
 .solutionsH3 {
   font-size: 60px !important;
   line-height: 70px !important;
-
 }
+
+ .animate-wrapper {
+  overflow-x: hidden;
+  position: relative; /* keeps elements inside */
+}
+
 /********************************************************************** media query start *******************************************************************/
 
 @media (max-width: 1556px) {
@@ -1205,5 +1209,46 @@ p{margin-bottom: 0px }
   line-height: 40px !important;
  }
 
+}
+
+
+@media (max-width:500px){
+  .linsAnim { 
+    height: 30px; 
+  }
+  .h3mobile{
+    font-size: 16px !important;
+    line-height: 28px !important; 
+  }
+  .navbar-menu{ 
+    font-size: 35px;
+  }
+  /* .buge-style{
+    font-size: 6px;
+  } */
+
+}
+
+@media (max-width:450px){ 
+    .company_logo{
+      width:130px;
+    }
+
+    .navbar-menu{ 
+      font-size: 30px;
+    }
+    .menuText{
+      font-size: 12px;
+    }
+ 
+}
+
+@media (max-width:400px){ 
+    .company_logo{
+      width:110px;
+    }
+    .navbar-menu{ 
+      font-size: 28px;
+    }
 }
 /********************************************************************** media query end *******************************************************************/
