@@ -123,9 +123,9 @@ const AboutTeora = () =>{
                                                             >
                                                             <div className={` ${Styles.stat_card} d-flex align-items-end`} style={{background:'#362952'}}>
                                                                 <div>
-                                                                    <h2>$ 10.37 Trillion</h2>
+                                                                    <h2>$ 10 Trillion</h2>
                                                                     <p className="">
-                                                                       The food sector is valued at over <b style={{fontWeight:'600', fontSize:'17px'}}>10 trillion,</b> supporting over a billion livelihoods worldwide and directly a ecting global nutrition
+                                                                       The food sector is valued at over <b style={{fontWeight:'600', fontSize:'17px'}}>$10 trillion,</b> supporting over a billion livelihoods worldwide and directly affecting global 
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -150,7 +150,7 @@ const AboutTeora = () =>{
                                                                 <div>
                                                                     <h2>$ 12.37 Trillion</h2>
                                                                     <p>
-                                                                        The market is growing at a <b style={{fontWeight:'600', fontSize:'17px'}}>CAGR of 6.7%</b>, with an expected valuation of 12.37 trillion by 2029 (Market Data Forecast, 2022) 
+                                                                        The market is growing at a <b style={{fontWeight:'600', fontSize:'17px'}}>CAGR of 6.7%</b>, with an expected valuation of $12.37 trillion by 2029 (Market Data Forecast, 2022) 
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -187,7 +187,7 @@ const AboutTeora = () =>{
                                                             /> 
                                                                 <p  className='text-primaryBeige'
                                                                     style={{fontSize:'27px'}}
-                                                                >By 2050, The World Will Need <span style={{color:'#B8DD5E'}}> 60-70%</span> More Food To Feed 10.3 Billion People</p>
+                                                                >By 2050, The World Will Need <span style={{color:'#B8DD5E'}}> 60-70%</span> More Food To Feed <span className='lightblueColor' >10.3 Billion</span> People</p>
                                                           
                                                         </div>
 
@@ -240,7 +240,7 @@ const AboutTeora = () =>{
                                                     <div className="p-all h-100 purpleColor">
                                                             <h4 className="" style={{paddingLeft:'4rem'}}>
                                                                     Despite Its Scale,Our Global Food
-                                                                    Systems Are Stressed, OverMedicated, Underperforming And
+                                                                    Systems Are Stressed, Overmedicated, Underperforming And
                                                                     Struggling To Meet Future Food
                                                                     Demands Sustainably. 
                                                             </h4>

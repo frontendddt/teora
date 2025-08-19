@@ -161,8 +161,7 @@ const BestRecorgnition =() =>{
                                         <p>
                                             WINNER- Teora secured $1 million in funding, standing out
                                             among over 600 entries for its potential to address global
-                                            food security issues and to solve a key fish viral disease
-                                            Scale Drop Disease Virus, which currently has no solutions
+                                            food security and climate change issues.  
                                         </p>
                                         <p className="mt-4 mb-4">
                                             <Link href="https://www.eco-business.com/" className="accentRedColor">

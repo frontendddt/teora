@@ -139,11 +139,11 @@ const counterData = [
                 <LeadershipSection
                     heading_card1 = "Want To Grow Smarter, Cleaner, And More Profitably?"
                     descreption_card1 = "Let’s help you ditch the stress and scale clean. Reach out for trials, bulk orders, or product info— we’re ready when you are." 
-                    buttonText_card1 = "Connect To Team"
+                    buttonText_card1 = "Connect Our Team"
                     classname_card1 = "card1_font"
 
                     heading_card2 = "Interested In Backing The Future Of Food?"
-                    descreption_card2 = "Teora Powered by SOLAQ™ is scaling fast—and globally. If you’re ready to invest in biotech with purpose and proof, we’d love to talk." 
+                    descreption_card2 = " SOLAQ™ is scaling fast—and globally. If you’re ready to invest in biotech with purpose and proof, we’d love to talk." 
                     buttonText_card2 = "Connect With Leadership"
                      classname_card2 = "card2_font"
                 />
