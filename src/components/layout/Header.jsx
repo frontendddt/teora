@@ -1,7 +1,7 @@
 import Styles from "./header.module.css";
 import Link from "next/link";
 import { FileText, Search } from 'lucide-react';
- 
+ import { TiThMenu } from "react-icons/ti";
 // import logo from "/logo/teora-logo.png"
 
 const Header = () =>{
@@ -16,21 +16,27 @@ const Header = () =>{
     ]);
 
    return(
-          <header className="sticky-top m-0" style={{zIndex:'99999'}}>
+          <header className="sticky-top m-0 tectureBg" style={{
+            zIndex:'99999', 
+        }}>
                <div className={`${Styles.header_container}`}>
-                     <nav className="navbar navbar-expand-lg">
+                     <nav className={`navbar navbar-expand-lg ${Styles.navvbarWidth}`}>
                         <div className={`container position-relative ${Styles.nav_container}`}>
                             <Link className="navbar-brand" href="/">  
                                 <img src="/logo/teora-logo2.png" 
                                       alt="eora company logo"
                                       width={170}
+                                      className="company_logo"
                                 ></img>
                             </Link> 
 
-                             <div className="d-flex align-items-center">
-                                <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                                  <span className="navbar-toggler-icon"></span>
-                               </button>
+                             <div className={`d-flex align-items-center ${Styles.navMenu} `}>
+                                <span className="navbar-toggler navbar-menu"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                                  <span className="d-flex gap-1 align-items-center purpleColor">
+                                         <TiThMenu/>
+                                          <span className="menuText">Menu</span>
+                                  </span>
+                               </span>
                                 <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                                     <div className="offcanvas-header">
                                         <h5 className="offcanvas-title" id="offcanvasNavbarLabel">logo</h5>

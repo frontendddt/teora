@@ -144,3 +144,64 @@
   position: absolute;
   color: var(--midPurple);
 }
+
+
+@media (max-width:500px){
+    .bannerHeaderContant{
+      max-width: 385px;
+      margin: 0;
+      top: 70px;
+      padding: 0 2rem;
+    }
+    .bannerHeaderContant h2{
+      font-size: 30px !important;
+      font-weight: 300 !important;
+      text-align: left;
+      line-height: 42px !important;
+    }
+    .banner_counter{
+      right: 65px;
+      top: 25px;
+    }
+
+    .prevButton{ 
+      width: 40px;
+      height: 40px; 
+  }
+  .bannerImg{
+    width: 100%;
+    max-height: 600px;
+  }
+
+  .sliders{
+    height: 720px; 
+  }
+  .sliderImg4{
+    max-width: 100% !important;
+    height: 300px !important;
+  }
+    
+}
+
+@media (max-width:400px){
+ 
+    .bannerHeaderContant h2{
+      font-size: 25px !important; 
+      line-height: 32px !important;
+    }
+  .prevButton{ 
+      width: 35px;
+      height: 35px; 
+  }
+
+  .bannerImg{
+    width: 100%;
+    max-height: 500px;
+  }
+ 
+  .sliderImg4{ 
+    height: 250px !important;
+  }
+    
+}
+ 

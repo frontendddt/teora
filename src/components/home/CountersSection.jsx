@@ -1,10 +1,6 @@
 'use client';
 import { useEffect, useState } from "react";
 import Styles from "./home.module.css";
-import { motion } from 'framer-motion';
-import { useAnimationContext } from '@/context/AnimationContext';
-
-
 
 const AnimatedCounter = ({target}) =>{ 
 
@@ -31,7 +27,7 @@ const AnimatedCounter = ({target}) =>{
 }
 
 const CountersSection = ({counterData = [], className=""}) =>{
-       const {animationVariants, ref1, inView1} = useAnimationContext();
+      
        
     return(
         <div className={`counter-container ${className}`} 

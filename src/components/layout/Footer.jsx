@@ -60,7 +60,7 @@ const Footer = () =>{
 
     return(
         <>
-              <footer className={`${Styles.footer_bg}`}>
+              <footer className={`${Styles.footer_bg} tectureBg`}>
                     <div className="container">  
                         <section className="d-flex justify-content-between align-items-center">  
                                 <span> 

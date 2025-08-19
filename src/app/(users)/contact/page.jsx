@@ -91,7 +91,7 @@ import BlogSection from "@/components/home/BlogSection";
 const Contact = () =>{
     return(
          <>
-             <section className="purpleBg">
+             <section className="purpleBg tectureBg">
                     <ContactBanner/>
                     
                     <div className="container section-space-2 pt-0">

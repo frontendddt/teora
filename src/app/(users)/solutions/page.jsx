@@ -88,7 +88,7 @@
   const Solutions = () =>{
     return(
       <> 
-        <section className="purpleBg">
+        <section className="purpleBg tectureBg">
             <SolutionsBanner/>
             
             <div className="container section-space-2 pt-0">

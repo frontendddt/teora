@@ -137,7 +137,7 @@ const Aquaculture = () =>{
                                     <div className="card1 p_smarter purpleBg text-primaryBeige border_radius_round2 mb-4 "> 
                                             <div className="m-0">  
                                                 <span className="rounded-pill buge-style accentRedBg text-primaryBeige pt-2 pb-2">
-                                                    THE SOLUTION IS CLEAR
+                                                    THE CHOICE IS YOURS
                                                 </span>
                                                 <p className={`mt-3 ${styles.solutionsElements}`}>
                                                     Keep Fighting Disease With Yesterday’s Tools—Or Feed The Future With Tomorrow’s Science.

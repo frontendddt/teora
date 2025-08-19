@@ -27,7 +27,6 @@ const TimerCardSwiper = ({cardcontant, heading,  varient = "default"}) =>{
                     return prev + 1;
                 });
             }, 35);
-
             return () => clearInterval(interval);
         }, []);
 
@@ -39,7 +38,6 @@ const TimerCardSwiper = ({cardcontant, heading,  varient = "default"}) =>{
             setActiveIndex(swiper.realIndex);
             setProgress(0); 
         };
-
 
     // verient pages design
     const renderCardContent = (slide) =>{
@@ -61,9 +59,8 @@ const TimerCardSwiper = ({cardcontant, heading,  varient = "default"}) =>{
                                 <tbody>
                                     <tr>
                                         <td> {slide.tableTrtd1}</td>
-                                        <td> {slide.tableTrtd1}</td>
+                                        <td> {slide.tableTrtd2}</td>
                                     </tr> 
-
                                 </tbody>
                             </table>
                        </div>
@@ -102,7 +99,6 @@ const TimerCardSwiper = ({cardcontant, heading,  varient = "default"}) =>{
                             className="cardImage_heights"
                         />
                     </div>  
-                    
             </div>
         )
     }
@@ -162,8 +158,7 @@ const TimerCardSwiper = ({cardcontant, heading,  varient = "default"}) =>{
                             </MotionWrapper> 
                                 
                             <MotionWrapper className="col-md-6"
-                                variant={fadeRight}
-                            >
+                                variant={fadeRight}>
                                     <div className={`corporateBg ${Styles.border_radiusEl} border_radiusEl`}>
                                         <Swiper
                                             modules={[Autoplay]}

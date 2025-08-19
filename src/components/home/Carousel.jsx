@@ -37,8 +37,8 @@ const {fadeLeft} = useAnimationContext();
 
     return(
         <> 
-            <section className={Styles.bannerContaner}>
-                    <div id="carouselExampleFade" className={`carousel slide ${Styles.sliders}`}> 
+            <section className={`tectureBg ${Styles.bannerContaner}`}>
+                    <div id="carouselExampleFade" className={`carousel slide ${Styles.sliders}`} > 
                             <div className="carousel-inner w-100 h-100">
                                 <div className="carousel-item active" style={{ width: '100%', height: '100%' }}> 
                                     <div className="h-100 position-relative">  
@@ -69,7 +69,7 @@ const {fadeLeft} = useAnimationContext();
 
                                                         {/* Fade-in heading */}
                                                         <motion.h3
-                                                            className="healthier"
+                                                            className="healthier h3mobile"
                                                              variants={fadeLeft}
                                                             initial="hidden"
                                                             whileInView="visible"
@@ -123,26 +123,26 @@ const {fadeLeft} = useAnimationContext();
                                             
                                             <div className={`container ${Styles.slider_img_container}`}> 
                                                     <div className={Styles.bannerFooterContant}>
-                                                        <h3><span className={Styles.cleanTex}>Compromised</span> Human Health. Farmers. Planet !
+                                                        <h3 className='h3mobile'><span className={Styles.cleanTex}>Compromised</span> Human Health. Farmers. Planet !
                                                         </h3>
                                                     </div>  
                                                     <div className="row">
-                                                        <div className="col-3">
+                                                        <div className="col-md-3 col-6 mb-2">
                                                             <Image src={slider2_img1}
                                                              alt="Slider Image"
                                                              style={{maxWidth:'100%',height:'100%', borderRadius:'20px'}}/>
                                                         </div>
-                                                        <div className="col-3">
+                                                        <div className="col-md-3 col-6 mb-2">
                                                             <Image src={slider2_img2}
                                                              alt="Slider Image"
                                                             style={{maxWidth:'100%',height:'100%', borderRadius:'20px'}}/>
                                                         </div>
-                                                        <div className="col-3">
+                                                        <div className="col-md-3 col-6 mb-2">
                                                             <Image src={slider2_img3}
                                                              alt="Slider Image"
                                                              style={{maxWidth:'100%',height:'100%', borderRadius:'20px'}}/>
                                                         </div>
-                                                        <div className="col-3">
+                                                        <div className="col-md-3 col-6 mb-2">
                                                             <Image src={slider2_img4} 
                                                              alt="Slider Image"
                                                              style={{maxWidth:'100%',height:'100%', borderRadius:'20px'}}/>
@@ -169,7 +169,7 @@ const {fadeLeft} = useAnimationContext();
                                             
                                             <div className={`container ${Styles.slider_img_container}`}> 
                                                     <div className={Styles.bannerFooterContant}>
-                                                        <h3><span className={Styles.cleanTex}>Compromised</span> What if we could grow food without harming everything else.
+                                                        <h3 className='h3mobile'><span className={Styles.cleanTex}>Compromised</span> What if we could grow food without harming everything else.
                                                         </h3>
                                                     </div>  
                                                     <div className="row">
@@ -202,13 +202,13 @@ const {fadeLeft} = useAnimationContext();
                                             
                                             <div className={`container ${Styles.slider_img_container}`}> 
                                                     <div className={Styles.bannerFooterContant}>
-                                                        <h3><span className={Styles.cleanTex}>And Farming no longer </span> comes at the cost of health, planet, or profitability.
+                                                        <h3 className='h3mobile'><span className={Styles.cleanTex}>And Farming no longer </span> comes at the cost of health, planet, or profitability.
                                                         </h3>
                                                     </div>  
                                                     <div className="row">
                                                         <div className="col-12 d-flex">
                                                             <Image src={slider4_img6}
-                                                              className="m-auto"
+                                                              className={`m-auto ${Styles.sliderImg4}`}
                                                               alt="Slider Image"
                                                               height={410}
                                                               style={{maxWidth:'80%'}}/>

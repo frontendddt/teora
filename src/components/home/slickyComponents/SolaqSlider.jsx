@@ -85,7 +85,7 @@ const SolaqSlider = () => {
                         <p>01/05</p>
                         <div className={`${styles.slicky_p}`}>
                              <h5 className='pb-4'>
-                              Using “NOBEL PRIZE WINNING technologies” SOLAQTM our
+                              Using “NOBEL PRIZE WINNING technologies” SOLAQ<sup>TM</sup> our
                               BIOTECH PLATFORM Designs Desease & Growth mangement
                               solutions for sustainable Farming. 
                             </h5>

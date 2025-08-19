@@ -16,7 +16,7 @@ const WhyMatterCard = ({data, text, buttons}) =>{
                                     {buttons ? 
                                         <div className="">
                                             <button className="connectBtn m-2">Aquaculture Products</button>
-                                            <button className="buttons-primary border1px m-2 bg-transparent" href="/">Why Teora ?</button>
+                                            <button className="buttons-primary border1px m-2 bg-transparent" href="/">Real World Impact</button>
                                         </div> : ''
                                     }
                                 </div>
@@ -49,18 +49,18 @@ const WhyMatterCard = ({data, text, buttons}) =>{
                                                         }
                                                    </div> :
 
-                                                    <div className="p-5">
+                                                    <div className="p-4">
                                                     {
                                                         elements.heading ? 
                                                          <h5 className="mb-5">
                                                             {elements.heading}
                                                         </h5> :
                                                          <div className="d-flex align-items-center gap-3 mb-5">
-                                                                <span><img src="/icons/about-icon1.png" width="100" alt="BUILT TO FIGHT BACK &amp; PROTECT"/></span>
+                                                                <span><img src={elements.main_icon} width="100" alt="BUILT TO FIGHT BACK &amp; PROTECT"/></span>
                                                                 <div className="m-0">
-                                                                    <span className="rounded-pill buge-style accentRedBg text-primaryBeige pt-2 pb-2">DISEASE MANAGEMENT- SHRIMPS &amp; FISH</span>
-                                                                    <h2 className="m-0">GUARD SERIES</h2>
-                                                                    <p className="m-0">PREVENT. COMBAT. KEEP CALM. FARM ON.</p>
+                                                                    <span className="rounded-pill buge-style accentRedBg text-primaryBeige pt-2 pb-2">{elements.series_title}</span>
+                                                                    <h2 className="m-0">{elements.series}</h2>
+                                                                    <p className="m-0">{elements.series_subTitle}</p>
                                                                 </div>
                                                          </div>
                                                     }

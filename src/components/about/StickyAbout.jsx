@@ -342,7 +342,7 @@ const StickyAbout = () =>{
              
                 <div className={`sticky-top z-6 section-space-2 deepPurple h-fitcontent ${Styles.sticky_section}`}>
                         <MotionWrapper 
-                            className="position-relative"
+                            className="position-relative "
                             variant={fadeDown}
                             >
                              <OurTeam/>

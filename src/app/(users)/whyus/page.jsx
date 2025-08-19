@@ -12,7 +12,7 @@ const Whyus = () =>{
 
     return(
         <section>
-                <section className="purpleBg">
+                <section className="purpleBg tectureBg">
                         <Banner/>
                 </section>
 
