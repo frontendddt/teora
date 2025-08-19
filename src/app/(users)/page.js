@@ -5,7 +5,7 @@ import '@/styles/globals.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"; 
 
-import styles from "./page.module.css";
+
 import Carousel from "@/components/home/Carousel";
 import AboutTeora from "@/components/home/AboutTeora"; 
 import CountersSection from "@/components/home/CountersSection"; 
@@ -111,7 +111,7 @@ const counterData = [
              <AboutTeora/>
           </section>
 
-           <section className="corporateBg section-space">
+           <section className="corporateBg section-space ">
              <IndustrySlider data={IndustrySliderData} text="State of the Industry" className="homeheading"/> 
           </section>
           

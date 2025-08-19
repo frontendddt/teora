@@ -116,7 +116,7 @@ body{
     color: var(--primaryPurple);
     font-size: 15.5px;
     font-weight: var(--fw-600);
-    padding: 8px 0;
+    padding: 8px 5px;
     border-radius: 10px;
     transition:  var(--trasition);
     border: 1px solid var(--primaryPurple);
@@ -131,7 +131,31 @@ body{
   font-weight: 600;
 }
 
-
+.boldh5slid{
+  font-size: 28px !important;
+  font-family: "Merriweather", serif !important;
+  line-height: 27px !important;
+  font-weight: bolder !important;
+}
+.blog_buttons{
+  height: 60px;
+  border-radius: 20px;
+  background: #e8e8e8;
+  padding: 0 10px;
+}
+.msg_box{
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 22px;
+  color: #b4b2b2;
+}
 .accentLimeborder{
   border: 1px solid var(--accentLime);
 }
@@ -343,12 +367,15 @@ ul{
   font-weight: 100;
   line-height: 40px !important;
 } 
-
 button{
   outline: none !important;
 }
 button:focus{
   outline: none !important;
+}
+
+.trillion_image{
+  height: 740px;
 }
 
 /* alll background color class start*/
@@ -1195,7 +1222,7 @@ p{margin-bottom: 0px }
  /* why us */
 
  .threSwiperImg{
-    width: 90% !important;
+    width: 100% !important;
  }
  .foxedMin_w{
     font-size: 38px !important;
@@ -1212,7 +1239,76 @@ p{margin-bottom: 0px }
 }
 
 
+ /* for tablate viewes */
+@media (max-width: 992px){
+ 
+    .navbar-menu{ 
+      font-size: 35px;
+    }
+    .buge-style{
+      font-size: 13px;
+    }
+    h2{
+      font-size: 35px !important;
+      line-height: 36px !important; 
+    }
+    .section-space{
+      padding: 2rem 0;
+    }
+    .capatilize{
+      text-transform: uppercase;
+    }
+  
+    
+}
+
+@media (max-width: 768px){
+  
+      .navbar-menu{ 
+        font-size: 35px;
+      }
+      .buge-style{
+        font-size: 13px;
+      }
+      h2{
+        font-size: 35px !important;
+        line-height: 36px !important; 
+      }
+      .section-space{
+        padding: 2rem 0;
+      }
+      .capatilize{
+        text-transform: uppercase;
+      }
+      .reverce_column{
+        flex-direction: column-reverse;
+      }
+      .pleft{
+        padding: 0px;
+      }
+      .nextPrevControl{
+        position: absolute;
+        right: 0;
+        bottom: 27px;
+      }
+      .topPadding_remove{
+        padding-top: 0px !important;
+      }
+      .m-top-b{
+        margin: 1rem 0 !important;
+      }
+}
+
+ /* for mobile  viewes */
 @media (max-width:500px){
+   .buttons-primary, .buttons-Beige{
+    font-size: 13.5px;  
+  }
+   .buge-style{
+    font-size: 6px;
+    font-weight: bold !important;
+    padding: 7px 0 !important;
+  } 
   .linsAnim { 
     height: 30px; 
   }
@@ -1223,9 +1319,55 @@ p{margin-bottom: 0px }
   .navbar-menu{ 
     font-size: 35px;
   }
-  /* .buge-style{
-    font-size: 6px;
-  } */
+  .buge-style{
+    font-size: 9px;
+  }
+  h2{
+    font-size: 27px !important;
+    line-height: 36px !important; 
+  }
+  .h2font{
+    font-size: 29px !important;
+    font-weight: 500 !important;
+  }
+  .section-space{
+    padding: 2rem 0;
+  }
+  .capatilize{
+    text-transform: uppercase;
+  }
+  .padding_manage{
+    padding: 0 1.5rem;
+  }
+  .youtubVideos{
+    width: 100% !important;
+  }
+  .marginBottom{
+    margin-bottom: 1.5rem;
+  }
+  .PaddinginTop{padding-top: 1rem !important;}
+  .foodIndustry{
+    font-size: 30px !important;
+    font-weight: 300 !important;
+    padding-top: 0 !important;
+    line-height: 40px !important;
+    padding-left: 3rem;
+  }
+
+  .teillion h2{
+    font-size: 18px !important;
+  }
+  .wid100{width: 80% !important;}
+  .wid100 p{
+    font-size: 17px !important;
+  }
+  .wid100 img{
+    width: 70px;
+    height: auto !important;
+  }
+  .trillion_image{
+    height: 700px;
+  }
 
 }
 
@@ -1233,14 +1375,22 @@ p{margin-bottom: 0px }
     .company_logo{
       width:130px;
     }
-
     .navbar-menu{ 
       font-size: 30px;
     }
     .menuText{
       font-size: 12px;
     }
- 
+  .buge-style{
+    font-size: 6px;
+    font-weight: bold !important;
+    padding: 7px 0 !important;
+  }
+
+  .buttons-primary, .buttons-Beige{
+    font-size: 13px;  
+  }
+  
 }
 
 @media (max-width:400px){ 

@@ -78,7 +78,7 @@ export const MissionCardSwiper = ({missionCardSwiperData, heading}) => {
 
             <div className="container-fluid" style={{ width: '94%' }}>
                  <div className="text-center purpleColor"
-                    style={{maxWidth:'550px', margin:'0 auto'}}
+                    style={{maxWidth:'480px', margin:'0 auto'}}
                  >
                     <h4 className='h2si'>{missionCardSwiperData[activeIndex].heaing}</h4>
                     <p className='paragraph_elements els2'><strong>{missionCardSwiperData[activeIndex].info}</strong></p>
@@ -112,7 +112,7 @@ export const MissionCardSwiper = ({missionCardSwiperData, heading}) => {
                                     </div>
 
                                     {activeIndex === index && (
-                                        <h6 className='purpleColor text-center mt-3'>{slides.title}</h6>
+                                        <h6 className='purpleColor text-center mt-1'>{slides.title}</h6>
                                     )}
                                 </div>
                             </SwiperSlide>

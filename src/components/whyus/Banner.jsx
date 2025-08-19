@@ -11,7 +11,7 @@ import InfoCard from "./InfoCard";
 //InfoCard data 
 const InfoCardData = [
     {
-        image:"/icons/emission.png",
+        image:"/icons/framers2.png",   
         headings:"FOR THE CHANGE YOU’LL SEE NEXT SEASON.",
         title:"Every gram of SOLAQ™ feed or foliar spray is designed to give you a visible win—higher survival, cleaner harvests, stronger profits —without extra operational hassle or hidden trade-offs.",
         bgColor:'accentLimebg',

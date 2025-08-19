@@ -175,7 +175,7 @@ const WhatWereBuildingSlider = ({swiperData}) =>{
                                                                 <div className="swiper_content d-flex flex-column justify-content-between h-100">
                                                                         <div className="d-flex justify-content-between align-items-center">
                                                                             <div className="col-8 purpleColor">
-                                                                                <p className={` ${elements.color}`}><strong>{index + 2}/{swiperData.length +1}</strong></p>
+                                                                                <p className={` ${elements.color}`}><strong>0{index + 2}/{swiperData.length +2}</strong></p>
                                                                                 <p className={`paragraph_elements ${elements.color}`}> <strong>{elements.titles}</strong> </p>
                                                                             </div> 
                                                                         </div> 

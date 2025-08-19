@@ -16,8 +16,6 @@ import { MdArrowBackIosNew, MdArrowForwardIos  } from "react-icons/md";
 import { useRef } from "react";
 const IndustySlider = ({fadeRight, fadeLeft}) =>{
 
- 
-
 const industryImage = [
     {image: industriesimg1},{image: industriesimg2},{image: industriesimg3},{image: industriesimg4},{image: industriesimg5},
 ]
@@ -34,8 +32,8 @@ const settings = {
  
     return(
         <>     
-            <div className="container">
-                    <div className="row">
+            <div className="container padding_manage">
+                    <div className="row reverce_column">
                             <motion.div className="col-md-5 col-12"
                                 variants={fadeLeft}
                                 initial="hidden"
@@ -56,13 +54,13 @@ const settings = {
                                     </Slider>  
                             </motion.div>
                             <motion.div className="col-md-7 col-12 d-flex justify-content-center align-items-center"
-                                   variants={fadeRight}
+                                    variants={fadeRight}
                                     initial="hidden"
                                     whileInView="visible"
                                     viewport={{ once: false, amount: 0.2 }}
                             >
-                                    <div className={`pleft ${Styles.industries}`}> 
-                                         <div className="d-flex gap-2 fs-5"> 
+                                    <div className={`pleft position-relative ${Styles.industries}`}> 
+                                         <div className="d-flex gap-2 fs-5 nextPrevControl"> 
                                             <button className="btnStyles"
                                                 onClick={() => sliderRef.current.slickPrev()}
                                             >
@@ -80,10 +78,10 @@ const settings = {
                                             are proven in aquaculture and primed to scale into livestock, poultry,
                                             companion animals and agriculture— <strong>unlocking a $193 billion market</strong></p>
 
-                                         <div>
-                                                 <Link href="/" className="buttons-primary " >
-                                                    Why us
-                                                </Link> 
+                                         <div className="marginBottom PaddinginTop">
+                                            <Link href="/" className="buttons-primary " >
+                                                Why us
+                                            </Link> 
                                          </div>
                                     </div>
                             </motion.div>

@@ -177,12 +177,9 @@ const BestRecorgnition =() =>{
                                         </div>
                                     </div>
                                         <div className="col-7">
-                                            <div className="border_radius_round2 bg-white" style={{ padding: '0 20px 20px 20px' }}>
-                                            <span className="text-danger" style={{ fontSize: '10px' }}>
-                                                Press Releases . Cities
-                                            </span>
-                                            <h5 >
-                                                Susteon and Teora win S$1<br/> million prize each at the <br/> Liveability Challenge 2023
+                                            <div className="border_radius_round2 bg-white" style={{ padding: '0 20px 20px 20px' }}> 
+                                            <h5 className='boldh5slid'>
+                                                <b>Susteon and Teora win S$1<br/> million prize each at the <br/> Liveability Challenge 2023</b>
                                             </h5>
                                                <Image height={370} src={img1} style={{ width: '80%', height:'' }} alt="Susteon and Teora win" />
                                             </div>
