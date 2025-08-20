@@ -9,10 +9,8 @@ import { useState } from 'react';
 // import styles from './SolaqSlider.module.css';
 import styles from './slicky.module.css';
  
-import React, { Component, useRef } from "react";
+import React, { useRef } from "react";
 
-// import homesliky from "../../../assets/heroSlider/slicky-home-1.svg";
-// import group1 from "/public/homeAssets/group-1.png";
 import group1 from "../../../assets/icons/group1.png";
 import group2 from "../../../assets/icons/group2.png";
 import group3 from "../../../assets/icons/group3.png";
@@ -48,31 +46,46 @@ const SolaqSlider = () => {
     speed: 500,
     arrows: false,
     afterChange: (index) => setCurrentSlide(index), 
+    
+      responsive: [
+      
+        {
+          breakpoint: 668, // example: tablet/desktop
+          settings: {
+            centerMode: true,
+            centerPadding: "0px",
+            slidesToShow: 1, // explicitly force 1 slide
+          },
+        },
+      ],
+
   };
 
 
   return (  
     <div className="slider-container w-100 " >
 
-     <div className="container d-flex justify-content-between align-items-center"> 
+     <div className="container d-flex justify-content-between align-items-center flexwrap "> 
         <div>
               <span className="rounded-pill buge-style" >POWERED BY BIOTECH. BACKED BY SCIENCE. SUSTAINED BY NATURE.</span>
-              <h1 className="m-top-b h1500 h11536">THAT’S WHY WE BUILT SOLAQ<sup>TM</sup></h1> 
+              <h1 className="m-top-b h1500 h11536 moH1">THAT’S WHY WE BUILT SOLAQ<sup>TM</sup></h1> 
         </div>
-        <div className={`${styles.countscroll}`}>
-              <div 
-                 className='d-flex justify-content-center align-items-center'
-                  onClick={() => sliderRef.current.slickPrev()}
-                  style={{ cursor: "pointer" }}
-              > <MdArrowBackIos size={24} /></div>
+        <div className='d-flex justify-content-end  w100Mobile'>
+               <div className={`${styles.countscroll}`}>
+                  <div 
+                    className='d-flex justify-content-center align-items-center'
+                      onClick={() => sliderRef.current.slickPrev()}
+                      style={{ cursor: "pointer" }}
+                  > <MdArrowBackIos size={24} /></div>
 
-              <div className={`d-flex justify-content-center align-items-center ${styles.values}`}><span> {String(currentSlide + 1).padStart(2, "0")}</span></div>
+                  <div className={`d-flex justify-content-center align-items-center ${styles.values}`}><span> {String(currentSlide + 1).padStart(2, "0")}</span></div>
 
-              <div 
-                  className='d-flex justify-content-center align-items-center'
-                  onClick={() => sliderRef.current.slickNext()}
-                style={{ cursor: "pointer" }}
-              ><MdArrowForwardIos size={24} /></div>
+                  <div 
+                      className='d-flex justify-content-center align-items-center'
+                      onClick={() => sliderRef.current.slickNext()}
+                    style={{ cursor: "pointer" }}
+                  ><MdArrowForwardIos size={24} /></div>
+            </div>
         </div>
      </div>
 
@@ -81,7 +94,7 @@ const SolaqSlider = () => {
         <div className={`slide_containe deepPurple`}>
             <div className=''> 
                 <div className="row">
-                    <div className={`col-9`}>
+                    <div className={`col-md-9 c0l-12`}>
                         <p>01/05</p>
                         <div className={`${styles.slicky_p}`}>
                              <h5 className='pb-4'>
@@ -89,6 +102,11 @@ const SolaqSlider = () => {
                               BIOTECH PLATFORM Designs Desease & Growth mangement
                               solutions for sustainable Farming. 
                             </h5>
+                            <img
+                                src="/icons/slicky-home-1.svg"
+                                alt='solutions for sustainable Farming'
+                                className='mobile_view imgWidth' 
+                              />
                             <p className='fw-100'>
                                 We took the best advances in human pharmaceuticals , stripped out the chemicals, needles,
                                 and stress—and built a platform that empowers farmers, simplifies disease control, and brings
@@ -97,7 +115,7 @@ const SolaqSlider = () => {
                         </div>
                     </div>
 
-                    <div className="col-3">
+                    <div className="col-md-3 col-12 desctop_view ">
                       <img
                         src="/icons/slicky-home-1.svg"
                         alt='solutions for sustainable Farming'
@@ -113,7 +131,7 @@ const SolaqSlider = () => {
             <div className='purpleColor'> 
                 <div className="row ">
                    <span><p>02/05</p></span>
-                    <div className={`col-9 d-flex flex-column justify-content-between`}>
+                    <div className={`col-md-9 col-12 d-flex flex-column justify-content-between`}>
                         
                          <div>
                             <p className='mt-3' style={{fontSize:'22px'}}>
@@ -122,7 +140,7 @@ const SolaqSlider = () => {
                          </div>
                      
                         <div className="row">
-                            <div className="col-4">
+                            <div className="col-md-4 col-12">
                                   <div className='d-flex justify-content-center mb-3'>
                                     <Image
                                         src={group1}
@@ -134,7 +152,7 @@ const SolaqSlider = () => {
                                   <p className='p_fonts-w mb-0 mt-2'>Prevent Disease Before It Even Starts.</p>
                                   <p className={`${styles.zerpfonts} mb-0`}>Higher survival . Regulation‑ready</p>
                             </div>
-                            <div className="col-4">
+                            <div className="col-md-4 col-12">
                                   <div className='d-flex justify-content-center mb-3'>
                                     <Image
                                        src={group2}
@@ -146,7 +164,7 @@ const SolaqSlider = () => {
                                   <p className='p_fonts-w mb-0 mt-2'>Treats active outbreaks, stress-free.</p>
                                   <p className={`${styles.zerpfonts} mb-0`}>Zero injections, zero handling</p>
                             </div>
-                            <div className="col-4">
+                            <div className="col-md-4 col-12">
                                   <div className='d-flex justify-content-center mb-3'>
                                     <Image
                                        src={group3}
@@ -161,7 +179,7 @@ const SolaqSlider = () => {
                         </div>
                     </div>
 
-                    <div className="col-3 ">
+                    <div className="col-md-3 col-12 ">
                         <div className='' style={{padding:'0 0px 0 15px'}}>
                                <img
                                     src="/icons/slicky-home-1.svg"

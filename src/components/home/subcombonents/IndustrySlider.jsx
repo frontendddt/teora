@@ -33,7 +33,7 @@ const settings = {
     return(
         <>     
             <div className="container padding_manage">
-                    <div className="row reverce_column">
+                    <div className="row reverce_column animate-wrapper">
                             <motion.div className="col-md-5 col-12"
                                 variants={fadeLeft}
                                 initial="hidden"
@@ -53,7 +53,7 @@ const settings = {
                                         ))} 
                                     </Slider>  
                             </motion.div>
-                            <motion.div className="col-md-7 col-12 d-flex justify-content-center align-items-center"
+                            <motion.div className="col-md-7 col-12 d-flex justify-content-center align-items-center "
                                     variants={fadeRight}
                                     initial="hidden"
                                     whileInView="visible"

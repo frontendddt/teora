@@ -31,7 +31,7 @@ const {fadeRight, fadeLeft} = useAnimationContext();
                     </div>
                     <div className={`container border_radius_round p_smarter ${color} ${classname}`}>
                     
-                            <div className="row">
+                            <div className="row animate-wrapper">
                                  <motion.div className="col-md-6"
                                         variants={fadeLeft}
                                         initial="hidden"

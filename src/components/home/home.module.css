@@ -109,6 +109,24 @@
   border-radius: 50%;
 }
 
+
+@media (max-width: 768px){
+    .rowcontainer{
+         flex-direction: column;
+    }
+    .left_arrow{
+        width: 100%;
+    }
+    .right_slider{
+        width: 100%;
+    }
+
+    .sticky_section{
+      border-radius: 35px 35px 0 0; 
+      /* top: 0 !important; */
+    } 
+
+}
  
 @media (max-width: 500px){
     .industries{

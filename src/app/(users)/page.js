@@ -112,7 +112,7 @@ const counterData = [
           </section>
 
            <section className="corporateBg section-space ">
-             <IndustrySlider data={IndustrySliderData} text="State of the Industry" className="homeheading"/> 
+             <IndustrySlider data={IndustrySliderData} text="State of the Industry" className="homeheading" homeRow="homerow"/> 
           </section>
           
           <section >

@@ -8,8 +8,8 @@ const LeadershipSection = ({
 }) =>{
 const {fadeLeft, fadeRight} = useAnimationContext();
     return(
-            <MotionWrapper className="container">
-                    <div className="row">
+            <div className="container">
+                    <div className="row animate-wrapper">
                     <MotionWrapper className="col-md-5 text-primaryBeige"
                         variant={fadeLeft}
                     >
@@ -43,7 +43,7 @@ const {fadeLeft, fadeRight} = useAnimationContext();
                         />
                     </MotionWrapper>
                     </div>
-            </MotionWrapper> 
+            </div> 
     )
 }
 

@@ -72,9 +72,9 @@ const StickySection = () => {
     return (
         <div className={`${Styles.sticky_container}`}>
             <div className={`sticky-top z-1 section-space-2 purpleBg tectureBg ${Styles.sticky_section}`}>
-                <div className="container">
-                    <div className="row">
-                        <motion.div className="col-md-6"
+                <div className="container padding_manage">
+                    <div className="row animate-wrapper">
+                        <motion.div className="col-md-6 "
                             variants={fadeLeft}
                             initial="hidden"
                             whileInView="visible"
@@ -116,7 +116,7 @@ const StickySection = () => {
                 </div>
             </div>
 
-            <div className={`sticky-top section-space-2 z-1 
+            <div className={`sticky-top section-space-2 mobile_space-2  z-1 
                 text-primaryBeige  ${Styles.sticky_section} `}
                 style={{
                     backgroundRepeat: 'no-repeat',
@@ -162,7 +162,7 @@ const StickySection = () => {
                     </div>
 
                     <div className="container-fluid" style={{ width: '90%' }}>
-                        <div className="row">
+                        <div className="row animate-wrapper">
                             <motion.div className="col-md-6"
                                 variants={fadeLeft}
                                 initial="hidden"

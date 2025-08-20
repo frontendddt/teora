@@ -119,6 +119,12 @@
     .millionCard h1{
       font-size: 30px !important;
     }
+    .aboutBorderS{
+      width: 60px !important;
+    }
+    .borderCard{
+      margin-top: 3rem !important;
+    }
   }
 
 @media (max-width: 500px){
@@ -147,6 +153,7 @@
       justify-content: center !important;
       gap: 15px !important;
       top:330px !important;
+      left: 5px;
     }
     .shareImage{
       width: 80px !important;
@@ -168,10 +175,24 @@
       line-height: 20px !important;
     }
     .circal_ox{
-      width: 100px;
-      height: 100px;
-      right: 60px;
+      width: 90px;
+      height: 90px;
+      right: 45px;
     }
+    .positionCol6{
+      display: flex;
+      justify-content: center;
+    }
+     .aboutBorderS{
+      width: auto !important;
+      height: 100% !important;
+    }
+    .removeLeft{
+      padding-left: 3rem !important;
+    }
+    
+    
+  
 }
 /* .stat-card h2 {
   font-size: 2rem;

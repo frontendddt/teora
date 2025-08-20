@@ -22,6 +22,7 @@
     display: flex;
     gap:10px;
     width: fit-content;
+    align-items: center;
     padding: 0 5px;
     border: 2.5px solid var(--primaryBeige);
     border-radius: 10px;
@@ -76,3 +77,45 @@
    font-size: 15.5px !important;
    font-weight: 600 !important;
  }
+
+ 
+@media (max-width: 768px){
+  .slicky_p{
+    padding: .2rem 0 0 0rem;
+    font-size: 16px !important;
+    line-height: 25px !important;
+ }
+ .slicky_p p{
+    font-size: 15.5px !important;
+    line-height: 25px !important;
+ }
+ 
+}
+ 
+@media (max-width: 500px){
+      .slicky_p h5{
+        padding-bottom: .5rem !important;
+      }
+
+      .values{
+          width: 35px;
+          height: 35px;
+          border-radius: 50%; 
+          border: 2px solid var(--primaryBeige); 
+          font-size: 18px !important; 
+      }
+
+       .countscroll{ 
+        padding: 0 5px;
+        border: 2px solid var(--primaryBeige); 
+        height: 45px;
+    }
+
+     .fontCard{
+        font-size: 14px;
+        font-weight: 400;
+        padding: 5px 5px;
+      }
+
+      
+}

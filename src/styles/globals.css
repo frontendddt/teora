@@ -1164,6 +1164,10 @@ button:focus{
   position: relative; /* keeps elements inside */
 }
 
+.mobile_view{
+  display: none;
+}
+
 /********************************************************************** media query start *******************************************************************/
 
 @media (max-width: 1556px) {
@@ -1298,10 +1302,60 @@ p{margin-bottom: 0px }
       .m-top-b{
         margin: 1rem 0 !important;
       }
+
+      .mobile_view{
+        display: block;
+      }
+      .desctop_view{
+        display: none;
+      }
+      .animate-wrapper{
+        overflow-x: hidden !important;
+      }
+      h4{
+        font-size: 28px !important;
+      }
+      .homeheading{
+        margin-top: 0px;
+      }
+         .borderchild{
+        margin-bottom: 2rem;
+      }
+   
+   
+      .imageheights{
+        width: 70% !important; 
+        height: 100% !important; 
+      }
+
+      .flexwrap{
+        flex-wrap: wrap !important;
+      }
+    .h11536{
+      font-size: 30px !important;
+      line-height: 35px !important
+      /* margin: .2rem 0 !important; */
+    }
+    .section-space-2{
+      padding: 4rem 0 !important;
+    }
+
+    .slide_containe{
+      padding: 2.5rem;
+      border-radius: 35px;
+      height: 740px;
+    }
+    
 }
 
  /* for mobile  viewes */
 @media (max-width:500px){
+    p{
+        font-size: 16px !important;
+      }
+   .section-space-2{
+      padding: 3rem 0 !important;
+    }
    .buttons-primary, .buttons-Beige{
     font-size: 13.5px;  
   }
@@ -1340,6 +1394,9 @@ p{margin-bottom: 0px }
   .padding_manage{
     padding: 0 1.5rem;
   }
+  .leftpadding_manage{
+    padding-left: 1.5rem;
+  }
   .youtubVideos{
     width: 100% !important;
   }
@@ -1369,7 +1426,94 @@ p{margin-bottom: 0px }
   .trillion_image{
     height: 700px;
   }
+  .p-all{
+    padding: 1.5rem;
+  }
 
+    h4{
+        font-size: 26px !important;
+        font-weight: 600 !important;
+        line-height: 35px !important;
+      }
+      .p-all-remove{
+        padding: 0px !important;
+      }
+      .controlerText{
+        gap: 28px !important;
+        margin-bottom: .8rem;
+      
+      }
+      .controlerText p{
+          font-size: 28px !important;
+          font-weight: 400 !important;
+          line-height: 35px !important;
+      }
+      .mobileSize_img{
+        width: 115px !important;
+        height: 115px !important;
+      }
+      .h4industry{
+        font-size: 22px !important;
+      }
+
+      .industry_p{
+        font-size: 15px !important;
+        padding: 0 11.5px;
+        line-height: 22px !important;
+      }
+      .homerow{
+            top: 125px !important;
+            width: 90% !important;
+      }
+
+      .box_p{
+        padding:0 .8rem !important; 
+      }
+
+      .pfont{
+        font-size: 16px !important;
+        /* font-weight: 300 !important; */
+      }
+      .p0{
+        padding: 0px !important;
+      }
+
+   
+    .borderchild:nth-of-type(2) .border-r {
+      border-right: none !important;
+    }
+
+     .slide_containe{
+      padding: 1.8rem;  
+    }
+
+      .h11536{
+      font-size: 25px !important;
+      line-height: 33px !important;
+    }
+    h5{
+      font-size: 18px !important;
+      line-height: 30px !important; 
+    }
+
+     .m-top-b{
+        margin: .7rem 0 !important;
+      }
+
+      .mobile_space-2{
+        padding: 1rem 0 !important;
+      }
+       .w100Mobile{
+        width: 100%;
+       }
+
+      .moH1{
+        margin: 0px 0 !important;
+      }
+    .imgWidth{
+      width: 40%;
+    }
+    
 }
 
 @media (max-width:450px){ 
@@ -1385,12 +1529,16 @@ p{margin-bottom: 0px }
   .buge-style{
     font-size: 6px;
     font-weight: bold !important;
-    padding: 7px 0 !important;
+    padding: 7px 4px !important;
   }
 
   .buttons-primary, .buttons-Beige{
     font-size: 13px;  
   }
+   h4{
+        font-size: 23px !important; 
+        line-height: 33px !important;
+      }
   
 }
 

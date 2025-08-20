@@ -28,11 +28,12 @@ const solutionData = [
 const CurrentSolution = () =>{
      const {fadeRight, fadeLeft} = useAnimationContext(); 
     return(
-          <section className="section-space-2">
-                <div className="container-2 m-auto">
-                    <div className="row">
-                        <div className="col-md-7"> 
-                                <motion.div className={Styles.aboutrowcontainer}
+          <section className="section-space-2 ">
+                <div className="container-2 m-auto ">
+                
+                    <div className="row animate-wrapper padding_manage pt-2 pb-2">
+                        <div className="col-md-7 h-100 "> 
+                                <motion.div className={`${Styles.aboutrowcontainer}`}
                                     variants={fadeLeft}
                                     initial="hidden"
                                     whileInView="visible"
@@ -53,10 +54,10 @@ const CurrentSolution = () =>{
                                         <div className="row"> 
                                             {
                                                 solutionData.map((elements, index) =>{
-                                                    return <div className="col-6 p-2 " key={index}>
-                                                                <div className={` ${homeStyles.cards} purpleColor`}>
+                                                    return <div className="col-md-6 col-12 p-2 h-100 " key={index}>
+                                                                <div className={` ${homeStyles.cards} h-100 purpleColor`}>
                                                                     <h5>{elements.title}</h5>
-                                                                    <p className="pfont">
+                                                                    <p className="pfont ">
                                                                       {elements.discreptions}
                                                                     </p>
                                                                 </div>
@@ -68,7 +69,7 @@ const CurrentSolution = () =>{
                                 </motion.div>
                         </div>
 
-                        <motion.div className="col-md-5 d-flex justify-content-end"
+                        <motion.div className="col-md-5 h-100 d-flex justify-content-end"
                             variants={fadeRight}
                             initial="hidden"
                             whileInView="visible"
@@ -84,7 +85,7 @@ const CurrentSolution = () =>{
                                         style={{width:'100%', height:'100%'}}
                                     /> 
                                 </div> 
-                                <div className="buttons d-flex gap-2 mt-3">
+                                <div className="buttons d-flex gap-2 pt-3">
                                     <Link href="/" className="buttons-primary " >
                                             Aquaculture Solutions
                                     </Link>  
