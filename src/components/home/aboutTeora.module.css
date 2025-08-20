@@ -65,7 +65,6 @@
 .stat_card h2{
   font-size: 49px !important;
   line-height: 49px !important;
-   
 }
 .stat_card p{
   font-size: 18px !important;
@@ -109,6 +108,71 @@
   }
 }  
 
+
+@media (max-width: 768px){
+    .aboutrowcontainer{
+        padding: 0px !important;
+    }
+    .critical { 
+      top: 65px;      
+    }
+    .millionCard h1{
+      font-size: 30px !important;
+    }
+  }
+
+@media (max-width: 500px){
+    .aboutrowcontainer{
+        padding: 0px !important;
+    }
+    .critical { 
+      top: 35px;        
+    }
+    .stat_card{
+      max-width: 160px;
+      padding: 15px;
+      height: 380px;
+      clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .stat_card h2{
+      font-size: 25px !important;
+      line-height: 32px !important;
+    }
+    .stat_card p{
+      font-size: 14px !important;
+      line-height: 23px !important;
+    }
+    .trilionCard{
+      justify-content: center !important;
+      gap: 15px !important;
+      top:330px !important;
+    }
+    .shareImage{
+      width: 80px !important;
+      height: 80px !important;
+      top: 10px !important;
+      left: 40px !important;
+    }
+    
+ 
+     .millionCard h1{
+      font-size: 25px !important;
+    }
+    .millionCard>div{
+      align-items: center !important;
+      height: 35px;
+    }
+    .millionCard p{
+      font-size: 14px !important;
+      line-height: 20px !important;
+    }
+    .circal_ox{
+      width: 100px;
+      height: 100px;
+      right: 60px;
+    }
+}
 /* .stat-card h2 {
   font-size: 2rem;
   font-weight: bold;

@@ -3,8 +3,6 @@
 'use client'; 
 
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-
 import Styles from "./aboutTeora.module.css";
 import Link from "next/link";
 import IndustrySlider from "./subcombonents/IndustrySlider";
@@ -31,7 +29,7 @@ const AboutTeora = () =>{
 
                           <section className="section-space">
 
-                                <div className="container-2 m-auto">
+                                <div className="container-2 m-auto padding_manage">
                                     <div className="row">
                                         <motion.div className="col-md-7"
                                                  variants={fadeLeft}
@@ -45,7 +43,7 @@ const AboutTeora = () =>{
                                                         </div>
 
                                                         <h2 className="purpleColor m-top-b" >
-                                                           Introducing Solaq™— A  Smart, Scalable & Sustainable
+                                                           Introducing <span className='capatilize'>Solaq™— </span> A  Smart, Scalable & Sustainable
                                                             Biotech Solution, Designed
                                                             For Every Farm, Everywhere.
                                                         </h2>
@@ -57,7 +55,7 @@ const AboutTeora = () =>{
                                                                 work across <strong>every farm, every season, and almost every species.</strong>
                                                         </p>
 
-                                                        <div className="buttons d-flex gap-2">
+                                                        <div className="buttons d-flex gap-2 marginBottom">
                                                                 <Link href="/" className="buttons-primary " >
                                                                        About Teora
                                                                 </Link> 
@@ -75,7 +73,7 @@ const AboutTeora = () =>{
                                                  whileInView="visible"
                                                  viewport={{ once: false, amount: 0.2 }}
                                         >
-                                            <div className="d-flex align-items-center" style={{width:'90%'}}>
+                                            <div className="d-flex align-items-center youtubVideos" style={{width:'90%'}}>
                                                 <iframe 
                                                     className="w-100" 
                                                     height={220}
@@ -93,7 +91,7 @@ const AboutTeora = () =>{
                                 </div> 
                           </section>
 
-                          <section className="section-space">
+                          <section className="section-space topPadding_remove">
                             <IndustrySlider  fadeRight={fadeRight} fadeLeft={fadeLeft}/>
                           </section>
 
@@ -102,14 +100,15 @@ const AboutTeora = () =>{
                                     <Image
                                         src={industry}
                                         style={{width:'100%',
-                                            height:'100%', 
+                                             
                                         }}
+                                        className='trillion_image'
                                         alt="industry img"
                                     />
                                     <div className={`container ${Styles.critical}`}>
                                         <div className="row ">
 
-                                            <div className="col-5 position-relative">
+                                            <div className="col-md-5 col-12 position-relative">
                                                     
                                                   <div className={`d-flex justify-content-around w-100 ${Styles.trilionCard}`}>
 
@@ -155,11 +154,11 @@ const AboutTeora = () =>{
                                                                 </div>
                                                             </div>
                                                                <Image 
-                                                                src={share}
-                                                                className={`${Styles.shareImage} imageScale`} 
-                                                                height={110}
-                                                                alt="share"  
-                                                                style={{right:'0'}} 
+                                                                 src={share}
+                                                                 className={`${Styles.shareImage} imageScale`} 
+                                                                 height={110}
+                                                                 alt="share"  
+                                                                 style={{right:'0'}} 
                                                             />
                                                         </motion.div>
 
@@ -168,24 +167,24 @@ const AboutTeora = () =>{
                                               
                                             </div>
 
-                                            <motion.div className="col-7 "
+                                            <motion.div className="col-md-7 col-12 "
                                                  variants={fadeRight}
                                                  initial="hidden"
                                                  whileInView="visible"
                                                  viewport={{ once: false, amount: 0.2 }} 
                                             >
                                                 <div className="padings">
-                                                    <h1 className="text-primaryBeige pt-5" style={{fontWeight:'400'}}>The Food industry is the Most Critical on Earth— And it’s Failing Us.</h1>
+                                                    <h1 className="text-primaryBeige pt-5 foodIndustry" >The Food industry is the Most Critical on Earth— And it’s Failing Us.</h1>
 
                                                    <div className="d-flex justify-content-center">
-                                                         <div className="d-flex gap-3" style={{width:'60%', paddingTop:'3rem'}}>
+                                                         <div className="d-flex gap-3 wid100" style={{width:'60%', paddingTop:'3rem'}}>
                                                             <Image 
                                                                 src={sharebox}
                                                                 width={90}
                                                                 height={130}
                                                                 alt="share" 
                                                             /> 
-                                                                <p  className='text-primaryBeige'
+                                                                <p  className='text-primaryBeige '
                                                                     style={{fontSize:'27px'}}
                                                                 >By 2050, The World Will Need <span style={{color:'#B8DD5E'}}> 60-70%</span> More Food To Feed <span className='lightblueColor' >10.3 Billion</span> People</p>
                                                           
@@ -212,10 +211,10 @@ const AboutTeora = () =>{
                                                  viewport={{ once: false, amount: 0.2 }} 
                                             
                                             >
-                                                <div className="card-container midPurpleBg borderRadius20 p-all text-primaryBeige" style={{width:'90%'}}> 
+                                                <div className={`card-container midPurpleBg borderRadius20 p-all text-primaryBeige  ${Styles.millionCard}`} style={{width:'90%'}}> 
                                                         <div className="d-flex align-items-end ">
                                                             <h1> $940 billion  </h1>
-                                                            <p style={{paddingLeft:'5px'}}> (reported)</p>
+                                                            <p className='' style={{paddingLeft:'5px'}}> (reported)</p>
                                                         </div>
                                                         <p className="f-500" style={{padding:'0 45px 0 0', fontSize:'20px'}}>
                                                               Food waste due to diseases, poor logistics, yields and premature harvesting costs the global economy $940 billion annually (UNEP, 2021)

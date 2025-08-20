@@ -110,3 +110,8 @@
 }
 
  
+@media (max-width: 500px){
+    .industries{
+        width: 100%;
+    }
+}

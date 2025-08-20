@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useAnimationContext } from '@/context/AnimationContext';
+import { MdOutlineMessage } from "react-icons/md";
 const BlogSection = () =>{
     const {animationVariants, ref1, inView1} = useAnimationContext(); 
       
@@ -23,19 +24,17 @@ const BlogSection = () =>{
                             <div className="col-md-8 h-100">
                                 <div className="row"> 
                                     <div className="col-6">
-                                        <div className={` card p-3 blogsfooter`}>
-                                            <div className="blogs">
-
+                                        <div className={` card p-3 blogsfooter flex-column-reverse`}>
+                                              <div className="blog_buttons d-flex justify-content-end align-items-center">
+                                                <button className="msg_box" type="button"> <MdOutlineMessage/></button>
                                             </div>
-                                            {/* <button></button> */}
                                         </div>
                                     </div>
                                     <div className="col-6">
-                                        <div className={` card p-3 blogsfooter`}>
-                                            <div className="blogs">
-
+                                        <div className={` card p-3 blogsfooter flex-column-reverse`}>
+                                             <div className="blog_buttons d-flex justify-content-end align-items-center">
+                                                <button className="msg_box" type="button"> <MdOutlineMessage/></button>
                                             </div>
-                                            {/* <button></button> */}
                                         </div>
                                     </div>
                                 
@@ -47,11 +46,11 @@ const BlogSection = () =>{
                             </div> 
 
                              <div className="col-4" >
-                                <div className={` card p-3 blogsfooter`} style={{minHeight:'500px'}} >
-                                    <div className="blogs">
-
+                                <div className={` card p-3 blogsfooter flex-column-reverse `} style={{minHeight:'500px'}} >
+                                    <div className="blog_buttons d-flex justify-content-end align-items-center">
+                                        <button className="msg_box" type="button"> <MdOutlineMessage/></button>
                                     </div>
-                                    {/* <button></button> */}
+                                   
                                 </div>
                             </div>
                         </div>  

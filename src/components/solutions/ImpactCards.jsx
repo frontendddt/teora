@@ -1,6 +1,6 @@
   const cards = [
     {
-      icon:  '/icons/margind.png',
+      icon:  '/icons/framers2.png',
       title: "FARMERS DESERVE BETTER CHOICES.",
       text: "More Profits. Fewer disease losses, lower feed costs, faster growth cycles better yields.",
       bg: "accentLimebg",
@@ -16,7 +16,7 @@
       textColor:'text-primaryBeige'
     },
     {
-      icon: "/icons/framers2.png",
+      icon: "/icons/margind.png",
       title: "SUSTAINABLE FARMING SHOULDN’T BE A LUXURY",
       text: "It should be the default. Our planet needs balance and we deserve good-clean food.",
       bg: "accentBlueBg",
