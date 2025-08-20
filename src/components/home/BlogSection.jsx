@@ -41,7 +41,7 @@ const BlogSection = () =>{
                                 </div>
 
                                 <div className="pt-4" style={{width:'95%'}}>
-                                  <h3 className="purpleColor" style={{fontWeight:'600'}}>Teora Blog - Sharp, Useful Reads—From Biotech To Business Of Food</h3>
+                                  <h3 className="purpleColor" style={{fontWeight:'600'}}>Teora Blog - Sharp, Useful Reads—From Biotech To Business Of Food.</h3>
                                </div> 
                             </div> 
 

@@ -18,7 +18,7 @@ const {fadeLeft, fadeRight} = useAnimationContext();
                                 <p className="">
                                         {descreption_card1}
                                 </p>
-                                <button className="connectBtn mt-3" style={{width:'fit-contant'}}>{buttonText_card1}</button>
+                                <button className="connectBtn mt-3 purpleColor" style={{width:'fit-contant'}}>{buttonText_card1}</button>
                             </div>
                     </MotionWrapper>
 
@@ -33,7 +33,7 @@ const {fadeLeft, fadeRight} = useAnimationContext();
                                     </p>
                                 
                                 </div> 
-                                <button className="mt-3 connectBtn" >{buttonText_card2}</button>
+                                <button className="mt-3 connectBtn purpleColor" >{buttonText_card2}</button>
                             </div>
                         <img
                             src="/image/handmeet.png"

@@ -142,7 +142,7 @@ const SolaqSlider = () => {
                                        alt='Prevent Disease Before'
                                   />
                                   </div>
-                                  <div className={`purpleBg text-center text-primaryBeige ${styles.fontCard}`}>Prophylactic- Stop outbreaks</div>
+                                  <div className={`purpleBg text-center text-primaryBeige ${styles.fontCard}`}> Therapeutic- Fight Back Fast</div>
                                   <p className='p_fonts-w mb-0 mt-2'>Treats active outbreaks, stress-free.</p>
                                   <p className={`${styles.zerpfonts} mb-0`}>Zero injections, zero handling</p>
                             </div>
@@ -154,9 +154,9 @@ const SolaqSlider = () => {
                                        alt='Cuts feed-to-growth'
                                   />
                                   </div>
-                                  <div className={`purpleBg text-center text-primaryBeige ${styles.fontCard}`}>Prophylactic- Stop outbreaks</div>
+                                  <div className={`purpleBg text-center  text-primaryBeige ${styles.fontCard}`}> Grow Bigger-Boosts Metabolism</div>
                                   <p className='p_fonts-w mb-0 mt-2'>Cuts feed-to-growth time.</p>
-                                  <p className={`${styles.zerpfonts} mb-0`}>Tougherimmunity. Stronger stock</p>
+                                  <p className={`${styles.zerpfonts} mb-0`}>Tougher immunity. Stronger stock</p>
                             </div>
                         </div>
                     </div>
@@ -171,7 +171,7 @@ const SolaqSlider = () => {
                                   <h6 className='h6why mt-3'><strong>What you get?</strong></h6>
                                   <h6 className='h6bold'>
                                     A room-temperature stable
-                                    powderthat turns ordinary farm
+                                    powder that turns ordinary farm
                                     feed and foliar sprays into disease
                                     shields and growth boosters. 
                                   </h6>
@@ -194,7 +194,7 @@ const SolaqSlider = () => {
                         
                          <div>
                             <h4 className='mt-3' style={{fontSize:'22px'}}>
-                                  What SOLAQ™ Delivers : One platform, three super‑powers
+                                   How Solaq™ Works : Smart. Precise. Fast. From Lab To Field In Months, Not Years. 
                             </h4> 
                          </div>
                      
@@ -202,7 +202,7 @@ const SolaqSlider = () => {
                             <div className="col-3"> 
                                   <div className={`purpleBg text-center text-primaryBeige ${styles.fontCard}`}>AI-driven bioinformatics</div>
                                   <p className='p_fonts-w mb-0 mt-2'>AI maps the pathogen, immune
-                                    triggers & growth ineciencies
+                                    triggers & growth inefficiencies
                                     like a GPS. No <strong>guesswork.</strong></p>
                                   
                             </div>
@@ -218,10 +218,10 @@ const SolaqSlider = () => {
                                   </p> 
                             </div>
                                <div className="col-3 p-0"> 
-                                  <div className={`purpleBg text-center text-primaryBeige ${styles.fontCard}`}>Encapsulation & Targeted Delivery</div>
+                                  <div className={`purpleBg text-center text-primaryBeige ${styles.fontCard}`}> Targeted encapsulation</div>
                                   <p className='p_fonts-w mb-0 mt-2'>
-                                      Each biologic is locked and delivered directly to immune system of animal or plant root.
-                                      <strong>Stable on the shelf .Stress-free for animals</strong>
+                                      Each biologic is locked and delivered directly to gut or root.
+                                      <strong>Stable on the shelf. Stress-free for animals</strong>
                                   </p> 
                             </div>
                         </div>
@@ -313,7 +313,7 @@ const SolaqSlider = () => {
                            <div className="col-3">
                                   <div className=' mb-3'>
                                     <Image
-                                       src={slickyicon1}
+                                       src={slickyicon3}
                                        width={110}
                                        height={110}
                                        alt='Every biologic is designed'
@@ -347,7 +347,7 @@ const SolaqSlider = () => {
                             <div className="col-3">
                                   <div className='mb-3'>
                                     <Image
-                                       src={slickyicon3}
+                                       src={slickyicon1}
                                         width={110}
                                         height={110}
                                         alt='Smarter feed that delivers'
@@ -371,7 +371,7 @@ const SolaqSlider = () => {
                                   </div>
                                   <p className='mt-2'> 
                                       From hatcheries to high-density
-                                      farms, SOLAQ™ fits in. Climate
+                                      barns, SOLAQ™ fits in. Climate
                                       stable. No infrastructure. No
                                       extra labour.
                                   </p>
@@ -398,7 +398,7 @@ const SolaqSlider = () => {
                                 <div className='mb-3'>
                                   <h4 className='mt-3' style={{fontSize:'22px'}}>
                                       Scientifically Validated & Market-Ready,<br></br>
-                                      Proven In Aquaculture—Scaling To OtherIndustries
+                                      Proven In Aquaculture—Scaling To Other Industries
                                   </h4> 
                                 </div>
 
@@ -412,9 +412,9 @@ const SolaqSlider = () => {
                                             />
                                        </div>
                                         <div className='pwaight'>
-                                            <p> Up to 90%survival vs. 30% <br></br>untreatedwith FishGuard <sub>TM</sub></p>
-                                            <p> Up to 90%survival vs. 2% <br></br>untreatedwith ShrimpGuardTM</p>
-                                            <p> 10%faster growth and 0.2– <br></br> 0.5 improvement in FCRwith <br></br>FishJumbo <sub>TM</sub></p>
+                                            <p> Up to 90%survival vs. 30% <br></br>untreated with FishGuard <sup>TM</sup></p>
+                                            <p> Up to 90%survival vs. 2% <br></br>untreated with ShrimpGuardTM</p>
+                                            <p> 10%faster growth and 0.2– <br></br> 0.5 improvement in FCRwith <br></br>FishJumbo <sup>TM</sup></p>
                                         </div>
                                     </div>
                                      
@@ -423,13 +423,13 @@ const SolaqSlider = () => {
                                              Rapid viral clearance- in 10 days
                                         </div>
                                         <div className='clearance mb-3'>
-                                             Rapid viral clearance- in 10 days
+                                             70% reduction in antibiotic use
                                         </div>
                                         <div className='clearance mb-3'>
-                                             Rapid viral clearance- in 10 days
+                                            Upto 45x improved survival
                                         </div>
                                         <div className='clearance mb-3'>
-                                             Rapid viral clearance- in 10 days
+                                             30% Reduction in feed costs
                                         </div>
                                    
                                    </div>

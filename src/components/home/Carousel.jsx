@@ -116,7 +116,7 @@ const {fadeLeft} = useAnimationContext();
                                             <div className={Styles.bannerHeaderContant}>
                                                 <h2 className="text-primaryBeige">
                                                    Injected Fish. Antibiotic-Fed Animals. High Amr’s.
-                                                    Sprayed Crops. SickSoils. Dying Oceans. Toxic
+                                                    Sprayed Crops. Sick Soils. Dying Oceans. Toxic
                                                     Waters. Stressed-Out Farmers. Polluted Plates.
                                                 </h2>
                                             </div> 
@@ -169,7 +169,7 @@ const {fadeLeft} = useAnimationContext();
                                             
                                             <div className={`container ${Styles.slider_img_container}`}> 
                                                     <div className={Styles.bannerFooterContant}>
-                                                        <h3 className='h3mobile'><span className={Styles.cleanTex}>Compromised</span> What if we could grow food without harming everything else.
+                                                        <h3 className='h3mobile'><span className={Styles.cleanTex}>What if</span> we could grow food without harming everything else.
                                                         </h3>
                                                     </div>  
                                                     <div className="row">
