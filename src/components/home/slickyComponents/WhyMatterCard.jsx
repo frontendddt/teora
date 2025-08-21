@@ -49,23 +49,24 @@ const WhyMatterCard = ({ data, text, buttons }) => {
                                                 }
                                             </div> :
 
-                                            <div className="p-5 remove_padding">
-                                                {
-                                                    elements.heading ? 
-                                                    <h5 className="mb-5 gaurd_h5">
-                                                        {elements.heading}
-                                                    </h5> :
-                                                        <div className="d-flex align-items-center  gap-3 mb-5">
-                                                            <span><img src="/icons/about-icon1.png" width="100" alt="BUILT TO FIGHT BACK &amp; PROTECT"/></span>
-                                                            <div className="m-0">
-                                                                <span className="rounded-pill buge-style accentRedBg text-primaryBeige pt-2 pb-2">DISEASE MANAGEMENT- SHRIMPS &amp; FISH</span>
-                                                                <h2 className="m-0">GUARD SERIES</h2>
-                                                                <p className="m-0">PREVENT. COMBAT. KEEP CALM. FARM ON.</p>
-                                                            </div>
-                                                        </div>
-                                                } 
+                                                    <div className="p-5 remove_padding">
+                                                    {
+                                                        elements.heading ? 
+                                                         <h5 className="mb-5 gaurd_h5">
+                                                            {elements.heading}
+                                                        </h5> :
+                                                         <div className="d-flex align-items-center gap-3 mb-5">
+                                                                <span><img src="/icons/about-icon1.png" width="100" alt="BUILT TO FIGHT BACK &amp; PROTECT"/></span>
+                                                                <div className="m-0">
+                                                                    <span className="rounded-pill buge-style accentRedBg text-primaryBeige pt-2 pb-2">DISEASE MANAGEMENT- SHRIMPS &amp; FISH</span>
+                                                                    <h2 className="m-0">GUARD SERIES</h2>
+                                                                    <p className="m-0">PREVENT. COMBAT. KEEP CALM. FARM ON.</p>
+                                                                </div>
+                                                         </div>
+                                                    }
+                                                   
 
-                                                <div className="d-flex align-items-center gap-2 card_images">
+                                                <div className="d-flex align-items-center">
                                                     <div>
                                                         <Image
                                                             src={elements.img}
@@ -76,10 +77,13 @@ const WhyMatterCard = ({ data, text, buttons }) => {
                                                         />
                                                     </div>
                                                     <div style={{ padding: '10px 0 10px 25px' }}>
-                                                        <p className="title_discreptions">{elements.title} {elements.titleBold ? <b>{elements.titleBold}</b> : ''}</p>
-                                                        <p className="fewerlosses ">{elements.bold}</p>
+                                                        <p>{elements.title} {elements.titleBold ? <b>{elements.titleBold}</b> : ''}</p>
+                                                        <p className="fewerlosses">{elements.bold}</p>
                                                     </div>
                                                 </div>
+                                                {elements.bold2 ? 
+                                                    <p className="h1500" >{elements.bold2}</p> : ''   
+                                                 }
 
                                             </div>
                                     }

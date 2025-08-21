@@ -134,7 +134,7 @@ const WhatWereBuildingSlider = ({swiperData}) =>{
                                                                                 <div className={`w-100 purpleColor ${Styles.slideOne}`}> 
                                                                                     <p className="shrimpGuard text-primaryBeige text-center purpleBg lightblueColor">FishJumbo <sup>TM</sup></p> 
                                                                                     <p className="aboutslicky_info">
-                                                                                        Growth-Boosting biologcs for Fish. Bigger yields, shorter cycles—without hormones or chemicals. Increases  
+                                                                                        Growth-Boosting Nutrition for Fish. Bigger yields, shorter cycles—without hormones or chemicals. Increases  
                                                                                         . <strong>growth —up to 30% faster, with better FCR naturally.</strong>
                                                                                           Works for Sea-bass, Pangasius, tilapia, trout & more.
                                                                                     </p>

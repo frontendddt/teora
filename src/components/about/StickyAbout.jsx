@@ -53,7 +53,7 @@ import card1 from "/public/slider/redcard.png"
             miniicon: slideMini2,
             subtitle: "Grow healthier animals, clean and profitably.",
             text: "Our feed-based biologics build muscle and immunity—no injections needed.Currently working on natural growth enhancers for cows, pigs, and goats. Easy to mix in feed, shelf-stable, no infrastructure needed",
-            bold: "More weight. Less waste. Zero residues.",
+            bold: " More weight. Less waste. Zero residues.",
             img: aboutIcon2,
             alt:"More weight. Less waste. Zero",
             linkName: "Explore More",
@@ -174,7 +174,7 @@ const stackCadrSlide = [
    {
     titleName: 'FOOD SECURITY',
     image:'/icons/scales.png',
-    hedings: "SCALE SWITH YOU",
+    hedings: "SCALES WITH YOU",
     subHeading: "Any Farm. Any Species. Any Season",
     title:"From smallholders to industrial setups, Teora’s biotech plugs right into existing routines of farm—no injections, no cold chain, no barriers to scale",
     bgClass:"mutedLavenderBg"
@@ -253,7 +253,7 @@ const StickyAbout = () =>{
                                                         MORE SUSTAINABLE  <br className="breackDisplay"/>
                                                         FOR THE PLANET, AND  <br className="breackDisplay"/>
                                                         MORE PROFITABLE  <br className="breackDisplay"/>
-                                                        FOR PRODUCERS
+                                                        FOR PRODUCERS.
                                                     </h2>
                                             </div>
                                     </div>
@@ -279,7 +279,7 @@ const StickyAbout = () =>{
                                                         <div className="d-flex">
                                                             <div style={{paddingRight:'1rem'}}>
                                                                 <h6 className={Styles.aboutCardtext}> Global Shrimp Summit 2024 - Innovation Award</h6> 
-                                                                <span className={Styles.asiaOne}> Teora received the innovation Award acknowledging its advancements in shrimp farming technologies</span> 
+                                                                <span className={Styles.asiaOne}> Teora received the innovation Award, acknowledging its advancements in shrimp farming technologies</span> 
                                                             </div>
                                                             <div style={{width:'150px'}} className="d-flex justify-content-end align-items-end position-relative">
                                                                 <img

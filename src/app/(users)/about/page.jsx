@@ -82,7 +82,7 @@ const About = () =>{
                                 classname_card1 = "card1_font"
 
                                 heading_card2 = "Interested In Backing The Future Of Food?"
-                                descreption_card2 = " Teora Powered by SOLAQ™ is scaling fast—and globally. If you’re ready to invest in biotech with purpose and proof, we’d love to talk." 
+                                descreption_card2 = " SOLAQ™ is scaling fast—and globally. If you’re ready to invest in biotech with purpose and proof, we’d love to talk." 
                                 buttonText_card2 = "Connect With Leadership"
                                 classname_card2 = "card2_font"
                             />

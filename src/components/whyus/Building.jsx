@@ -12,11 +12,11 @@ const whyUsSwiperData = [
         subHeading1: "HigherYields, Lower Losses,more income",
         discriptions1: "Up to 90% survival in proven aquaculture trials. Reduces disease-driven mortality, ensuring more produce reaches market.",
         subHeading2: "Harvest Faster, Earn Sooner",
-        discriptions2: "Up to 90% survival in proven aquaculture trials. Reduces disease-driven mortality, ensuring more produce reaches market.",
-        subHeading3: "Premium Price, Zero Residue, Compliant",
-        discriptions3: " No antibiotics = export-ready stock.Access premium markets demanding clean food. Get 15-30 % higher prices for the same farmed produce.",
-        subHeading4: "Feed Smarter, Cost-Eective Growth",
-        discriptions4: "20% faster growth. better FCR by 0.2 to 0.5 points. When feed costs 60% of your budget,these numbers change everything.",
+        discriptions2: "20% shorter cycles mean 5-6 harvests/year instead of 4. Same pond, more revenue. Less time exposed to disease risk.",
+        subHeading3: " Feed Smarter, Cost-Eective Growth",
+        discriptions3: " 20% faster growth. better FCR by 0.2 to 0.5 points. When feed costs 60% of your budget, these numbers change everything.",
+        subHeading4: "Easy adoption, Shelf stable",
+        discriptions4: " No injections. No cold storage. No special training. works all season. Just mix with feed or water and prevent disease.",
         subHeading5: "Easy adoption, Shelf stable",
         discriptions5: "No injections. No cold storage. No special training.works all season.Just mix with feed or water and prevent disease.",
 
@@ -34,8 +34,8 @@ const whyUsSwiperData = [
         discriptions2: "Farmers demand it. Regulations require it.Transform commodity feed into premium, clean products~ 20-30% higher margins.",
         subHeading3: "Proven Performance = Customer Loyalty",
         discriptions3: " When farmers see 90% survival and 20% faster growth, they don’t switch suppliers.Your retention rates soar. Loyalty it is.",
-        subHeading4: "Proven Performance = Customer Loyalty",
-        discriptions4: " When farmers see 90% survival and 20% faster growth, they don’t switch suppliers.Your retention rates soar. Loyalty it is.", 
+        subHeading4: "Align with future-ready regulations",
+        discriptions4: " Antibiotic/ chemical bans, What’s that ?  Lead the market shift instead of chasing it. First-mover advantage secured.", 
         
         image: "/image/premium_products.png",
         imageTitle: "FARMERS DEMAND IT. REGULATIONS REQUIRE IT. YOU DELIVER IT.",
@@ -162,7 +162,7 @@ const Building = () =>{
                                                                     el.listinvesto ? 
                                                                          <div className="card_contaoiner_flex">
                                                                                 <div className='w-50 text-primaryBeige'>
-                                                                                    <p className='refrange_headings text-center corporateBg purpleColor mb-0'> No
+                                                                                    <p className='refrange_headings text-center corporateBg purpleColor mb-0'>
                                                                                         A Multi-Billion Dollar Market Opportunity</p>
                                                                                     <p className='pt-3 pb-3 fw-500 mb-2' style={{fontSize:'13.5px'}}>
                                                                                         Teora addresses an underserved $573 billion aquaculture industry, expanding into a $193 billion sustainable biologics market. Its adaptable platform extends beyond aquaculture into livestock, poultry, and crops—maximizing commercial scalability and investor potential

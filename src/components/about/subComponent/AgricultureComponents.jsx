@@ -20,7 +20,7 @@ const AgricultureComponents = () =>{
                                             </h2>
 
                                             <p className="purpleColor m-top-b" style={{padding:'0 1.5rem 0 0'}}>
-                                                    Our oral feed based and foliar sprayable Plant biologics are already improving
+                                                    Our oral and sprayable biologics are already improving
                                                     survival, accelerating growth, and reducing waste across
                                                     aquaculture.Next stop: livestock, poultry, crop disease
                                                     management, and companion health.
