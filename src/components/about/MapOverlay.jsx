@@ -42,7 +42,7 @@ const bubble = [
     },
 
      {
-        text: "One-third of all food produced is wasted—I am loosing Money ! Can technology help",
+        text: "One-third of all food produced is wasted—I am loosing Money ! Can technology help us?",
         bgclass: 'accentLimebg',
         colorClass: 'purpleColor', 
         bubbleClass: 'bubble6',

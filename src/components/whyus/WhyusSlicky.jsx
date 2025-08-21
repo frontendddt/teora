@@ -114,8 +114,8 @@ const cardcontant = [
             main_icon:"/icons/about-icon2.png",
             bgcolorClass: 'accentLimebg',
 
-            title: "SOLAQ™ biologics are clean and dont add to the residues, contaminants, and AMR risks that chemical farming leaves behind.",
-            bold:"20% faster growth, 0.2–0.5 lower FCR, 30%less feedwastage, No hormones orGMOs, 100%biodegradable and export-compliant",
+            title: " A clean, natural growth accelerator that improves feed conversion, muscle development, and harvest speed—without chemicals or hormones.  FishJumbo™",
+            bold2:"20% faster growth, 0.2–0.5 lower FCR, 30%less feedwastage, No hormones orGMOs, 100%biodegradable and export-compliant",
             class: "purpleBg",
             color:"text-primaryBeige",
             series_title:"GROWTH OPTIMISATION IN FISH",
@@ -134,7 +134,7 @@ const cardcontant = [
          {
             img: "/icons/neutralized.png",
             heading:"Real-World Results— Proven Where It Matters: In Your Ponds, Not Just Our Labs",
-            title: "10+ pathogens neutralized  5+ countries validated >45x improved survival in outbreak farms ~30% faster growth across species  70% fewer toxic inputs",
+            title: "10+ pathogens neutralized | 5+ countries validated | >45x improved survival in outbreak farms | ~30% faster growth across species | 70% fewer toxic inputs",
             bold:"0 residues. Zero rejections. No run-offs", 
             class: "lavenderBg",
             color:"purpleColor"
@@ -142,7 +142,7 @@ const cardcontant = [
          {
             img: "/icons/neutralized.png",
             heading:"What this means for Aquaculture Farmers ?",
-            title: "Less stress → Healthier ponds  \nNo antibiotics, \nno residues → No rejections Fewer mortalities → More harvests Healthier stock → Better prices Lower feed use = lower footprint More growth, less input, Less waste  Save on labor, logistics and stress",
+            title: "Less stress → Healthier ponds | \nNo antibiotics, \nno residues → No rejections | Fewer mortalities → More harvests | Healthier stock → Better prices | Lower feed use = lower footprint | More growth, less input, Less waste  Save on labor, logistics and stress",
             bold:"Cleaner yields . Safer exports. No withdrawal period.", 
             class: "lavenderBg",
             color:"purpleColor"
@@ -189,7 +189,7 @@ const missionCardSwiperData = [
 //whyus stack card slider card slider content 
 const stackCadrSlide = [
     {
-    titleName: 'SAFETY',
+    titleName: 'DIFFERENCES',
     image:'/icons/settings.png',
     hedings: "DESIGNED FOR REAL FARMS.",
     subHeading: "Any Farm Any Species. Any Season. Fast", 
@@ -211,7 +211,7 @@ const stackCadrSlide = [
     ]
   },
    {
-    titleName: 'SAFETY',
+    titleName: 'SCALABLE',
     image:'/icons/smarter.png',
     hedings: "NOT JUST SAFER. SMARTER.",
     subHeading: "Lab-designed. Farm-tested. Globally ready. ",
@@ -222,7 +222,7 @@ const stackCadrSlide = [
     titleName: 'CLEAN BIOLOGICS',
     image:'/icons/Needle.svg',
     hedings: "OUR BIOLOGICS ARE",
-    subHeading: "90% Survival. 30% Less Waste. More yield ", 
+    // subHeading: "90% Survival. 30% Less Waste. More yield ", 
     bgClass:"accentBlueBg",
     listTitles: [
       { title: "Antibiotic-free  ",
@@ -266,7 +266,7 @@ const stackCadrSlide = [
   },
 
   {
-    titleName: 'SUSTAINABILITY', 
+    titleName: 'THE PROCESS', 
     hedings: "HOW IT WORKS",
     rowImage:"/image/process_image.png",
     subHeading: "Less Emissions. More Ecosystem.",
@@ -355,7 +355,7 @@ const WhyusSlicky = () =>{
 
                  <div className="sticky-top section-space-2 sticky_section beigeCreamBg" style={{zIndex:'8'}}>
                         <div className="container"> 
-                                <h2 className="h1500 revolutionising purpleColor"> HOW DO WE SOLVE LOW VACCINE COVERAGE IN FISH & SHRIMPFARMS ?</h2>
+                                <h2 className="h1500 revolutionising purpleColor"> HOW DO WE SOLVE LOW VACCINE COVERAGE IN FISH & SHRIMP FARMS ?</h2>
                                 <div className={styles.vaccine}>
                                      <img
                                         src="/image/coverage.png"

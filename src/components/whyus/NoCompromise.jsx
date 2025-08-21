@@ -19,7 +19,7 @@ const NoCompromise =() =>{
                                 Prevention Or Disease Cure Or Growth
                                 Enhancement, We Deliver It All In One
                                 Feed-Top Or Foliar Spray Solution For
-                                Aquaculture, Agriculture, LivestockAnd
+                                Aquaculture, Agriculture, Livestock And
                                 Companion Animals. 
                             </h3>
                             <p>
