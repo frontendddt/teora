@@ -229,7 +229,7 @@ const BestRecorgnition =() =>{
                             ref={cardRefs[2]}
                             style={{ ...cardStyle, backgroundColor: 'beigeCreamBg' }}
                             >
-                                <CompanyComponents/>
+                                <CompanyComponents disableAnimation />
 
                             </div>
                         </div> 

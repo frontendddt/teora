@@ -96,7 +96,7 @@ const AboutTeora = () =>{
                           </section>
 
                           <section>
-                            <div className="position-relative">
+                            <div className="position-relative" >
                                     <img
                                         src="/bgImage/teora_multi.png"
                                         style={{width:'100%',    
@@ -111,7 +111,7 @@ const AboutTeora = () =>{
                                         className='trillion_image mobile_view'
                                         alt="industry img"
                                     />
-                                    <div className={`container ${Styles.critical}`}>
+                                    <div className={`container  ${Styles.critical}`}>
                                         <div className="row ">
 
                                             <div className="col-md-5 col-12 position-relative">
@@ -173,13 +173,16 @@ const AboutTeora = () =>{
                                               
                                             </div>
 
-                                            <motion.div className="col-md-7 col-12 animate-wrapper"
-                                                 variants={fadeRight}
-                                                 initial="hidden"
-                                                 whileInView="visible"
-                                                 viewport={{ once: false, amount: 0.2 }} 
+                                            <div className="col-md-7 col-12 animate-wrapper"
+                                                
                                             >
-                                                <div className="padings">
+                                                <motion.div className="padings"
+                                                     variants={fadeRight}
+                                                     initial="hidden"
+                                                     whileInView="visible"
+                                                     viewport={{ once: false, amount: 0.2 }} 
+                                                
+                                                >
                                                     <h1 className="text-primaryBeige pt-5 foodIndustry" >The Food industry is the Most Critical on Earth— And it’s Failing Us.</h1>
 
                                                    <div className="d-flex justify-content-center">
@@ -198,8 +201,8 @@ const AboutTeora = () =>{
 
                                                    </div>
 
-                                                </div>
-                                            </motion.div>
+                                                </motion.div>
+                                            </div>
 
                                         </div>
                                     </div>

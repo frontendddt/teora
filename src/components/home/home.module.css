@@ -126,6 +126,13 @@
       /* top: 0 !important; */
     } 
 
+    .sticky_section{
+        border-radius:0;
+        height: auto; 
+        min-height: auto !important;
+        position: static !important;
+} 
+
 }
  
 @media (max-width: 500px){

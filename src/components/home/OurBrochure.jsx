@@ -12,7 +12,7 @@ const {fadeRight, fadeLeft} = useAnimationContext();
   
     return( 
         <>
-            <section className="section-space">
+            <section className="section-space padding_manage">
                     <div className="container d-flex justify-content-center">
                         <div 
                             className={`${classname} p-2`}
@@ -32,7 +32,7 @@ const {fadeRight, fadeLeft} = useAnimationContext();
                     <div className={`container border_radius_round p_smarter ${color} ${classname}`}>
                     
                             <div className="row animate-wrapper">
-                                 <motion.div className="col-md-6"
+                                 <motion.div className="col-md-6 "
                                         variants={fadeLeft}
                                         initial="hidden"
                                         whileInView="visible"
