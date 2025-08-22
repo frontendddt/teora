@@ -8,12 +8,12 @@ const LeadershipSection = ({
 }) =>{
 const {fadeLeft, fadeRight} = useAnimationContext();
     return(
-            <MotionWrapper className="container">
-                    <div className="row">
-                    <MotionWrapper className="col-md-5 text-primaryBeige"
+            <div className="container">
+                    <div className="row animate-wrapper">
+                    <MotionWrapper className="col-md-5 text-primaryBeige padding_manage"
                         variant={fadeLeft}
                     >
-                            <div className={`p-all midPurpleBg border_radius_round d-flex flex-column justify-content-between h-100 interested intrestSections ${classname_card1}`} style={{padding:'6rem 3rem'}}>
+                            <div className={`p-all midPurpleBg border_radius_round d-flex flex-column justify-content-between h-100 interested intrestSections  ${classname_card1}`} style={{padding:'6rem 3rem'}}>
                                 <h3>{heading_card1} </h3>
                                 <p className="">
                                         {descreption_card1}
@@ -22,7 +22,7 @@ const {fadeLeft, fadeRight} = useAnimationContext();
                             </div>
                     </MotionWrapper>
 
-                    <MotionWrapper className="col-md-7 text-primaryBeige position-relative"
+                    <MotionWrapper className="col-md-7 text-primaryBeige position-relative padding_manage mt_40"
                         variant={fadeRight}    
                     >
                             <div className={`card_padding midPurpleBg border_radius_round2 h-100  d-flex flex-column justify-content-between interested intrestSections ${classname_card2}`}>
@@ -43,7 +43,7 @@ const {fadeLeft, fadeRight} = useAnimationContext();
                         />
                     </MotionWrapper>
                     </div>
-            </MotionWrapper> 
+            </div> 
     )
 }
 

@@ -8,7 +8,7 @@ import styles from './home.module.css';
 import { MdArrowBackIosNew, MdArrowForwardIos  } from "react-icons/md";
 const Slider = dynamic(() => import('react-slick'), { ssr: false });
 
-const IndustrySlider = ({data, text, className, solaqClass}) => {
+const IndustrySlider = ({data, text, className, solaqClass, homeRow}) => {
  
 
 
@@ -27,7 +27,7 @@ const IndustrySlider = ({data, text, className, solaqClass}) => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.1,
         },
       },
     ],
@@ -36,10 +36,10 @@ const IndustrySlider = ({data, text, className, solaqClass}) => {
   return (
         
             <div className="container">
-                <div className={`row d-flex position-relative ${styles.rowcontainer} ${solaqClass}`}>
+                <div className={` d-flex position-relative ${styles.rowcontainer} ${solaqClass}`}>
 
                     <div className={`${styles.left_arrow} `}>
-                        <div className={`d-flex gap-2 justify-content-between align-items-center w-100 ${className}`}>
+                        <div className={`d-flex gap-2 justify-content-between align-items-center w-100 padding_manage controlerText ${className}`}>
                                 <div className={`purpleColor ${styles.infoh1}`} >
                                      <p className={`mb-0`}>{text}</p>
                                 </div>
@@ -58,7 +58,7 @@ const IndustrySlider = ({data, text, className, solaqClass}) => {
                         </div>
                     </div>  
 
-                    <div className={`${styles.right_slider} right_slider2`}>
+                    <div className={`${styles.right_slider} right_slider2 leftpadding_manage`}>
                            <div className={styles.sliderWrapper}>
                             
                                  <Slider {...settings} ref={sliderRef}>
@@ -74,7 +74,7 @@ const IndustrySlider = ({data, text, className, solaqClass}) => {
                                                                 width={items.widths}
                                                                 height={items.heights}
                                                                 alt='icons' 
-                                                                className={`mb-3 ${activeIndex === index ? styles.activeSlide : ""}`} 
+                                                                className={`mb-3 mobileSize_img ${activeIndex === index ? styles.activeSlide : ""}`} 
                                                             />
                                                     </div>
                                                       <h4 className={`text-center mt-2 h4industry`}>{items.title}</h4> 
@@ -88,7 +88,7 @@ const IndustrySlider = ({data, text, className, solaqClass}) => {
                                         
                                  </Slider>
                            </div>   
-                           <div className={`${styles.rowWhite} rowWhites`}></div>
+                           <div className={`${styles.rowWhite} ${homeRow} rowWhites`}></div>
                     </div> 
 
                </div>

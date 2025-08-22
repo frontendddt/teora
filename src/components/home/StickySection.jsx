@@ -72,9 +72,9 @@ const StickySection = () => {
     return (
         <div className={`${Styles.sticky_container}`}>
             <div className={`sticky-top z-1 section-space-2 purpleBg tectureBg ${Styles.sticky_section}`}>
-                <div className="container">
-                    <div className="row">
-                        <motion.div className="col-md-6"
+                <div className="container padding_manage">
+                    <div className="row animate-wrapper">
+                        <motion.div className="col-md-6 "
                             variants={fadeLeft}
                             initial="hidden"
                             whileInView="visible"
@@ -116,7 +116,7 @@ const StickySection = () => {
                 </div>
             </div>
 
-            <div className={`sticky-top section-space-2 z-1 
+            <div className={`sticky-top section-space-2 mobile_space-2  z-1 
                 text-primaryBeige  ${Styles.sticky_section} `}
                 style={{
                     backgroundRepeat: 'no-repeat',
@@ -161,9 +161,9 @@ const StickySection = () => {
                         <h1 className="m-top-b h1500 h11536">SOLUTIONS FOR AQUACULTURE</h1>
                     </div>
 
-                    <div className="container-fluid" style={{ width: '90%' }}>
-                        <div className="row">
-                            <motion.div className="col-md-6"
+                    <div className="container-fluid wmd100" style={{ width: '90%' }}>
+                        <div className="row animate-wrapper">
+                            <motion.div className="col-md-6 mb-3"
                                 variants={fadeLeft}
                                 initial="hidden"
                                 whileInView="visible"
@@ -187,7 +187,7 @@ const StickySection = () => {
                                         </div>
                                     </div>
 
-                                    <div className="text_container mt-5">
+                                    <div className="text_container mt-5 mt-5Mobile">
                                         <p>Guard Series delivers both prophylactic (preventive) and
                                             therapeutic (Combat-ready) vaccine-like protection —no
                                             needles, no cold chains, no chemical chaos, no antibiotics</p>
@@ -200,11 +200,11 @@ const StickySection = () => {
                                             For Fish: Tackles SDDV, Vibrio & many more.
                                         </p>
                                     </div>
-                                    <div className="mt-5"><a className="buttons-primary " href="/"> Explore Guard Series</a></div>
+                                    <div className="mt-5 mt-5Mobile"><a className="buttons-primary " href="/"> Explore Guard Series</a></div>
                                 </div>
                             </motion.div>
 
-                            <div className="col-md-6">
+                            <div className="col-md-6 mb-3">
                                 <motion.div className="card_container round_padding corporateBg h-100 purpleColor"
                                     variants={fadeRight}
                                     initial="hidden"
@@ -228,7 +228,7 @@ const StickySection = () => {
                                         </div>
                                     </div>
 
-                                    <div className="text_container mt-5">
+                                    <div className="text_container mt-5 mt-5Mobile">
                                         <p>
                                             Jumbo Series promotes growth and delivers faster
                                             harvests and higher yields—Clean, residue-free, ROI-smart
@@ -243,7 +243,7 @@ const StickySection = () => {
                                             For Fish: Tackles SDDV, NNV, Streptococcus etc
                                         </p>
                                     </div>
-                                    <div className="mt-5"><a className="buttons-primary " href="/"> Explore Jumbo Series</a></div>
+                                    <div className="mt-5 mt-5Mobile"><a className="buttons-primary " href="/"> Explore Jumbo Series</a></div>
 
                                 </motion.div>
                             </div>
@@ -255,7 +255,7 @@ const StickySection = () => {
 
             <div className={`sticky-top section-space-2 z-4 deepPurple sticky_radius h-fitcontent ${Styles.sticky_section}`}>
                 <div className="container">
-                    <div className="row">
+                    <div className="row padding_manage">
                         <FeatureHighlights />
                     </div>
                 </div>

@@ -20,14 +20,17 @@ const features = [
   },
 ];
 
+
+
 const FeatureHighlights = () => {
+
   return (
     <>
 
         {
            features.map((feture, index) =>{
                 return(
-                    <div className={`col-md-3 ${index === features.length - 1 ? "" : styles.border_rignt}`} key={index}>
+                    <div className={`col-md-3 col-sm-6 col-12 ${styles.border_rignt1} ${index === features.length - 1 ? "" : styles.border_rignt}`} key={index}>
                         <div className={`d-flex gap-3 align-items-center text-primaryBeige h-100 `}>
                             <img
                                 src={feture.icon}

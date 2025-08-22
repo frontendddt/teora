@@ -17,20 +17,20 @@ const BlogSection = () =>{
                     >
                             
                         <div className="d-flex justify-content-end section-space">
-                            <button className="buttons-Beige mt-3">Read All</button>
+                            <button className="buttons-Beige">Read All</button>
                         </div> 
 
                         <div className="row"> 
-                            <div className="col-md-8 h-100">
+                            <div className="col-md-8 padding_manage h-100">
                                 <div className="row"> 
-                                    <div className="col-6">
+                                    <div className="col-md-6 col-12 mbmd4">
                                         <div className={` card p-3 blogsfooter flex-column-reverse`}>
                                               <div className="blog_buttons d-flex justify-content-end align-items-center">
                                                 <button className="msg_box" type="button"> <MdOutlineMessage/></button>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-6">
+                                    <div className="col-md-6 col-12 mbmd4">
                                         <div className={` card p-3 blogsfooter flex-column-reverse`}>
                                              <div className="blog_buttons d-flex justify-content-end align-items-center">
                                                 <button className="msg_box" type="button"> <MdOutlineMessage/></button>
@@ -40,12 +40,12 @@ const BlogSection = () =>{
                                 
                                 </div>
 
-                                <div className="pt-4" style={{width:'95%'}}>
-                                  <h3 className="purpleColor" style={{fontWeight:'600'}}>Teora Blog - Sharp, Useful Reads—From Biotech To Business Of Food.</h3>
+                                <div className="pt-4 blog_el" style={{width:'95%'}}>
+                                  <h3 className="purpleColor " style={{fontWeight:'600'}}>Teora Blog - Sharp, Useful Reads—From Biotech To Business Of Food.</h3>
                                </div> 
                             </div> 
 
-                             <div className="col-4" >
+                             <div className="col-md-4 col-12 padding_manage mbmd4" >
                                 <div className={` card p-3 blogsfooter flex-column-reverse `} style={{minHeight:'500px'}} >
                                     <div className="blog_buttons d-flex justify-content-end align-items-center">
                                         <button className="msg_box" type="button"> <MdOutlineMessage/></button>

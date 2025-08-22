@@ -28,16 +28,15 @@ const AnimatedCounter = ({target}) =>{
 
 const CountersSection = ({counterData = [], className=""}) =>{
       
-       
     return(
         <div className={`counter-container ${className}`} 
         >
-            <div className={`container-2 ${Styles.counterPadding}`}>
-                    <div className="row">
+            <div className={`container-2  ${Styles.counterPadding}`}>
+                    <div className="row padding_manage">
                             {
                                 counterData.map((ele, index) =>{
-                                    return<div className="col-md-3 col-sm-6 col-12" key={index}>
-                                                <div className={`text-primaryBeige box_p border-r`}>
+                                    return<div className="col-md-3 col-6 p0 borderchild" key={index}>
+                                                <div className={`text-primaryBeige box_p border-r `}>
                                                         <AnimatedCounter target={ele.counter}/>
                                                         <p className="pfont"> 
                                                             {ele.discriptions}

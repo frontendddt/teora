@@ -8,9 +8,9 @@ import Link from "next/link";
 import IndustrySlider from "./subcombonents/IndustrySlider";
 import group_icons from "../../assets/homeAssets/icon_groups.png";
 import Image from "next/image";
-// import borders from "/public/homeAssets/borders.jpg";
+
 import borders from "../../assets/homeAssets/borders.jpg";
-import industry from "../../assets/homeAssets/teora_multi.png";
+
 import share from "../../assets/homeAssets/share2.png";
 import sharebox from "../../assets/homeAssets/sharelogo.png" 
 import flowers from "../../assets/icons/flowers.jpg";
@@ -30,7 +30,7 @@ const AboutTeora = () =>{
                           <section className="section-space">
 
                                 <div className="container-2 m-auto padding_manage">
-                                    <div className="row">
+                                    <div className="row animate-wrapper">
                                         <motion.div className="col-md-7"
                                                  variants={fadeLeft}
                                                  initial="hidden"
@@ -96,16 +96,22 @@ const AboutTeora = () =>{
                           </section>
 
                           <section>
-                            <div className="position-relative">
-                                    <Image
-                                        src={industry}
-                                        style={{width:'100%',
-                                             
+                            <div className="position-relative" >
+                                    <img
+                                        src="/bgImage/teora_multi.png"
+                                        style={{width:'100%',    
                                         }}
-                                        className='trillion_image'
+                                        className='trillion_image desctop_view'
                                         alt="industry img"
                                     />
-                                    <div className={`container ${Styles.critical}`}>
+                                      <img
+                                        src="/bgImage/industry_mobileBanner.png"
+                                        style={{width:'100%',    
+                                        }}
+                                        className='trillion_image mobile_view'
+                                        alt="industry img"
+                                    />
+                                    <div className={`container  ${Styles.critical}`}>
                                         <div className="row ">
 
                                             <div className="col-md-5 col-12 position-relative">
@@ -167,13 +173,16 @@ const AboutTeora = () =>{
                                               
                                             </div>
 
-                                            <motion.div className="col-md-7 col-12 "
-                                                 variants={fadeRight}
-                                                 initial="hidden"
-                                                 whileInView="visible"
-                                                 viewport={{ once: false, amount: 0.2 }} 
+                                            <div className="col-md-7 col-12 animate-wrapper"
+                                                
                                             >
-                                                <div className="padings">
+                                                <motion.div className="padings"
+                                                     variants={fadeRight}
+                                                     initial="hidden"
+                                                     whileInView="visible"
+                                                     viewport={{ once: false, amount: 0.2 }} 
+                                                
+                                                >
                                                     <h1 className="text-primaryBeige pt-5 foodIndustry" >The Food industry is the Most Critical on Earth— And it’s Failing Us.</h1>
 
                                                    <div className="d-flex justify-content-center">
@@ -192,8 +201,8 @@ const AboutTeora = () =>{
 
                                                    </div>
 
-                                                </div>
-                                            </motion.div>
+                                                </motion.div>
+                                            </div>
 
                                         </div>
                                     </div>
@@ -201,18 +210,19 @@ const AboutTeora = () =>{
                          </section>
 
 
-                          <section className="section-space mt-5" >
-                                <div className="container">
-                                     <div className="row">
-                                            <motion.div className="col-md-6 position-relative pt-2"
+                          <section className="section-space mt-md-5 mt-4" >
+                                <div className="container padding_manage">
+                                     <div className="row animate-wrapper">
+                                            <motion.div className={`col-md-6 position-relative pt-2 ${Styles.positionCol6}`}
                                                  variants={fadeLeft}
                                                  initial="hidden"
                                                  whileInView="visible"
                                                  viewport={{ once: false, amount: 0.2 }} 
                                             
                                             >
-                                                <div className={`card-container midPurpleBg borderRadius20 p-all text-primaryBeige  ${Styles.millionCard}`} style={{width:'90%'}}> 
-                                                        <div className="d-flex align-items-end ">
+                                            <div className={` ${Styles.cardC01}`} style={{width:'90%'}}>
+                                                <div className={`card-container midPurpleBg borderRadius20 p-all text-primaryBeige  ${Styles.millionCard}`} > 
+                                                        <div className="d-flex align-items-end  ">
                                                             <h1> $940 billion  </h1>
                                                             <p className='' style={{paddingLeft:'5px'}}> (reported)</p>
                                                         </div>
@@ -228,26 +238,28 @@ const AboutTeora = () =>{
                                                         alt="Food waste due to diseases"
                                                     />
                                                 </div> 
+                                            </div>
+
                                             </motion.div>
 
-                                            <motion.div className="col-md-6 h-100 position-relative"
+                                            <motion.div className={`col-md-6 h-100 position-relative  ${Styles.borderCard}`}
                                                  variants={fadeRight}
                                                  initial="hidden"
                                                  whileInView="visible"
                                                  viewport={{ once: false, amount: 0.2 }} 
                                             >
-                                                    <div className="p-all h-100 purpleColor">
-                                                            <h4 className="" style={{paddingLeft:'4rem'}}>
+                                                    <div className="p-all p-all-remove h-100 purpleColor">
+                                                            <h4 className={` ${Styles.removeLeft}`} style={{paddingLeft:'4rem'}}>
                                                                     Despite Its Scale,Our Global Food
-                                                                    Systems Are Stressed, Overmedicated, Underperforming And
+                                                                    Systems Are Stressed, Over-medicated, Underperforming And
                                                                     Struggling To Meet Future Food
                                                                     Demands Sustainably. 
                                                             </h4>
                                                     </div>
-                                                    <Image src={borders} 
-                                                     alt="border image"
-                                                     className={` ${Styles.aboutBorderS}`}
-                                                     width={70}
+                                                    <img src="/icons/border.png"
+                                                        alt="border image"
+                                                        className={`${Styles.aboutBorderS}`}
+                                                        width={70}
                                                     />
                                             </motion.div>
 

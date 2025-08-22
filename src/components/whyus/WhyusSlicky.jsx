@@ -89,7 +89,7 @@ const cardcontant = [
             main_icon:"/icons/about-icon1.png",
             title: "Next-gen, feed-based prophylactic + therapeutic disease protection—no injections, no antibiotics, no drama. ",
             titleBold:"ShrimpGuard™| FishGuard™ ",
-            bold:"Up to 90% survival rates, 70%drop in antibiotic use, Via top-coated feed, no cold storage required, Validated in real- farms across Asia.",
+            bold2:"Up to 90% survival rates, 70% drop in antibiotic use, Via top-coated feed, no cold storage required, Validated in real- farms across Asia.",
             class: "purpleBg",
             color:"text-primaryBeige",
             series_title:"DISEASE MANAGEMENT- SHRIMPS & FISH",

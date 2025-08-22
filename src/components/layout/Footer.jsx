@@ -62,7 +62,7 @@ const Footer = () =>{
         <>
               <footer className={`${Styles.footer_bg} tectureBg`}>
                     <div className="container">  
-                        <section className="d-flex justify-content-between align-items-center">  
+                        <section className="d-flex flex-wrap justify-content-between align-items-center">  
                                 <span> 
                                         <Image
                                             src="/logo/footer-logo.png"
