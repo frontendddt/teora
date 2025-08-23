@@ -142,3 +142,15 @@
 /* .contents >div{
     padding-left: 10;
 } */
+
+
+@media (max-width: 768px){ 
+
+    .sticky_section{
+        border-radius:0;
+        height: auto; 
+        min-height: auto !important;
+        position: static !important;
+    } 
+
+}

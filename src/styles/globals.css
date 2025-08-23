@@ -1167,6 +1167,14 @@ button:focus{
 .mobile_view{
   display: none;
 }
+/* .menu_sidebar{
+  background-color: var(--primaryPurple) !important;
+} */
+
+.work_media_flow{
+  width: 75%;
+  margin: 0 auto;
+}
 
 /********************************************************************** media query start *******************************************************************/
 
@@ -1427,17 +1435,81 @@ p{margin-bottom: 0px }
 .mbmd4{
   margin-bottom: 1.5rem;
 }
-    
+
+.remove_margin{
+  margin-bottom: .5rem !important;
+}
+.remove_margin_tb{
+  margin: .2rem  0 !important;
+}
+
+
 }
 
 
 @media (max-width: 576px){
 
-.blog_el h3{
-  font-size: 20px !important;
-  line-height: 30px !important;
+  .flexwrapFooter{
+    flex-wrap: wrap; 
+  }
+  .flexwrapFooter span{ 
+     width: 100%;
+  }
+  .flexwrapFooter span{
+    width: auto !important;
+    height: auto !important;
+  }
+   .footerToptobootm{
+    padding: 2rem 0 4rem 0;
+  }
 
-}
+    .bottom_to_top{
+        width:60px;
+        height: 60px;
+      }
+     .chatButton{
+        width: 70px;
+        height: 70px;  
+        font-size: 30px;
+         position: fixed;
+         bottom: 1.5rem;
+         right: 1.5rem;
+         z-index: 9999;
+      }
+    .frequently_asked{
+      padding: 13px 10px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 14px;
+      border-radius: 10px;
+  }
+  .blog_el h3{
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+
+    .boldh5slid {
+      font-size: 17px !important; 
+      line-height: 21px !important;
+    }
+    .slide_image_bx{
+      width: 75% !important;
+      height: auto !important;
+    }
+    .container_slide_border{
+      border-top-left-radius: 20px !important;
+      border-bottom-left-radius: 20px !important; 
+    }
+
+    .work_media_img{
+      width: 60% !important;
+    }
+    .work_place{
+      top: 0px !important ;
+    }
+    .company_logogs{
+      margin-top: 0px !important;
+    }
   
 }
 

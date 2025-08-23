@@ -32,7 +32,7 @@ const CountersSection = ({counterData = [], className=""}) =>{
         <div className={`counter-container ${className}`} 
         >
             <div className={`container-2  ${Styles.counterPadding}`}>
-                    <div className="row padding_manage">
+                    <div className="row padding_manage w-100">
                             {
                                 counterData.map((ele, index) =>{
                                     return<div className="col-md-3 col-6 p0 borderchild" key={index}>

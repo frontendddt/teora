@@ -55,3 +55,33 @@
 .copyright{
     color: var(--midBeige) !important;
 }
+
+@media (max-width: 576px){
+    .footerSocial>div ul{
+        justify-content: center;
+    }
+    .copyright{
+        width: 100% !important;
+        text-align: center !important;
+    }
+    .footer_email_btn{
+        font-size: 16px;
+    }
+    .footer_heading{
+        margin-bottom: 1rem !important;
+        margin-top: 1.5rem !important;
+    }
+    .footer_info_heading{
+        font-size: 19px;
+    }
+
+    .footer_link a{
+        font-size: 16.5px;
+    }
+
+    .hr{  
+        margin: 1rem 0 2rem 0;
+    }
+
+  
+}

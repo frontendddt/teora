@@ -14,7 +14,7 @@ const CompanyComponents = ({ disableAnimation = false }) =>{
                     >
                         <div className="container purpleColor p-4 corporateBg border_radius_round2 position-relative" style={{height:'300px'}}>
                             <div className="row">
-                                <div className="col-4">
+                                <div className="col-md-4 col-12">
                                     <div className='' style={{padding:'0 1.5rem'}}>
                                         <h2>Supported By The Best</h2>
                                         <p>
@@ -23,8 +23,8 @@ const CompanyComponents = ({ disableAnimation = false }) =>{
                                         </p>
                                     </div>
                                 </div>
-                                <div className="col-8">
-                                        <img src="/image/allLogos.png" alt="company logos" style={{ width: '100%', height: '100%', marginTop:'-64px' }} />
+                                <div className="col-md-8 col-12">
+                                        <img src="/image/allLogos.png" className="company_logogs" alt="company logos" style={{ width: '100%', height: '100%', marginTop:'-64px' }} />
                                 </div>
                             </div>
                         </div>

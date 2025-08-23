@@ -96,6 +96,13 @@
     top:100px;
     min-height: 320px;
  }
+ .sliderBanner{
+    padding: .4rem .5rem; 
+    border-radius: 50px;
+ }
+ .sliderBanner img{
+   height: 50px !important;
+ }
  
 }
 

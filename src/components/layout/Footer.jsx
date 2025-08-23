@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Styles from "./footer.module.css";
 import { GoArrowRight } from "react-icons/go";
-import { FaLinkedin, FaSquareInstagram, FaYoutube, FaFacebook, FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin, FaSquareInstagram, FaFacebook, FaXTwitter } from "react-icons/fa6";
 import { TbBrandYoutube } from "react-icons/tb";
 import { HiArrowsUpDown } from "react-icons/hi2";
 import { TfiCommentAlt } from "react-icons/tfi";
@@ -60,16 +60,16 @@ const Footer = () =>{
 
     return(
         <>
-              <footer className={`${Styles.footer_bg} tectureBg`}>
-                    <div className="container">  
-                        <section className="d-flex flex-wrap justify-content-between align-items-center">  
+              <footer className={`${Styles.footer_bg} tectureBg `}>
+                    <div className="container padding_manage">  
+                        <section className="d-flex flex-wrap justify-content-between align-items-center flexwrapFooter">  
                                 <span> 
-                                        <Image
-                                            src="/logo/footer-logo.png"
-                                            alt="footer logo"
-                                            width={160}
-                                            height={180}
-                                            />
+                                    <Image
+                                        src="/logo/footer-logo.png"
+                                        alt="footer logo"
+                                        width={160}
+                                        height={180}
+                                        />
                                 </span>
                                <span><Link href="/" className={Styles.footer_info_heading}>Info@Teoralife.com</Link></span>
                         </section>
@@ -80,7 +80,7 @@ const Footer = () =>{
 
                                     {
                                         footerLinks.map((footerNav, index) =>(
-                                        <div className="col-md-3" key={index}>
+                                        <div className="col-md-3 col-6" key={index}>
                                             <div className={`${Styles.footer_elements}`}>
                                                 <h6 className={`m-0 ${Styles.footer_info_heading} ${Styles.footer_heading}`}>{footerNav.f_heading}</h6> 
                                                 <ul className="p-0">
@@ -97,7 +97,7 @@ const Footer = () =>{
                                         ))
                                     }   
 
-                                    <div className="col-md-3">
+                                    <div className="col-md-3 col-6">
                                         <div className={`${Styles.footer_elements}`}>
                                             <h6 className={`m-0 ${Styles.footer_info_heading} ${Styles.footer_heading}`}>Subscribe Newsletter</h6>
                                             <ul className="p-0">
@@ -150,7 +150,7 @@ const Footer = () =>{
                             </button>
                                 
                             <button type="button" 
-                                className="frequently_asked d-flex align-items-center gap-4" >
+                                className="frequently_asked d-flex align-items-center gap-4 " >
                                 <span>Frequently Asked Questions</span>
                                 <span>
                                    <SlArrowUp/> 

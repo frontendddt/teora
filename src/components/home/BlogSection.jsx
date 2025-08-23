@@ -16,8 +16,8 @@ const BlogSection = () =>{
                         transition={{ duration: 0.8, ease: 'easeOut' }}
                     >
                             
-                        <div className="d-flex justify-content-end section-space">
-                            <button className="buttons-Beige">Read All</button>
+                        <div className="d-flex justify-content-end section-space padding_manage  marginBottom">
+                            <button className="buttons-Beige ">Read All</button>
                         </div> 
 
                         <div className="row"> 

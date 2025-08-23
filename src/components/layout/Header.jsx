@@ -37,9 +37,17 @@ const Header = () =>{
                                           <span className="menuText">Menu</span>
                                   </span>
                                </span>
-                                <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                                <div className="offcanvas offcanvas-end menu_sidebar" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                                     <div className="offcanvas-header">
-                                        <h5 className="offcanvas-title" id="offcanvasNavbarLabel">logo</h5>
+                                        <div className="offcanvas-title" id="offcanvasNavbarLabel">
+                                                 <Link className="navbar-brand" href="/">  
+                                                    <img src="/logo/teora-logo2.png" 
+                                                        alt="eora company logo"
+                                                        width={170}
+                                                        className="company_logo"
+                                                    ></img>
+                                                </Link> 
+                                        </div>
                                         <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
                                     <div className="offcanvas-body">

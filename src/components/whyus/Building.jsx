@@ -52,15 +52,14 @@ const whyUsSwiperData = [
         discriptions3: "EU bans? US regulations? Asia standards? One product meets all. Expand territories without regulatory nightmares.",
         subHeading4: " Premium Products,  bigger returns",
         discriptions4: "Antibiotic-free means “expensive.” Not here. Accessible pricing lets you tap both premium buyers AND volume markets.",
-        image: "",
+        image: "/image/stockthe_future.png",
         imageTitle: "BE THE FIRST TO STOCK THE FUTURE.",
         bgClass:"mutedBeigeBg", 
         colorClass:'purpleColor'
     },
     {
         mainHeading: "For Investors: Scale Meets Science Meets Serious Returns.",
-         
-        image: "",
+        image: "/image/stockthe_future.png",
         imageTitle: "INVEST IN FEEDING 10 BILLION—PROFITABLY.",
         bgClass:"purpleBg",
         colorClass:'text-primaryBeige',
@@ -76,8 +75,7 @@ const whyUsSwiperData = [
         discriptions3: "Prevents disease-driven losses that lead to unnecessary culling & spoilage.",
         subHeading4: "Strengthens Global Food Security",
         discriptions4: "Future-proofs farming against climate, disease, scale and supply disruptions.",
- 
-        image: "",
+        image: "/image/resource_group.png",
         imageTitle: "MEETS RISING DEMAND FOR SUSTAINABLE, ETHICAL FOOD",
         bgClass:"mutedBeigeBg", 
         colorClass:'purpleColor'
@@ -93,7 +91,7 @@ const whyUsSwiperData = [
         subHeading4: "Align with future-ready regulations",
         discriptions4: "Antibiotic/ chemical bans, What’s that ? Lead the market shift instead of chasing it. First-mover advantage secured.",
  
-        image: "",
+        image: "/image/natiration.png",
         imageTitle: "FARMERS DEMAND IT. REGULATIONS REQUIRE IT. YOU DELIVER IT.",
         bgClass:"mutedBeigeBg", 
         colorClass:'purpleColor'
@@ -279,7 +277,7 @@ const Building = () =>{
                         
                                             <div className=" h-100" style={{width:'20%'}}>
                                                 <div className='d-flex justify-content-end position-relative h-100'>
-                                                    <img src="/image/farm-pepols.png" style={{width:'100%', height:'100%'}}
+                                                    <img src={el.image} style={{width:'100%', height:'100%'}}
                                                         className='border_radius_round2' />
                                                     <p className='onimage_text text-white'>{el.imageTitle}</p>
                                                 </div>

@@ -1,6 +1,5 @@
  
-import Slider from 'react-slick';
-
+ 
 import { useEffect } from 'react';
 import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md';
 import styles from "./slicky.module.css";
@@ -10,18 +9,17 @@ import img1 from "../../../assets/homeAssets/cardImg.jpg";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { useRef, useState } from 'react';
 import single_logos from "../../../assets/homeAssets/single-logos.jpg"
- import CompanyComponents from './CompanyComponents';
- 
+import CompanyComponents from './CompanyComponents';
 
-import work_media2 from "../../../assets/homeAssets/work-media2.png";
-import work_media1 from "../../../assets/homeAssets/work_media1.png";
+// import work_media2 from "../../../assets/homeAssets/work-media2.png";
+// import work_media1 from "../../../assets/homeAssets/work_media1.png";
 
 import { motion } from "framer-motion";
 import { useAnimationContext } from '@/context/AnimationContext'; 
 
 
 const BestRecorgnition =() =>{
-    // const url = "https://www.eco-business.com/"; 
+  
     const {fadeLeft} = useAnimationContext(); 
       
             
@@ -37,7 +35,7 @@ const BestRecorgnition =() =>{
           const initCards = () => {
             cardRefs.forEach((ref, index) => {
               if (!ref.current) return;
-              ref.current.style.left = '85%';
+              ref.current.style.left = '88%';
               ref.current.style.visibility = 'hidden';
               ref.current.style.zIndex = index + 2;
             });
@@ -56,11 +54,11 @@ const BestRecorgnition =() =>{
                 card.style.visibility = 'visible';
                 card.style.zIndex = 100 + index;
               } else if (index === step) {
-                card.style.left = '85%';
+                card.style.left = '88%';
                 card.style.visibility = 'visible';
                 card.style.zIndex = 100 + index;
               } else {
-                card.style.left = '85%';
+                card.style.left = '88%';
                 card.style.visibility = 'hidden';
                 card.style.zIndex = index + 2;
               }
@@ -103,24 +101,26 @@ const BestRecorgnition =() =>{
             borderBottomLeftRadius: '50px',
           };
 
+          
+
 
     return(
         <> 
              <div className="purpleColor"> 
                    <div className="container">
                         <div className="row">
-                                <motion.div className='col-9'
+                                <motion.div className='col-md-9 col-12'
                                     variants={fadeLeft}
                                     initial="hidden"
                                     whileInView="visible"
                                     viewport={{ once: false, amount: 0.2 }} 
                                 > 
-                                    <h1 className="m-top-b h1500">SUPPORTED & AWARDED BY THE BEST- RECOGNITION</h1> 
+                                    <h1 className="m-top-b h1500 h11536">SUPPORTED & AWARDED BY THE BEST- RECOGNITION</h1> 
                                 </motion.div>
                                 {  
 
-                                <div className={`col-3 d-flex align-items-center justify-content-end`}>   
-                                        <div className={`${styles.countscroll} ${styles.countscroll2}`} > 
+                                <div className={`col-md-3 col-12 d-flex align-items-center justify-content-end marginBottom`}>   
+                                        <div className={` ${styles.countscroll} ${styles.countscroll2}`} > 
                                                 <div className={`d-flex justify-content-center align-items-center`} 
                                                   style={{
                                                         cursor: step === 1 ? "not-allowed" : "pointer",
@@ -147,40 +147,40 @@ const BestRecorgnition =() =>{
                     </div> 
 
                    <div >
-                        <div style={containerStyle}>
+                        <div className='container_slide_border' style={containerStyle}>
                             {/* Card 1 */}
                             <div
-                            ref={cardRefs[0]}
-                            style={{ ...cardStyle, backgroundColor: '#f5f0e8' }}
+                              ref={cardRefs[0]}
+                              style={{ ...cardStyle, backgroundColor: '#f5f0e8' }}
                             >
                             <div className="supported_slider_card corporateBg border_radius_round2 sliderCardHeight mb-3 industry-slide" style={{ padding: '0 0 1.5rem 0' }}>
                                 <div className="row">
-                                    <div className="col-5 d-flex align-items-center">
+                                    <div className="col-md-5 col-12 d-flex align-items-center">
                                         <div className="p_smarter">
-                                        <h4 className="mb-4">The Liveability Challenge 2023</h4>
-                                        <p>
-                                            WINNER- Teora secured $1 million in funding, standing out
-                                            among over 600 entries for its potential to address global
-                                            food security and climate change issues.  
-                                        </p>
-                                        <p className="mt-4 mb-4">
-                                            <Link href="https://www.eco-business.com/" className="accentRedColor">
-                                            https://www.eco-business.com/
-                                            </Link>
-                                        </p>
-                                        <p>
-                                            <Link href="https://www.eco-business.com/" className="purpleColor fw-medium">
-                                            Explore more <FaLongArrowAltRight />
-                                            </Link>
-                                        </p>
+                                            <h4 className="mb-4 remove_margin">The Liveability Challenge 2023</h4>
+                                            <p>
+                                                WINNER- Teora secured $1 million in funding, standing out
+                                                among over 600 entries for its potential to address global
+                                                food security and climate change issues.  
+                                            </p>
+                                            <p className="mt-4 mb-4 remove_margin_tb">
+                                                <Link href="https://www.eco-business.com/" className="accentRedColor">
+                                                  https://www.eco-business.com/
+                                                </Link>
+                                            </p>
+                                            <p>
+                                                <Link href="https://www.eco-business.com/" className="purpleColor fw-medium">
+                                                Explore more <FaLongArrowAltRight />
+                                                </Link>
+                                            </p>
                                         </div>
                                     </div>
-                                        <div className="col-7">
+                                        <div className="col-md-7 col-12">
                                             <div className="border_radius_round2 bg-white" style={{ padding: '0 20px 20px 20px' }}> 
                                             <h5 className='boldh5slid'>
                                                 <b>Susteon and Teora win S$1<br/> million prize each at the <br/> Liveability Challenge 2023</b>
                                             </h5>
-                                               <Image height={370} src={img1} style={{ width: '80%', height:'' }} alt="Susteon and Teora win" />
+                                               <Image className='slide_image_bx' height={370} src={img1} style={{ width: '80%', height:'' }} alt="Susteon and Teora win" />
                                             </div>
                                         </div>
                                 </div>
@@ -199,25 +199,32 @@ const BestRecorgnition =() =>{
                                 <div className="supported_slider_card  border_radius_round2 sliderCardHeight d-flex justify-content-center align-items-center" style={{ padding: '0 0 1.5rem 0', background:'#F5F4F1' }}>
                                     <div className="container purpleColor border_radius_round2 position-relative">
                                         <div className="row position-relative">
-                                            <div className="col-md-3">
-                                            <div style={{ position: 'absolute', left: '30px', zIndex: '1', top: '60px', color: '#b7b0bc' }}>
-                                                <h1>WORK WORTH <br /> BEING IN MEDIA</h1>
-                                                <div className="mt-5">
-                                                    <a className="buttons-primary" href="/">
-                                                        Explore More
-                                                    </a>
-                                                </div>
+                                            <div className="col-md-3 col-12">
+                                              <div className='work_place' style={{ position: 'absolute', left: '30px', zIndex: '1', top: '60px', color: '#b7b0bc' }}>
+                                                  <h1>WORK WORTH <br/> BEING IN MEDIA</h1>
+                                                  <div className="mt-5 remove_margin_tb">
+                                                      <a className="buttons-primary" href="/">
+                                                          Explore More
+                                                      </a>
+                                                  </div>
+                                              </div>
                                             </div>
+
+                                            <div className="col-md-5 col-12 d-flex align-items-center">
+                                                <img 
+                                                  src="/image/work_media1.png"
+                                                   className='work_media_img'
+                                                  style={{ width: '100%', height: '85%' }} 
+                                                  alt=' Explore More'
+                                                />
                                             </div>
-                                            <div className="col-5 d-flex align-items-center">
-                                            <Image src={work_media1} style={{ width: '100%', height: '85%' }} 
-                                              alt=' Explore More'
-                                            />
-                                            </div>
-                                            <div className="col-4 d-flex align-items-center">
-                                            <Image src={work_media2} style={{ width: '100%', height: '85%' }} 
-                                              alt='BEING IN MEDIA'
-                                            />
+                                            <div className="col-md-4 col-12 d-flex align-items-center">
+                                                <img 
+                                                  src="/image/work-media2.png" 
+                                                  className='work_media_img'
+                                                  style={{ width: '100%', height: '85%' }} 
+                                                  alt='BEING IN MEDIA'
+                                                />
                                             </div>
                                         </div>
                                     </div>

@@ -7,6 +7,7 @@ import Aquaculture from "@/components/whyus/Aquaculture";
 import CompanyComponents from "@/components/home/slickyComponents/CompanyComponents";
 import OurBrochure from "@/components/home/OurBrochure";
 import LeadershipSection from "@/components/home/LeadershipSection";
+import BingMedia from "@/components/whyus/BingMedia";
 
 const Whyus = () =>{
 
@@ -37,6 +38,13 @@ const Whyus = () =>{
                 </section>
 
                 <section className="corporateBg">
+
+                    <section>
+                        <div className="container  " >
+                             <BingMedia/>
+                        </div>
+                    </section>
+
                     <OurBrochure
                         classname="purpleBg" 
                         color="text-primaryBeige" 
@@ -56,8 +64,7 @@ const Whyus = () =>{
                             buttonText_card2 = "Connect With Leadership"
                             classname_card2 = "card2_font"
                         />
-                    </section> 
-
+                    </section>  
                 </section>
 
         </section>

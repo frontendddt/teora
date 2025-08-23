@@ -31,7 +31,7 @@ const CurrentSolution = () =>{
           <section className="section-space-2 ">
                 <div className="container-2 m-auto ">
                 
-                    <div className="row animate-wrapper padding_manage pt-2 pb-2">
+                    <div className="row animate-wrapper  pt-2 pb-2"  >
                         <div className="col-md-7 h-100 "> 
                                 <motion.div className={`${Styles.aboutrowcontainer}`}
                                     variants={fadeLeft}

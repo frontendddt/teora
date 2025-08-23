@@ -122,16 +122,14 @@
     }
 
     .sticky_section{
-      border-radius: 35px 35px 0 0; 
-      /* top: 0 !important; */
-    } 
-
-    .sticky_section{
         border-radius:0;
         height: auto; 
         min-height: auto !important;
         position: static !important;
-} 
+    } 
+    .cards{
+        border-radius: 20px;
+    }
 
 }
  
