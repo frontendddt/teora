@@ -1,0 +1,166 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+ 
+
+
+/* admin dashboard container */
+
+.left_sidebar{
+    position: fixed;
+    left: 0;
+    width: 260px;
+    height: 100%;
+    top: 0;    
+    transition: .2s ease-in;
+}
+.page-wrapper{
+    margin-left:260px; 
+    height: 100%; 
+    background-color: #f5f6fe;
+    min-height: 100vh;
+}
+
+.logout_header{
+    position: sticky;
+    top: 0;
+}
+
+
+.sidemenu_btn{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--primaryPurple);
+    cursor: pointer;
+}
+.logout_admin{
+    border: none;
+    background-color: var(--primaryPurple);
+    color: var(--primaryBeige);
+     width: 110px;
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     justify-content: center;
+     border-radius: 5px;
+     font-weight: 500; 
+     transition: ease-in-out all .3s;
+     border: 1px solid var(--primaryPurple);
+}
+.logout_admin svg{
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.logout_admin:hover{
+    background-color: var(--primaryBeige);
+    color: var(--primaryPurple);
+
+}
+
+.header_logos{
+    height: 60px;
+    padding: 10px 2.5rem;
+}
+.sidebar_menu{
+     padding: 10px 10px;
+}
+
+.dashboard_menu_list{
+    padding: 0px;
+    list-style: none;
+}
+.dashboard_menu_list li{
+    margin: .5rem 0;
+    transition: ease-in-out .2s;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.dashboard_menu_list li a{
+    padding: .5rem 15px;
+    text-decoration: none;
+    color: var(--primaryBeige);
+    font-size: 16.5px; 
+    display: inline-block;
+    width: 100%;
+}
+.dashboard_menu_list li a:hover{
+    background-color: var(--primaryBeige);
+    color:var(--primaryPurple)
+}
+ 
+.content-wrapper{
+    padding: 1rem 2.5rem;
+}
+
+.heading_titles{
+  font-size: 20px !important;  
+}
+.card_container{
+    margin-top: 2rem;
+    padding:2rem 1.5rem;
+}
+
+.formcontrol label{
+    font-size: 15px;
+    font-weight: 400;
+    width: 20%;
+}   
+.formcontrol input{
+    width: 80%;
+    padding: 7px 10px;
+    font-size: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+.formcontrol input:focus{
+    outline: none; 
+}
+.formcontrol textarea{
+    width: 80%;
+    padding: 7px 10px;
+    font-size: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    height: 100px;
+}
+
+.formcontrol textarea:focus{
+    outline: none; 
+}
+
+.tables_style{
+    border-radius: 10px;
+}
+.tables_style thead tr th{
+    background-color: var(--primaryPurple);
+    color: var(--primaryBeige); 
+}
+.tables_style thead tr th, .tables_style tbody tr td{
+      text-align: center;
+      padding: 14px 15px;
+}
+.tables_style tbody tr:hover {
+    background-color: red !important;
+}
+.edit_menu{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid var(--primaryPurple);
+    font-size: 25px;
+    transition: ease-in-out .2s;
+    background-color: var(--primaryPurple);
+    color: var(--primaryBeige);
+}
+.edit_menu:hover{
+    background-color: transparent;
+    color: var(--primaryPurple);
+}

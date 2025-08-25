@@ -8,8 +8,8 @@ const BingMedia = () =>{
                     <Innovation/>
 
                     <div className="d-flex gap-3">
-                        <Link class="buttons-primary " href="/">Awards & Recognition</Link>
-                        <Link class="buttons-Beige" href="/">Explore Media</Link>
+                        <Link className="buttons-primary " href="/">Awards & Recognition</Link>
+                        <Link className="buttons-Beige" href="/">Explore Media</Link>
                     </div>
                 </div>
                 <div className="col-md-7">
