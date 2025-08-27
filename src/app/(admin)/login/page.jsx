@@ -1,54 +1,53 @@
 
   "use client";
   import { useState } from "react";
-// import { useRouter } from "next/navigation";
+  import { useRouter } from 'next/navigation';
   import styles from "./login.module.css";
   
   const AdminLogin = () =>{ 
-    //  const router = useRouter();
+
+    const router = useRouter();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    
-    const handalLogin = (e) =>{ 
-        e.preventDefault();
-        if(!email || !password) return;
+    // const handalLogin = async (e) =>{ 
+    //     e.preventDefault();
+    //     if(!email || !password) return;
+    //     console.log({
+    //       email,
+    //       password
+    //     })
+    //     setEmail("");
+    //     setPassword("");
+    // } 
+  const handalLogin = async (e) => {
+    e.preventDefault();
+    if (!email || !password) return;
 
-        // if(email === "admin@gmail.com" && password === "admin123"){
-        //   localStorage.setItem("isAdmin", "true");
-        //    router.push("/dashboard"); 
-        // }else{
-        //   alert("Invalid credentials");
-        // } 
+    try {
+      const res = await fetch('/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
 
-        console.log({
-          email,
-          password
-        })
-        setEmail("");
-        setPassword("");
-    } 
- 
-    //  const handalLogin = async (e) => {
-    //       e.preventDefault();
+      const data = await res.json();
 
-    //       const res = await fetch('/api/login', {
-    //         method: 'POST',
-    //         headers: {
-    //           'Content-Type': 'application/json',
-    //         },
-    //         body: JSON.stringify({ email, password }),
-    //       });
+      if (data.success) {
+        router.push('/dashboard'); // redirect to admin page
+      } else {
+        setErrorMsg(data.message || 'Login failed');
+      }
+    } catch (err) {
+      setErrorMsg('Something went wrong');
+      console.error(err);
+    }
 
-    //       const data = await res.json();
-
-    //       if (res.ok) {
-    //         router.push('/dashboard');
-    //       } else {
-    //         alert(data.error);
-    //       }
-    //     };
-
+    setEmail('');
+    setPassword('');
+  };
 
 
     return(
@@ -81,9 +80,7 @@
                                                     onChange={(e) => setEmail(e.target.value)}
                                                     value={email}
                                                     ></input>
-                                                    {
-                                                      // <p>Please enter a valid email address</p>
-                                                    }
+                                                  
                                               </div>
 
                                               <div className={` ${styles.input_container}`}>
@@ -96,9 +93,7 @@
                                                       onChange={(e) => setPassword(e.target.value)}
                                                       value={password}
                                                       ></input>
-                                                     {
-                                                      //  <p >Please enter valid password</p>
-                                                     }
+                                                   
                                               </div> 
                                               <button className={`w-100  ${styles.submit_button}`} type="submit">Login</button>
                                           </form>
