@@ -1,23 +1,60 @@
 'use client';
+// import { CarouselData } from '@/data/carouselData';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
  import Styles from "./carousel.module.css"; 
-import Image from "next/image";
-import { useState, useRef, useEffect } from "react";
-// import Slide from "../../../public/slider/hero-bg.jpg"
-// import Slide1 from "../../../public/slider/homfooter_bg.jpg"
+
 import { IoIosArrowBack, IoIosArrowForward  } from "react-icons/io";
-import slider2_img1 from "/public/slider/Group.png";
-import slider2_img2 from "/public/slider/Group2.png";
-import slider2_img3 from "/public/slider/Group3.png";
-import slider2_img4 from "/public/slider/Group4.png";
-import slider3_img5 from "/public/slider/Group5.png";
-import slider4_img6 from "/public/slider/group6.png";
-import banner from "/public/slider/Animal-Illustartor.png"
 import { useAnimationContext } from '@/context/AnimationContext';
+
+
+    const staticSlides = [
+        {
+            id: 1,
+            counter: '01/04',
+            heading: `We’re Building A Future Where Every Farm—Small Or Large, Can Protect What Matters And Grow What’s Needed Through Clean, Easy, Powerful Science.`,
+            subheading: 'Stronger Yields, Sustainable Planet Healthier Ecosystems, And Resilient Communities.',
+            subheadingSpan: 'Cleaner Harvests,', 
+            images: [],
+            bannerImg: '/slider/Animal-Illustartor.png',
+        },
+        {
+            id: 2,
+            counter: '02/04',
+            heading: `Injected Fish. Antibiotic-Fed Animals. High Amr’s. Sprayed Crops. Sick Soils. Dying Oceans. Toxic Waters. Stressed-Out Farmers. Polluted Plates.`,
+            subheading:'Human Health. Farmers. Planet !',
+            subheadingSpan:'Compromised',
+            images: [
+            '/slider/Group.png',
+            '/slider/Group2.png',
+            '/slider/Group3.png',
+            '/slider/Group4.png',
+            ],
+        },
+        {
+            id: 3,
+            counter: '03/04',
+            heading: `This Is The Cost Of How We Grow Food Today And We’re Expected To Feed 10 Billion Like This?`,
+            subheading:'We Could Grow Food Without Harming Everything Else.',
+            subheadingSpan:'What if', 
+            images: ['/slider/Group5.png'],
+        },
+        {
+            id: 4,
+            counter: '04/04',
+            heading: `At Teora, We Envision A World Where — Disease Doesn’t Destroy Harvests Or Drain Profits. Growth Doesn’t Rely On Chemicals, Antibiotics Or Shortcuts.`,
+            subheading:'Comes At The Cost Of Health, Planet, Or Profitability.',
+            subheadingSpan:'And Farming no longer',
+            images: ['/slider/group6.png'],
+            imgClass: 'sliderImg4',
+        },
+    ];
 
  const Carousel = () =>{
 
-const {fadeLeft} = useAnimationContext();
+
+ const {fadeLeft} = useAnimationContext();
+const [carouselData, setCarouselData] = useState(staticSlides);
  
     const lineVariants = {
             hidden: {
@@ -35,193 +72,155 @@ const {fadeLeft} = useAnimationContext();
             },
         };
 
+    
+ useEffect(() => {
+    const fetchSliderData = async () => {
+      try {
+        const res = await fetch('/api/banner');
+        const json = await res.json();
+        
+        console.log(json, "json");
+
+        if (json.success && Array.isArray(json.data)) {
+          const updatedSlides = carouselData.map((slide) => {
+            const updated = json.data.find((s) => s.slider_number === slide.id);
+
+            // if (slide.id === 1 && updated) {
+            //   return {
+            //     ...slide,
+            //     heading: updated.heading || slide.heading,
+            //     bannerImg: updated.images || slide.bannerImg,
+            //   };
+            // }
+                if (updated) {
+                    return {
+                    ...slide,
+                    heading: updated.heading || slide.heading,
+                    bannerImg:
+                        slide.id === 1
+                        ? updated.images?.[0] || slide.bannerImg
+                        : slide.bannerImg,
+                    };
+                }
+
+
+            return slide;
+          });
+
+          setCarouselData(updatedSlides);
+        }
+      } catch (err) {
+        console.error("Failed to fetch banners:", err);
+      }
+    };
+
+    fetchSliderData();
+  }, []);
+
     return(
         <> 
             <section className={`tectureBg ${Styles.bannerContaner}`}>
                     <div id="carouselExampleFade" className={`carousel slide ${Styles.sliders}`} > 
-                            <div className="carousel-inner w-100 h-100">
-                                <div className="carousel-item active" style={{ width: '100%', height: '100%' }}> 
-                                    <div className="h-100 position-relative">  
+
+                             <div className="carousel-inner w-100 h-100">
+                                    {carouselData.map((slide, index) => (
+                                        <div
+                                          key={slide.id}
+                                          className={`carousel-item ${index === 0 ? 'active' : ''}`}
+                                          style={{ width: '100%', height: '100%' }}
+                                        >
+                                        <div className="h-100 position-relative">
+                                            {/* Top Counter */}
                                             <div className="container position-relative">
-                                                 <p className={` ${Styles.banner_counter}`}><strong> <i>01/04</i> </strong></p>
+                                                 <p className={`${Styles.banner_counter}`}>
+                                                    <strong>
+                                                      <i>{slide.counter}</i>
+                                                    </strong>
+                                                </p>
                                             </div>
-                                            <div className={`z-1 ${Styles.bannerHeaderContant}`}> 
-                                                <h2 className="text-primaryBeige">
-                                                    We’re Building A Future Where Every Farm—Small 
-                                                    Or Large, Can Protect What Matters And Grow What’s 
-                                                    Needed Through Clean, Easy, Powerful Science.
-                                                </h2>
-                                            </div> 
-                                            
-                                            <div className={`container z-1 ${Styles.slider_img_container}`}> 
-                                                    <div className={Styles.bannerFooterContant}>
 
-                                                        {/* Top animated line */}
-                                                        <div className="d-flex justify-content-center">
-                                                            <motion.span 
-                                                                className="linsAnim"
-                                                                variants={lineVariants}
-                                                                initial="hidden"
-                                                                whileInView="visible"
-                                                                viewport={{ once: false, amount: 0.2 }} 
-                                                            ></motion.span>
-                                                        </div>
+                                            {/* Heading */}
+                                            <div className={`z-1 ${Styles.bannerHeaderContant}`} style={slide.id === 4 ? { maxWidth: 1100 } : {}}>
+                                                <h2 className="text-primaryBeige">{slide.heading}</h2>
+                                            </div>
 
-                                                        {/* Fade-in heading */}
-                                                        <motion.h3
-                                                            className="healthier h3mobile"
-                                                             variants={fadeLeft}
+                                            {/* Subheading and images */}
+                                            <div className={`container z-1 ${Styles.slider_img_container}`}>
+                                                <div className={Styles.bannerFooterContant}>
+                                                    {/* Top animated line */}
+                                                    {slide.id === 1 && (
+                                                    <div className="d-flex justify-content-center">
+                                                        <motion.span
+                                                            className="linsAnim"
+                                                            variants={lineVariants}
                                                             initial="hidden"
                                                             whileInView="visible"
-                                                            viewport={{ once: false, amount: 0.2 }} 
-                                                        >
-                                                        <span className={` ${Styles.cleanTex}`}>Cleaner harvests,</span> stronger yields, sustainable Planet,
-                                                            healthier ecosystems, and resilient communities.
-                                                        </motion.h3>
-
-                                     
-                                     
-                                     
-                                                        {/* Bottom animated line */}
-                                                        <div className="d-flex justify-content-center">
-                                                            <motion.span className="linsAnim" 
-                                                                variants={lineVariants}
-                                                                initial="hidden"
-                                                                whileInView="visible"
-                                                                viewport={{ once: false, amount: 0.2 }} 
-                                                            ></motion.span>
-                                                        </div>
-
+                                                            viewport={{ once: false, amount: 0.2 }}
+                                                        ></motion.span>
                                                     </div>
-                                            </div> 
-                                           
-                                            <Image 
-                                                src={banner}
-                                                 alt="banner img"
-                                                className={Styles.bannerImg}
-                                             />
-                                    </div>
-                                </div>
-                               
+                                                    )}
 
-                               {
-                                /// slider second
-                               }
+                                                    {/* Fade-in subheading */}
+                                                    {slide.id === 1 ? (
+                                                    <motion.h3
+                                                        className="healthier h3mobile"
+                                                        variants={fadeLeft}
+                                                        initial="hidden"
+                                                        whileInView="visible"
+                                                        viewport={{ once: false, amount: 0.2 }}
+                                                    >
+                                                     <span className={` ${Styles.cleanTex}`}>{slide.subheadingSpan}</span> {slide.subheading}
+                                                    </motion.h3>
+                                                    ) : (
+                                                    <h3 className="h3mobile"> <span className={` ${Styles.cleanTex}`}>{slide.subheadingSpan}</span> {slide.subheading}</h3>
+                                                    )}
 
-                               <div className="carousel-item " style={{ width: '100%', height: '100%' }}> 
-                                    <div className="h-100 position-relative"> 
-                                             <div className="container position-relative">
-                                                 <p className={` ${Styles.banner_counter}`}><strong> <i>02/04</i> </strong></p>
-                                            </div>
-                                            <div className={Styles.bannerHeaderContant}>
-                                                <h2 className="text-primaryBeige">
-                                                   Injected Fish. Antibiotic-Fed Animals. High Amr’s.
-                                                    Sprayed Crops. Sick Soils. Dying Oceans. Toxic
-                                                    Waters. Stressed-Out Farmers. Polluted Plates.
-                                                </h2>
-                                            </div> 
-                                            
-                                            <div className={`container ${Styles.slider_img_container}`}> 
-                                                    <div className={Styles.bannerFooterContant}>
-                                                        <h3 className='h3mobile'><span className={Styles.cleanTex}>Compromised</span> Human Health. Farmers. Planet !
-                                                        </h3>
-                                                    </div>  
-                                                    <div className="row">
-                                                        <div className="col-md-3 col-6 mb-2">
-                                                            <Image src={slider2_img1}
-                                                             alt="Slider Image"
-                                                             style={{maxWidth:'100%',height:'100%', borderRadius:'20px'}}/>
-                                                        </div>
-                                                        <div className="col-md-3 col-6 mb-2">
-                                                            <Image src={slider2_img2}
-                                                             alt="Slider Image"
-                                                            style={{maxWidth:'100%',height:'100%', borderRadius:'20px'}}/>
-                                                        </div>
-                                                        <div className="col-md-3 col-6 mb-2">
-                                                            <Image src={slider2_img3}
-                                                             alt="Slider Image"
-                                                             style={{maxWidth:'100%',height:'100%', borderRadius:'20px'}}/>
-                                                        </div>
-                                                        <div className="col-md-3 col-6 mb-2">
-                                                            <Image src={slider2_img4} 
-                                                             alt="Slider Image"
-                                                             style={{maxWidth:'100%',height:'100%', borderRadius:'20px'}}/>
-                                                        </div>
-                                                    </div> 
-                                            </div> 
-                                    </div>
-                                </div>
-
-                                 { 
-                                 /// slider three
-                                 }
-
-                                  <div className="carousel-item " style={{ width: '100%', height: '100%' }}> 
-                                    <div className="h-100 position-relative"> 
-                                             <div className="container position-relative">
-                                                 <p className={` ${Styles.banner_counter}`}><strong> <i>03/04</i> </strong></p>
-                                            </div>
-                                            <div className={Styles.bannerHeaderContant}>
-                                                <h2 className="text-primaryBeige">
-                                                   This Is The Cost Of How We Grow Food Today And We’re Expected To Feed 10 Billion Like This?
-                                                </h2>
-                                            </div> 
-                                            
-                                            <div className={`container ${Styles.slider_img_container}`}> 
-                                                    <div className={Styles.bannerFooterContant}>
-                                                        <h3 className='h3mobile'><span className={Styles.cleanTex}>What if</span> we could grow food without harming everything else.
-                                                        </h3>
-                                                    </div>  
-                                                    <div className="row">
-                                                        <div className="col-12">
-                                                            <Image src={slider3_img5}
-                                                             alt="Slider Image"
-                                                             style={{maxWidth:'100%',height:'100%', borderRadius:'20px'}}/>
-                                                        </div> 
+                                                    {/* Bottom animated line */}
+                                                    {slide.id === 1 && (
+                                                    <div className="d-flex justify-content-center">
+                                                        <motion.span
+                                                          className="linsAnim"
+                                                          variants={lineVariants}
+                                                          initial="hidden"
+                                                          whileInView="visible"
+                                                          viewport={{ once: false, amount: 0.2 }}
+                                                        ></motion.span>
                                                     </div>
+                                                    )}
+                                                </div>
 
-                                            </div> 
-                                    </div>
-                                </div>
-
-                                   { 
-                                    /// slider three
-                                    }
-
-                                <div className="carousel-item " style={{ width: '100%', height: '100%' }}> 
-                                    <div className="h-100 position-relative"> 
-                                             <div className="container position-relative">
-                                                 <p className={` ${Styles.banner_counter}`}><strong> <i>04/04</i> </strong></p>
-                                            </div>
-                                            <div className={Styles.bannerHeaderContant} style={{ maxWidth: 1100 }}>
-                                                <h2 className="text-primaryBeige">
-                                                   At Teora, We Envision A World Where — Disease Doesn’t Destroy Harvests Or Drain Profits. Growth Doesn’t Rely 
-                                                   On Chemicals, Antibiotics Or Shortcuts.
-                                                </h2>
-                                            </div> 
-                                            
-                                            <div className={`container ${Styles.slider_img_container}`}> 
-                                                    <div className={Styles.bannerFooterContant}>
-                                                        <h3 className='h3mobile'><span className={Styles.cleanTex}>And Farming no longer </span> comes at the cost of health, planet, or profitability.
-                                                        </h3>
-                                                    </div>  
-                                                    <div className="row">
-                                                        <div className="col-12 d-flex">
-                                                            <Image src={slider4_img6}
-                                                              className={`m-auto ${Styles.sliderImg4}`}
-                                                              alt="Slider Image"
-                                                              height={410}
-                                                              style={{maxWidth:'80%'}}/>
-                                                        </div>
-                                                       
+                                                {/* Images */}
+                                                <div className="row">
+                                                    {slide.images.map((imgSrc, imgIndex) => (
+                                                    <div
+                                                        key={imgIndex}
+                                                        className={slide.id === 3 || slide.id === 4 ? 'col-12 d-flex' : 'col-md-3 col-6 mb-2'}
+                                                    >
+                                                        <img
+                                                          src={imgSrc}
+                                                          alt="Slider Image"
+                                                          className={slide.id === 4 ? `m-auto ${Styles[slide.imgClass]}` : ''}
+                                                          style={{
+                                                            maxWidth: slide.id === 4 ? '80%' : '100%',
+                                                            height: '100%',
+                                                            borderRadius: '20px',
+                                                          }}
+                                                          height={slide.id === 4 ? 410 : undefined}
+                                                        />
                                                     </div>
+                                                    ))}
+                                                </div>
+                                            </div>
 
-                                            </div> 
+                                            {/* Banner background image (only for slide 1) */}
+                                            {slide.bannerImg && (
+                                            <img src={slide.bannerImg} alt="banner img" className={Styles.bannerImg} />
+                                            )}
+                                        </div>
+                                        </div>
+                                    ))}
                                     </div>
-                                </div>
-
-                             
-                            </div>
+                            
 
                             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev" style={{opacity:1}}>
                                 <span className={Styles.prevButton}>
@@ -239,8 +238,7 @@ const {fadeLeft} = useAnimationContext();
                                     </div>
                                 </span>
                                 <span className="visually-hidden">Next</span>
-                            </button>
-
+                            </button> 
                     </div>
             </section>
         

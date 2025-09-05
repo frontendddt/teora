@@ -22,7 +22,7 @@ const Sidebar = () =>{
                     <ul className="dashboard_menu_list">
 
                          <li> 
-                            <Link href="/dashboard">
+                            <Link href="/admin/dashboard">
                                 <div className="d-flex gap-2 align-items-center">
                                     <IoMdAdd/> 
                                     <span>Dashboard</span>
@@ -30,7 +30,7 @@ const Sidebar = () =>{
                             </Link>
                         </li>
                         <li> 
-                            <Link href="/pageadd">
+                            <Link href="/admin/pageadd">
                                 <div className="d-flex gap-2 align-items-center">
                                     <IoMdAdd/> 
                                     <span>Page Add</span>
@@ -38,7 +38,7 @@ const Sidebar = () =>{
                             </Link>
                         </li>
                         <li>
-                            <Link href="/slider">
+                            <Link href="/admin/sliders">
                                     <div className="d-flex gap-2 align-items-center">
                                     <PiSlidersHorizontal /> 
                                     <span>Sliders</span>
@@ -46,7 +46,7 @@ const Sidebar = () =>{
                             </Link>
                         </li>
                         <li>
-                            <Link href="/header-menu"> 
+                            <Link href="/admin/header-menu"> 
                                 <div className="d-flex gap-2 align-items-center">
                                     <RiMenuSearchLine/> 
                                     <span>Header Menu</span>
@@ -54,7 +54,7 @@ const Sidebar = () =>{
                             </Link>
                         </li>
                         <li>
-                            <Link href="/footer-menu">
+                            <Link href="/admin/footer-menu">
                                     <div className="d-flex gap-2 align-items-center">
                                     <RiMenuSearchLine/> 
                                     <span>Footer Menu</span>

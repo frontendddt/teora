@@ -1176,6 +1176,44 @@ button:focus{
   margin: 0 auto;
 }
 
+
+/* Hover-enabled dropdown */
+.dropdown_hover {
+  position: relative;
+}
+
+.dropdown_hover .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0; 
+  z-index: 99;
+  min-width: 180px;
+  padding: 0.5rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Show menu on hover */
+.dropdown_hover:hover .dropdown-menu {
+  display: block;
+}
+
+/* Optional: style items */
+.custom_dropdown .dropdown-item {
+  padding: 8px 16px;
+}
+
+.custom_dropdown .dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Hover-enabled dropdown end */
+
+.ck-editor__editable{
+  min-height: 200px;
+}
+
 /********************************************************************** media query start *******************************************************************/
 
 @media (max-width: 1556px) {

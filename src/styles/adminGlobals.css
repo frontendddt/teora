@@ -106,7 +106,7 @@
 
 .formcontrol label{
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     width: 20%;
 }   
 .formcontrol input{
@@ -131,6 +131,40 @@
 .formcontrol textarea:focus{
     outline: none; 
 }
+
+
+/*   for */
+
+.formcontrol2 label{
+    font-size: 15px;
+    font-weight: 500; 
+}   
+.formcontrol2 input{ 
+    width: 100%;
+    padding: 7px 10px;
+    font-size: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+.formcontrol2 input:focus{
+    outline: none; 
+}
+.formcontrol2 textarea{ 
+    padding: 7px 10px;
+    font-size: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    height: 100px;
+}
+
+.formcontrol2 textarea:focus{
+    outline: none; 
+}
+
+
+
+/*   form */
+
 
 .tables_style{
     border-radius: 10px;
@@ -163,4 +197,40 @@
 .edit_menu:hover{
     background-color: transparent;
     color: var(--primaryPurple);
+}
+
+.delete_menu{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid var(--accentRed);
+    font-size: 25px;
+    transition: ease-in-out .2s;
+    background-color: var(--accentRed);
+    color: var(--primaryBeige);
+}
+.delete_menu:hover{
+    background-color: transparent;
+    color: var(--accentRed);
+}
+
+
+
+.submit_button_admin{
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--primaryPurple);
+    color: var(--primaryBeige);
+}
+.clear_button_admin{
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+      background-color: var(--accentRed);
+    color: var(--primaryBeige);
 }
