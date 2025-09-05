@@ -39,3 +39,21 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Build output
+dist/
+build/
+.next/
+out
+
+
+# Optional: local scripts or debug tools
+hash.cjs
+/lib/jwt.js
